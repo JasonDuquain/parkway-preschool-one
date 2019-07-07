@@ -1,0 +1,104 @@
+
+.header {
+    
+    &__top-sect {
+        border-top: 5px solid $gray-darker;
+        
+    }
+    
+    &__top-sect-container {
+        
+    }
+    
+    &__top-bar {
+        background: url('../../img/cner.png') no-repeat top center;
+        
+        position: relative;
+        right: -15%;
+        
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    &__top-bar-contact {
+        height: 39px;
+        width: 936px;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transform: translate(4em, -2.5px);
+        
+        padding: 1em 0 1em 1em;
+    }
+    
+    &__top-bar-item + &__top-bar-item {
+        margin-left: 2em;
+    }
+    
+    &__top-bar-icon {
+       color: $orange;
+        margin-right: .3em;
+    }
+    
+    
+    &__top-bar-link {
+        color: #fff;
+    }
+    
+    
+    &__main-sect {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__logo {
+        transform: translateY(-18px);
+    }
+    
+    &__logo-link {
+        
+    }
+    
+    &__logo-image {
+        
+    }
+    
+    &__nav {
+        
+    }
+    
+    &__nav-list {
+        display: flex;
+        
+    }
+    
+    &__nav-item {
+        padding: .5em 0;
+        margin-left: 1.5em;
+        transition: all 300ms ease-in;
+    }
+    
+    &__nav-item:hover {
+        box-shadow: inset 0 -0.1875em 0 $orange;
+    }
+    
+    &__nav-item:hover .header__nav-link{
+        color: $orange;
+    }
+    
+    &__nav-link {
+        color: $gray-darker;
+        text-transform: uppercase;
+        transition: all 300ms ease-in;
+    }
+    
+    
+}
+
+.sm {
+    font-size: .9em;
+}

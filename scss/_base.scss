@@ -1,0 +1,19 @@
+:root {
+	box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Grand Hotel', cursive; */
+}
+
+
