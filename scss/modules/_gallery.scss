@@ -1,0 +1,28 @@
+
+.gallery {
+    
+    &.fullwidth {
+        padding: 10em 0;
+        display: flex;
+    }
+    
+    &__image-wrap {
+        width: 25%;
+        background-color: #000;
+        overflow: hidden;
+    }
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .85;
+        transition: all 300ms ease-out;
+        
+        &:hover {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    }
+    
+}
