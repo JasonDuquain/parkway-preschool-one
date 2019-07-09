@@ -16,4 +16,34 @@ body {
     /* font-family: 'Grand Hotel', cursive; */
 }
 
+section {
+    padding: 6em 2em;
+}
+
+.pre-heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: $gray-dark;
+    margin-bottom: .3em;
+}
+
+.sect-heading {
+    font-size: 2.3em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: .2em;
+    color: $gray-darker;
+}
+
+.sect-heading-img {
+    height: 13px;
+    width: 142px;
+    background-image: url('../img/heading-img.svg');
+    margin: 0 auto 3em auto;
+    opacity: .5;
+}
+
+
 

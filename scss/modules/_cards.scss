@@ -1,0 +1,171 @@
+
+
+.cards {
+    background-color: $gray-lighter;
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 2em;
+        align-items: center;
+    }
+    
+    &__wrap {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    &__image-wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    &__wave {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-repeat: repeat;
+            height: 12px;
+            background-size: 20px 20px;
+            background-image: radial-gradient(circle at 10px -5px, transparent 14px, #fff 16px);
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-repeat: repeat;
+            height: 12px;
+            background-size: 40px 20px;
+            background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px);
+        }
+    }
+    
+    &__content {
+        padding: 1.5em; 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    /*2ND CARD START*/
+    &__content-bleed {
+        overflow: hidden;
+    }
+    
+    &__subheading-bleed {
+        margin: 1.5em 0 1em 0;
+        font-size: 1.7em;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    &__icon-wrap-bleed {
+        margin-bottom: 1em;
+        display: flex;
+    }
+    
+    &__icon-bleed {
+        color: $orange;
+        margin-right: .2em;
+        
+        &::before {
+            font-size: .8em;
+        }
+    }
+    
+    &__summary-bleed {
+        line-height: 1.5;
+        padding: 1em 1.5em 2em 1.5em;
+    }
+    
+    &__btn-wrap-bleed {
+        text-align: center;
+    }
+    /*2ND CARD END*/
+    
+    
+    /* 3RD CARD START */
+    &__icon-large {
+        color: $orange;
+        
+        &::before {
+            font-size: 3em;
+        }
+    }
+    
+    &__subheading-brush {
+       position: relative;
+       padding-bottom: 20px;
+        
+        &::after {
+            background-color: #f27c7e;
+            position: absolute;
+            content: "";
+            padding: 0px;
+            max-width: 275px;
+            width: 100%;
+            display: inline-block;
+            background-image: url('../../img/footer_title_bg.png');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            bottom: 0;
+            left: 55%;
+            transform: translateX(-50%);
+            height: 14px;
+        }
+    }
+    /* 3RD CARD END */
+    
+    
+    &__subheading {
+        margin: .5em 0 1em 0;
+        font-size: 1.7em;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    &__icon-wrap {
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__icon {
+        color: $orange;
+    }
+    
+    &__icon:not(:last-of-type) {
+        margin-right: .3em;
+    }
+    
+    &__summary {
+        line-height: 1.5;
+    }
+    
+    &__btn {
+        margin: 3em 0;
+        align-self: center;
+    }
+    
+}
