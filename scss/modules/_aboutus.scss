@@ -1,0 +1,66 @@
+
+
+.apple {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 40vh;
+    background-image: url('../../img/hightlights-bg_02.jpg');
+    background-size: cover;
+    
+    position: relative;
+    
+}
+
+.navlist {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+}
+
+.navlist a {
+    color: #fff; 
+    font-size: 1.3em;
+    padding: 2em 3em;
+    background-color: royalblue;
+}
+
+.navlist a.active {
+    background-color: #fff;
+    color: #000;
+    pointer-events: none;
+}
+
+.navlist a:not(:last-of-type) {
+    margin-right: 1.5em;
+}
+
+.sect-wrap {
+    height: 40vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sect-wrap {
+    background-color: gold;
+}
+
+.sect-wrap > div {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: auto;
+    transition: all 400ms;
+}
+
+.sect-wrap > .hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+#news, #donations {
+    background-image: url('../../img/logo.png');
+}

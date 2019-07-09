@@ -19,10 +19,8 @@
         width: 1200px;
         
         
-        /*position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
+        position: relative;
+        
     }
     
     &__wrap-two {
@@ -41,6 +39,14 @@
         left: 50%;
         transform: translate(-50%, -50%);*/
     }
+    
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     
     &__heading {
         text-transform: uppercase;
