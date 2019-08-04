@@ -86,7 +86,7 @@
     }
     
     &__icon-bleed {
-        color: $orange;
+        color: $red-heart;
         margin-right: .2em;
         
         &::before {
@@ -107,7 +107,7 @@
     
     /* 3RD CARD START */
     &__icon-large {
-        color: $orange;
+        color: $royalblue;
         
         &::before {
             font-size: 3em;
@@ -152,7 +152,7 @@
     }
     
     &__icon {
-        color: $orange;
+        color: $red-heart;
     }
     
     &__icon:not(:last-of-type) {

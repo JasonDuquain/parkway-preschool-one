@@ -68,7 +68,7 @@
         margin-bottom: .7em;
         
         &--span {
-            color: darken($orange, 15%);
+            color: $aqua;
         }
     }
     
@@ -79,13 +79,13 @@
     text-transform: uppercase;
     display: inline-block;
     color: #fff;
-    background-color: $orange;
+    background-color: $royalblue;
     padding: 1em 2em;
     border-radius: 99em;
     transition: background-color 300ms ease-out;
     
     &:hover {
-        background-color: darken($orange, 10%);
+        background-color: lighten($royalblue, 10%);
     }
     
 }

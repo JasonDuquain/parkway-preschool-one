@@ -3,49 +3,58 @@
     
     &__top-sect {
         border-top: 5px solid $gray-darker;
-        
     }
     
     &__top-sect-container {
-        
-    }
-    
-    &__top-bar {
-        background: url('../../img/cner.png') no-repeat top center;
-        
-        position: relative;
-        right: -15%;
-        
         max-width: 1280px;
         margin: 0 auto;
     }
     
-    &__top-bar-contact {
+    &__top-bar {
+        background: url('../../img/cner-536.png') no-repeat top center;
+        
         height: 39px;
-        width: 936px;
+        width: 536px;
+        
+        position: relative;
+        right: -55vw;
+
+        @include breakpoint (max-width 1280px) {
+            right: -50vw;
+        }
+        
+        @include breakpoint (max-width 1130px) {
+            right: -45vw;
+        }
+        
+        @include breakpoint (max-width 1020px) {
+            right: -40vw;
+        }
+    }
+    
+    &__top-bar-contact {   
+        position: absolute; 
+        right: 4em;
+        top: 50%;
+        transform: translateY(calc(-50% - 5px));
         color: #fff;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        transform: translate(4em, -2.5px);
-        
-        padding: 1em 0 1em 1em;
+        align-items: center;    
+        padding: 1em 0;
     }
     
     &__top-bar-item + &__top-bar-item {
-        margin-left: 2em;
+        margin-left: 1.5em;
     }
     
     &__top-bar-icon {
-       color: $orange;
+       color: $aqua;
         margin-right: .3em;
     }
-    
     
     &__top-bar-link {
         color: #fff;
     }
-    
     
     &__main-sect {
         max-width: 1280px;
@@ -53,10 +62,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 2em;
+        
+        @include breakpoint (max-width 1020px) {
+            padding: 0 1em;
+        }
+        
     }
     
     &__logo {
-        transform: translateY(-18px);
+        transform: translateY(-37px);
+        margin-bottom: -30px;
     }
     
     &__logo-link {
@@ -64,7 +80,8 @@
     }
     
     &__logo-image {
-        
+        width: 15.625em;
+        height: auto;
     }
     
     &__nav {
@@ -78,11 +95,13 @@
 
     &__nav-item {
         padding: .5em 0;
-        margin-left: 1.5em;
-        transition: all 300ms ease-in;
-        
         position: relative;
         z-index: 100;
+        transition: all 300ms ease-in;
+    }
+    
+    &__nav-item + &__nav-item {
+        margin-left: 1em;
     }
     
     &__nav-item.has-submenu::after {
@@ -93,17 +112,25 @@
     }
     
     &__nav-item:hover {
-        box-shadow: inset 0 -0.1875em 0 $orange;
+        box-shadow: inset 0 -0.1875em 0 $royalblue;
     }
     
     &__nav-item:hover .header__nav-link {
-        color: $orange;
+        color: $royalblue;
     }
     
     &__nav-link {
+        
+        font-size: .95em;
+        
         color: $gray-darker;
         text-transform: uppercase;
         transition: all 300ms ease-in;
+        
+        @include breakpoint (max-width 1020px) {
+            font-size: .85em;
+        }
+        
     }
     
     /**** 2nd LEVEL  ****/
@@ -130,20 +157,28 @@
     }
     
     &__nav-item ul a {
+        
+        font-size: .95em;
+        
         display: block;
         padding: 1rem 1.5rem;
-        font: inherit;
+        font-family: inherit;
         color: #fff;
         text-transform: uppercase;
         transition: color 300ms ease-out;
+        
+        @include breakpoint (max-width 1020px) {
+            font-size: .9em;
+        }
+        
     }
     
     &__nav-item ul li:hover a {
-        color: $orange;
+        color: $aqua;
     }
     
     &__nav-item ul li::after:hover {
-        color: $orange;
+        color: $royalblue;
     }
     
 }
@@ -151,3 +186,5 @@
 .sm {
     font-size: .9em;
 }
+
+
