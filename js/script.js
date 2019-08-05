@@ -135,6 +135,7 @@ window.addEventListener('scroll', (e) => {
 
 
 /*********** HAMBURGER MENU  ***********/
+/*
 
 let hamburgerMenu = document.querySelector('.hamburger-icon');
 
@@ -143,6 +144,7 @@ hamburgerMenu.addEventListener('click', function(e) {
     header.classList.toggle('hamburger-on');
 });
 
+*/
 
 /******* HIGHTLIGHT INDIVIDUAL PAGES ******/
 let menuAnchs = document.querySelectorAll('.header__nav-link');
