@@ -15,7 +15,7 @@
     <title>Parkway Preschool</title>
 </head>
 
-<body>
+<body class="Home">
    
     <div class="hamburger-icon">
         <div class="hamburger-icon__middle"></div>
@@ -49,10 +49,10 @@
              <nav class="header__nav">
                 <ul class="header__nav-list">
                    <li class="header__nav-item">
-                        <a href="/index.html" class="header__nav-link">Home</a>
+                        <a href="/index.html" class="header__nav-link" data-title="Home">Home</a>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">About Us</a>
+                        <a href="/aboutus.html" class="header__nav-link" data-title="AboutUs">About Us</a>
                         <ul>
                            <li><a href="/aboutus.html#testone">Mission</a></li>
                            <li><a href="/aboutus.html#testtwo">Our Story</a></li>
@@ -60,14 +60,14 @@
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">Program</a>
+                        <a href="#" class="header__nav-link" data-title="Program">Program</a>
                         <ul>
                            <li><a href="#">Overview</a></li>
                            <li><a href="#">Activities</a></li>
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">Curriculum</a>
+                        <a href="#" class="header__nav-link" data-title="Curriculum">Curriculum</a>
                         <ul>
                            <li><a href="#">Classes</a></li>
                            <li><a href="#">Registration</a></li>
@@ -75,13 +75,13 @@
                        </ul>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Calendar</a>
+                        <a href="#" class="header__nav-link" data-title="Calendar">Calendar</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Forms</a>
+                        <a href="#" class="header__nav-link" data-title="Forms">Forms</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Contact Us</a>
+                        <a href="#" class="header__nav-link" data-title="ContactUs">Contact Us</a>
                     </li>
                 </ul>
              </nav>
@@ -89,7 +89,7 @@
         
     </header>
     
-    <div class="hero">
+    <div class="hero" id="hdr">
         <div class="hero__wrap">
            <div class="hero__center">
                 <h1 class="hero__heading">Welcome to Parkway Preschool</h1>
@@ -347,6 +347,10 @@
         </p>
         <p class="footer__copyright">Designed by <a href="https://github.com/JasonDuquain">JDuquain</a> 
     </div>
+    
+    <button class="js-btt-btn" >
+        <i class="js-btt-btn-icon fa fa-arrow-up"></i>
+    </button>
     
     <script src="js/TweenMax.min.js"></script>
     <script src="js/TimelineMax.min.js"></script>

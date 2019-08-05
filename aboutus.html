@@ -14,8 +14,12 @@
     <title>Parkway Preschool</title>
 </head>
 
-<body>
-    <header class="header">
+<body class="AboutUs">
+    <div class="hamburger-icon">
+        <div class="hamburger-icon__middle"></div>
+    </div> 
+   
+    <header class="header" id="hdr">
        
         <div class="header__top-sect">
             <div class="header__top-sect-container">
@@ -37,28 +41,31 @@
         <div class="header__main-sect">
             <div class="header__logo">
                 <a href="/index.html" class="header__logo-link">
-                    <img class="header__logo-image" src="img/logo.png" alt="parkway logo">
+                    <img class="header__logo-image" src="img/logo.jpg" alt="parkway logo">
                 </a>
              </div>
              <nav class="header__nav">
                 <ul class="header__nav-list">
+                   <li class="header__nav-item">
+                        <a href="/index.html" class="header__nav-link" data-title="Home">Home</a>
+                    </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">About Us</a>
+                        <a href="/aboutus.html" class="header__nav-link" data-title="AboutUs">About Us</a>
                         <ul>
-                           <li><a href="#testone">Mission</a></li>
-                           <li><a href="#testtwo">Our Story</a>
+                           <li><a href="/aboutus.html#testone">Mission</a></li>
+                           <li><a href="/aboutus.html#testtwo">Our Story</a></li>
                            <li><a href="#">Meet Our Staff</a></li>
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">Program</a>
+                        <a href="#" class="header__nav-link" data-title="Program">Program</a>
                         <ul>
                            <li><a href="#">Overview</a></li>
                            <li><a href="#">Activities</a></li>
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="#" class="header__nav-link">Curriculum</a>
+                        <a href="#" class="header__nav-link" data-title="Curriculum">Curriculum</a>
                         <ul>
                            <li><a href="#">Classes</a></li>
                            <li><a href="#">Registration</a></li>
@@ -66,13 +73,13 @@
                        </ul>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Calendar</a>
+                        <a href="#" class="header__nav-link" data-title="Calendar">Calendar</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Forms</a>
+                        <a href="#" class="header__nav-link" data-title="Forms">Forms</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Contact Us</a>
+                        <a href="#" class="header__nav-link" data-title="ContactUs">Contact Us</a>
                     </li>
                 </ul>
              </nav>
@@ -95,9 +102,9 @@
     <div class="accordion-wrap">
         <div class="apple">
            <nav class="navlist">
-               <a class="active" href="#news">Our Mission</a>
-               <a href="#events">Our Story</a>
-               <a href="#donations">Meet Our Staff</a>
+               <a class="active noZensmooth" href="#news">Our Mission</a>
+               <a class="noZensmooth" href="#events">Our Story</a>
+               <a class="noZensmooth" href="#donations">Meet Our Staff</a>
            </nav>
         </div>
         <div class="sect-wrap">
@@ -125,10 +132,79 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ex quisquam expedita, corporis cumque officiis praesentium temporibus reiciendis incidunt nobis nesciunt minima, repellat recusandae distinctio facilis tempore, est voluptatum deleniti.</p>
     </div>
   </div>
+   
+   <footer class="footer">
+        <div class="footer__wrap">
+            
+            <div class="footer__main">
+                <div class="footer__mission">
+                    <h3 class="footer__subheading">Our Mission</h3>
+                    
+                    <div class="footer__logo-wrap">
+                        <a href="#" class="footer__logo">
+                            <img src="img/logo.jpg" alt="parkway logo">
+                        </a>           
+                    </div>
+                    
+                    <p class="footer__para">To partner with parents to offer a loving, nurturing, and Christ-filled environment where each child can be encouraged to develop their unique personalities and god-given talents. </p>
+                </div>
+                <div class="footer__times">
+                    <h3 class="footer__subheading">Preschool Hours</h3>
+                    <p class="footer__days">Monday to Friday</p>
+                    <p class="footer__hours">9:00AM - 2:00PM</p>
+                    <p class="footer__days">Saturday</p>
+                    <p class="footer__hours">10:00AM - 2:00PM</p>
+                    <p class="footer__days">Sunday</p>
+                    <p class="footer__hours">Closed</p>
+
+                    <p class="footer__closings">
+                        Please check the Forsyth County School Closings/Calendar
+                        during inclement weather (ADD LINK!)
+                    </p>
+                </div>
+                <div class="footer__contact">
+                    <h3 class="footer__subheading">Contact Us</h3>
+                    <i class="footer__contact-icon fa fa-home"></i>
+                    <p class="footer__address">
+                        1060 West Addison<br>
+                        Chicago, IL 32302
+                    </p>
+                    <i class="footer__contact-icon fa fa-phone"></i>
+                    <p class="footer__telephone">
+                        1-800-DRU-IDIA
+                    </p>
+                    <i class="footer__contact-icon fa fa-envelope"></i>
+                    <p class="footer__email">
+                         parkway@parkway.com
+                    </p>
+                    <i class="footer__contact-icon fa fa-map-marker"></i>
+                    <p class="footer__fax">
+                        1-800-FAX-MACH
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <div class="footer__shape">
+            <div class="footer__icon-wrap">
+                <i class="footer__icon fa fa-facebook"></i>
+                <i class="footer__icon fa fa-twitter"></i>
+                <i class="footer__icon fa fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottom">
+        <p class="footer__copyright">
+            Copyright &copy; <span class="year">2018</span>. Parkway Presbyterian Preschool &amp; Kindergarten. All rights reserved. 
+        </p>
+        <p class="footer__copyright">Designed by <a href="https://github.com/JasonDuquain">JDuquain</a> 
+    </div>
     
+    <button class="js-btt-btn" >
+        <i class="js-btt-btn-icon fa fa-arrow-up"></i>
+    </button>
     
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
-    <script src="js/script-aboutus.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

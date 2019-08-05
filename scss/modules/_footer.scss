@@ -9,6 +9,9 @@
     &__wrap {
         color: $gray-light;
         margin-bottom: 3em;
+        
+        max-width: 1280px;
+        margin: 0 auto;
     }
     
     &__logo-wrap {
@@ -26,9 +29,9 @@
     
     &__main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 2.5em;
-        margin-top: 3em;
+        margin: 3em 0;
         line-height: 1.4;
     }
     
@@ -64,18 +67,19 @@
     }
     
     &__contact-icon {
+        text-align: center;
         float: left;
-        margin-right: .25em;
+        margin-right: .15em;
         width: 1.2em;
         height: 1.2em;
         font-size: 1.2em !important;
         color: $aqua;
-        line-height: 1em;
+        transform: translateY(2px);
     }
     
     &__contact-icon.fa-envelope {
         font-size: 1em !important;
-        margin-right: .75em;
+        margin-right: .6em;
     }
     
     &__shape {

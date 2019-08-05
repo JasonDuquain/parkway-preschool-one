@@ -5,7 +5,7 @@
     height: 23px;
     cursor: pointer;
     position: fixed;
-    top: 14px;
+    top: 54px;
     right: 16px;
     z-index: 8000;
     
@@ -71,13 +71,9 @@
 
 .header {
     
-    @include breakpoint (max-width $mobile-hamburger) {
-        display: none;
-    }
-    
     
     &__top-sect {
-        border-top: 5px solid $gray-darker;
+        border-top: 5px solid $gray-darker; 
     }
     
     &__top-sect-container {
@@ -105,6 +101,23 @@
         @include breakpoint (max-width 1020px) {
             right: -40vw;
         }
+        
+        @include breakpoint (max-width $mobile-hamburger) {
+            right: -35vw;
+        }
+        
+        @include breakpoint (max-width 840px) {
+            background: url('../../img/cner-301.png') no-repeat top center;
+            right: -40vw;
+        }
+        
+        @include breakpoint (max-width 720px) {
+            right: -30vw;
+        }
+        
+        @include breakpoint (max-width 615px) {
+            right: -22vw;
+        }
     }
     
     &__top-bar-contact {   
@@ -116,11 +129,25 @@
         display: flex;
         align-items: center;    
         padding: 1em 0;
+        
+        @include breakpoint (max-width 840px) {
+            right: 12em;
+        }
+        
     }
     
     &__top-bar-item + &__top-bar-item {
         margin-left: 1.5em;
     }
+    
+    
+    &__top-bar-item:last-of-type {
+        @include breakpoint (max-width 840px) {
+            display: none;
+        }
+    }
+    
+    
     
     &__top-bar-icon {
        color: $aqua;
@@ -147,13 +174,9 @@
     
     &__logo {
         transform: translateY(-37px);
-        margin-bottom: -30px;
+        margin-bottom: -30px;    
     }
-    
-    &__logo-link {
-        
-    }
-    
+
     &__logo-image {
         width: 15.625em;
         height: auto;
@@ -162,11 +185,14 @@
     
     &__nav {
         
+        @include breakpoint (max-width $mobile-hamburger) {
+            display: none;
+        }
+        
     }
     
     &__nav-list {
         display: flex;
-        
     }
 
     &__nav-item {
@@ -194,6 +220,19 @@
     &__nav-item:hover .header__nav-link {
         color: $royalblue;
     }
+    
+
+    /* if submenus get removed go ahead and add pointer-events: none and change the cursor to some kind of not-allowed */
+    &__nav-item.clicked-parent {
+        box-shadow: inset 0 -0.1875em 0 $royalblue;
+        transition: none;
+    }
+    
+    &__nav-link.clicked {
+        color: $royalblue;
+        transition: none;
+    }
+    
     
     &__nav-link {
         
@@ -293,13 +332,80 @@
         
     }
     
+    /*& .header__nav-link.clicked {
+        color: $royalblue;
+        
+    }*/
+    
     & .header__nav-item.has-submenu::after {
         color: #fff;
     }
     
 }
 
+@include breakpoint (max-width $mobile-hamburger) {
 
+    .header.hamburger-on {
+
+        & .header__nav {
+            display: block;
+        }
+
+        & .header__main-sect {
+            display: block; 
+        }
+
+        & .header__nav-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        & .header__nav-item {
+            flex: 1 0 17em;
+            margin-left: 0;
+            padding: .75em 0;
+            background-color: $royalblue; 
+        }
+
+        & .header__nav-item:not(:last-of-type) {
+            border-bottom: 1px dotted #fff;
+            border-right: 1px dotted #fff;
+        }
+
+        & .header__nav-item {
+            text-align: center;
+        }
+
+        & .header__nav-item.has-submenu::after {
+            color: #fff;
+        }
+
+        & .header__nav-item:hover {
+            box-shadow: none;
+            background-color: $aqua;
+        }
+
+        & .header__nav-item:hover .header__nav-link {
+            color: #fff;
+        }
+
+        & .header__nav-link {
+            color: #fff;
+
+        }
+
+    }
+
+}
+
+.header.sticky.hamburger-on .header__logo-image {
+    margin: 0 auto;
+}
+
+.header.sticky.hamburger-on .header__nav-item.clicked-parent {
+    background-color: $aqua;
+    box-shadow: none;
+}
 
 
 .sm {
