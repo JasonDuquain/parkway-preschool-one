@@ -1,5 +1,7 @@
 MAKE SURE ALL IMG PATHS IN THE SCSS FILES HAVE PATHS THAT WORK FOR THE CSS FILE (../ INSTEAD OF ../../)!!!!
 
+all paths in nav menu should not have a / in front of them (a href="aboutus.html" instead of a href="/aboutus.html")
+
 do they want a google maps sect/area? 
 
 child font that is not too comicy: https://fonts.google.com/specimen/Bubblegum+Sans it is used on the page with the paintbrush underlines
