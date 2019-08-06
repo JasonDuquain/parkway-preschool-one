@@ -37,15 +37,18 @@
         
         @include breakpoint (max-width 840px) {
             background: url('../../img/cner-301.png') no-repeat top center;
-            right: -40vw;
+            right: -57vw;
+            width: 301px;
         }
         
         @include breakpoint (max-width 720px) {
-            right: -30vw;
+            right: -47vw;
         }
         
         @include breakpoint (max-width 615px) {
-            right: -22vw;
+            background: none;
+            width: 100%;
+            right: 0;
         }
     }
     
@@ -60,7 +63,14 @@
         padding: 1em 0;
         
         @include breakpoint (max-width 840px) {
-            right: 13.5em;
+            right: 6em;
+        }
+
+        @include breakpoint (max-width 615px) {
+            right: .25em;
+            
+            // allow phone # to go above logo
+            z-index: 5565;
         }
         
     }
@@ -77,18 +87,51 @@
     }
     
     &__top-bar-icon {
-       color: $aqua;
+        color: $aqua;
         margin-right: .3em;
+        
+        @include breakpoint (max-width 615px) {
+            margin-right: .1em;
+        }
     }
     
     &__top-bar-icon.fa-phone::before {
         font-size: 1.25em;
         display: inline-block;
         transform: translateY(.1em);
+        
+        @include breakpoint (max-width 615px) {
+            font-size: 1.1em;
+            transform: translateY(.2em);
+        }
     }
+    
+    /* phone icon text  */
+    &__phone-icon {
+        font-size: .9em;
+
+        @include breakpoint (max-width 615px) {
+            font-size: .8em;
+        }
+    }
+
+    
     
     &__top-bar-link {
         color: #fff;
+        transition: color 300ms ease-out;
+        
+        &:hover {
+            color: darken(#fff, 15%);
+        }
+        
+        @include breakpoint (max-width 615px) {
+            color: #333;
+            
+            &:hover {
+                color: lighten(#333, 30%);
+            }
+        }
     }
     
     &__main-sect {
@@ -107,7 +150,12 @@
     
     &__logo {
         transform: translateY(-37px);
-        margin-bottom: -30px;    
+        margin-bottom: -30px; 
+        
+        @include breakpoint (max-width 615px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__logo-image {
@@ -228,7 +276,7 @@
     top: 0; 
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.8);
     box-shadow: 0 2px 2px rgba(0,0,0,.4);
     z-index: 1001;
     
@@ -261,10 +309,6 @@
 }
 
 
-.sm {
-    font-size: .9em;
-}
-
 
 
 .navigation__checkbox {
@@ -274,13 +318,13 @@
 @include breakpoint (max-width $mobile-hamburger) {
 
     .navigation__button {
-        background-color: #333;
+        background-color: #444;
         height: 50px;
         width: 50px;
         border-radius: 50%;
         position: fixed;
         top: 40px;
-        right: 25px;
+        right: 15px;
         z-index: 2000;
         box-shadow: 0 1.5em 2em rgba(#000, .1);
         text-align: center;
@@ -293,7 +337,7 @@
         border-radius: 50%;
         position: fixed;
         top: 45px;
-        right: 30px;
+        right: 20px;
         background-image: radial-gradient(rgba($royalblue, .8), rgba($aqua, .8));
         z-index: 1000;
 
