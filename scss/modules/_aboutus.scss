@@ -1,12 +1,12 @@
 .handprints {
     height: 120px;
-    background-image: url('../../img/handprints.jpg');
+    background-image: url('../img/handprints.jpg');
     background-size: contain;
 }
 
 
 .hero__wrap-2 {
-    background-image: url('../../img/black-board.jpg');
+    background-image: url('../img/black-board.jpg');
     height: 50vh;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
 .apple {
     
     height: 40vh;
-    background-image: url('../../img/hightlights-bg_02.jpg');
+    background-image: url('../img/hightlights-bg_02.jpg');
     background-size: cover;
     
     position: relative;
@@ -87,11 +87,11 @@
 }
 
 #events {
-    background-image: url('../../img/black-board.jpg')
+    background-image: url('../img/black-board.jpg')
 }
 
 #news, #donations {
-    background-image: url('../../img/logo.png');
+    background-image: url('../img/logo.png');
 }
 
 

@@ -2,7 +2,7 @@
 .footer {
     position: relative;
     padding: 2em;
-    background-image: url('../../img/bg_footer.png');
+    background-image: url('../img/bg_footer.png');
     background-repeat: repeat-y;
     border-bottom: 5px solid $gray-darkest;
     
@@ -83,7 +83,7 @@
     }
     
     &__shape {
-        background-image: url('../../img/shape_bottom.png');
+        background-image: url('../img/shape_bottom.png');
         background-repeat: no-repeat;
         //background-position: 50% 0%;
         

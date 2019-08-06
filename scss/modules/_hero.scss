@@ -6,7 +6,7 @@
     
     &__wrap {    
         height: 80vh;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../../img/hero.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero.jpg');
         background-size: cover;
         /*background-attachment: fixed;*/
         
@@ -18,7 +18,7 @@
     
     &__wrap-two {
         height: 80vh;
-        background-image: url('../../img/hero2.jpg');
+        background-image: url('../img/hero2.jpg');
         background-size: cover;
         /*background-attachment: fixed;*/
         
@@ -28,7 +28,7 @@
     
     &__wrap-three {
         height: 80vh;
-        background-image: url('../../img/hero3.jpg');
+        background-image: url('../img/hero3.jpg');
         background-size: cover;
         /*background-attachment: fixed;*/
         
