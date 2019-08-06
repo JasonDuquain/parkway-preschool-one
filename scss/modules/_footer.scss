@@ -54,12 +54,7 @@
         color: $aqua;
         margin-bottom: .8em;
     }
-    
-    
-    &__contact {
-        
-    }
-    
+
     &__contact p {
         margin-bottom: 1.2em;
         font-weight: 300;
@@ -67,7 +62,7 @@
     }
     
     &__contact-icon {
-        text-align: center;
+        text-align: left;
         float: left;
         margin-right: .15em;
         width: 1.2em;
@@ -75,6 +70,14 @@
         font-size: 1.2em !important;
         color: $aqua;
         transform: translateY(2px);
+    }
+    
+    &__contact-icon.fa-map-marker, &__contact-icon.fa-phone {
+        
+        &::before {
+            font-size: 1.15em;
+        }
+        
     }
     
     &__contact-icon.fa-envelope {
@@ -122,6 +125,12 @@
     
     &__copyright {
         text-align: center;
+        margin-bottom: .5em;
+    }
+    
+    &__design {
+        text-align: center;
+        font-size: .9em;
     }
 
     &__me, &__me:visited {

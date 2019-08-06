@@ -8,7 +8,7 @@ let body = document.body;
 
 if (body.classList.contains('Home')) {
     
-    let tl = new TimelineMax({repeat: 1, yoyo: true, repeatDelay: 2});
+    let tl = new TimelineMax(/*{repeat: 1, yoyo: true, repeatDelay: 2}*/);
 
     let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
 
@@ -30,9 +30,9 @@ if (body.classList.contains('Home')) {
     }, .1, "-=2.3")
 
     
-    
     /***********  TESTIMONIAL SLIDER  ***********/
 
+    /** Arrows removed as the right arrow was causing horizontal overlfow **/
     $(document).ready(function(){
       $('.hero').slick({
       dots: true,
@@ -41,7 +41,8 @@ if (body.classList.contains('Home')) {
       slidesToShow: 1,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 10000
+      autoplaySpeed: 10000,
+      arrows: false
       });
     });
 
