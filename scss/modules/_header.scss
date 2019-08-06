@@ -81,6 +81,12 @@
         margin-right: .3em;
     }
     
+    &__top-bar-icon.fa-phone::before {
+        font-size: 1.25em;
+        display: inline-block;
+        transform: translateY(.1em);
+    }
+    
     &__top-bar-link {
         color: #fff;
     }

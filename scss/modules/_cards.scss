@@ -68,41 +68,7 @@
     }
     
     
-    /*2ND CARD START*/
-    &__content-bleed {
-        overflow: hidden;
-    }
     
-    &__subheading-bleed {
-        margin: 1.5em 0 1em 0;
-        font-size: 1.7em;
-        font-weight: 300;
-        text-align: center;
-    }
-    
-    &__icon-wrap-bleed {
-        margin-bottom: 1em;
-        display: flex;
-    }
-    
-    &__icon-bleed {
-        color: $red-heart;
-        margin-right: .2em;
-        
-        &::before {
-            font-size: .8em;
-        }
-    }
-    
-    &__summary-bleed {
-        line-height: 1.5;
-        padding: 1em 1.5em 2em 1.5em;
-    }
-    
-    &__btn-wrap-bleed {
-        text-align: center;
-    }
-    /*2ND CARD END*/
     
     
     /* 3RD CARD START */
@@ -122,8 +88,10 @@
             background-color: #f27c7e;
             position: absolute;
             content: "";
-            padding: 0px;
-            max-width: 275px;
+            padding: 0;
+            
+            // removed 1px to get rid of tiny border lines on outside of paintbrush
+            max-width: 274px; 
             width: 100%;
             display: inline-block;
             background-image: url('../../img/footer_title_bg.png');
@@ -135,8 +103,21 @@
             height: 14px;
         }
     }
-    /* 3RD CARD END */
     
+    &__subheading-brush--2 {
+        &::after {
+            background-color: red;
+        }
+    }
+    
+    &__subheading-brush--3 {
+        &::after {
+            background-color: green;
+        }
+    }
+    
+    
+    /* 3RD CARD END */
     
     &__subheading {
         margin: .5em 0 1em 0;
@@ -149,10 +130,6 @@
         margin-bottom: 1em;
         display: flex;
         justify-content: center;
-    }
-    
-    &__icon {
-        color: $red-heart;
     }
     
     &__icon:not(:last-of-type) {
@@ -204,7 +181,7 @@
     }
     
     &__content-2 {
-        background-color: rgba(141,198,63,.9);
+        background-color: darkred;
         position: relative;
     }
     
@@ -216,19 +193,19 @@
         height: 80px;
         z-index: 2;
         pointer-events: none;
-        color: rgba(141,198,63,.9);
+        color: red;
     }
     
     &__svg-overlay svg {
         width: 100%;
         height: 100%;
-        fill: currentColor;
+        fill: green;
     }
     
     &__content-wrap {
         position: absolute;
         bottom: 0;
-        background-color: rgba(141,198,63,.9);
+        background-color: green;
         padding: 2em;
         padding-top: 1em;
         color: #fff;

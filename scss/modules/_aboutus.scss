@@ -1,6 +1,21 @@
+.handprints {
+    height: 120px;
+    background-image: url('../../img/handprints.jpg');
+    background-size: contain;
+}
+
 
 .hero__wrap-2 {
     background-image: url('../../img/black-board.jpg');
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.hero__heading {
+    color: #fff;
 }
 
 /******* 1st accordion *********/

@@ -39,7 +39,9 @@ if (body.classList.contains('Home')) {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 10000
       });
     });
 
