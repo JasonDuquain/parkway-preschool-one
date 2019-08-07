@@ -1,8 +1,26 @@
 
+.current {
+    padding-bottom: 0;
+    text-align: center;
+    
+    
+    &__image {
+        height: 700px;
+        width: 700px;
+        
+        @include breakpoint (max-width 720px) {
+            height: 325px;
+            width: 325px;
+        }
+    }
+    
+}
+
+
 .gallery {
     
     &.fullwidth {
-        padding: 6em 0 0 0;
+        padding: 0;
         display: flex;
     }
     

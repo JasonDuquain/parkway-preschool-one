@@ -5,12 +5,13 @@
 }
 
 .hero__wrap-2 {
-    background-image: url('../img/black-board.jpg');
-    height: 50vh;
+    background-image: url('../img/hero-aboutus.jpeg');
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5em;
+    background-size: cover;
 }
 
 .hero__heading {
@@ -18,105 +19,142 @@
 }
 
 /******* 1st accordion *********/
-.accordion-wrap {
+.aboutus {
+    max-width: 1280px;
+    margin: 0 auto 200px auto;
+    
+    &__main-wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    &__tabs { 
+        height: 40vh;
+        background-image: url('../img/hightlights-bg_02.jpg');
+        background-size: cover;
+        position: relative;
+
+    }
+    
+    &__navlist {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    &__navlist a {
+        flex-shrink: 0;
+        color: #fff; 
+        font-size: 1.3em;
+        padding: 1em 5em;
+        background-color: royalblue;
+        font-weight: 300;
+    }
+    
+    &__navlist a.active {
+        background-color: #fff;
+        color: #000;
+        pointer-events: none;
+    }
+
+    &__navlist a:not(:last-of-type) {
+        margin-right: 1.5em;
+    }
+    
+    &__span {
+        font-weight: 900;
+    }
+    
+    &__sect-wrap {
+        height: 50vh;
+        max-width: 1280px;
+        margin: 0 auto;
+        background-color: gold;
+    }
+    
+    &__sect-wrap > div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        height: auto;
+        transition: all 400ms;
+    }
+
+    &__sect-wrap > .hidden {
+        height: 0;
+        overflow: hidden;
+    }
+    
+    &__start {
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    &__para {
+        padding: 1em;
+    }
+    
+    &__para--2 {
+        padding: 1.5em 1em;
+        color: #fff;
+        flex: 1;
+    }
+    
+    
+}
+
+#ourstory {
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../img/black-board.jpg');
+}
+
+#staff {
+    background-image: url('../img/logo.jpg');
+}
+
+
+
+
+
+
+
+/**************** 2nd accordion *****************/
+
+.about-us-2 {
     max-width: 1280px;
     margin: 0 auto 200px auto;
 }
 
-.apple {
-    
-    height: 40vh;
-    background-image: url('../img/hightlights-bg_02.jpg');
-    background-size: cover;
-    
-    position: relative;
-    
-}
-
-.navlist {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0; 
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navlist a {
-    flex-shrink: 0;
-    color: #fff; 
-    font-size: 1.3em;
-    padding: 1em 5em;
-    background-color: royalblue;
-}
-
-.navlist a.active {
-    background-color: #fff;
-    color: #000;
-    pointer-events: none;
-}
-
-.navlist a:not(:last-of-type) {
-    margin-right: 1.5em;
-}
-
-.sect-wrap {
-    height: 40vh;
-    max-width: 1280px;
+.accordion-wrap-2 {
+    width: 80%;
     margin: 0 auto;
 }
 
-.sect-wrap {
-    background-color: gold;
-}
-
-.sect-wrap > div {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    height: auto;
-    transition: all 400ms;
-}
-
-.sect-wrap > .hidden {
-    height: 0;
-    overflow: hidden;
-}
-
-#events {
-    background-image: url('../img/black-board.jpg')
-}
-
-#news, #donations {
-    background-image: url('../img/logo.png');
-}
-
-
-/******* 2nd accordion *********/
-.accordion-wrap-2 {
-    max-width: 1280px;
-    margin: 0 auto 200px auto;
-}
-
 button.accordion {
+    font-family: 'Lato', sans-serif;
     transition: background-color 300ms linear;
-    background-color: whitesmoke;
+    background-color: $royalblue;
+    color: #fff;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 1.3em;
     cursor: pointer;
+    
+    font-weight: 300;
 }
 
 button.accordion::after {
     content: '\f055';
     font-family: "fontawesome";
-    font-size: 14px;
+    font-size: 1.1em;
     float: right;
+    transform: translateY(.23em);
 }
 
 button.accordion.is-open::after {
@@ -124,7 +162,7 @@ button.accordion.is-open::after {
 }
 
 button.accordion:hover, button.accordion.is-open {
-    background-color: #ddd;
+    background-color: lighten($royalblue, 15%);
 }
 
 div.accordion-content {
@@ -134,6 +172,26 @@ div.accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 300ms ease-in-out;
+    background-color: lighten($gray-lighter, 5%);
+    
+    line-height: 1.4;
+    font-size: 1.1em;
+    
+}
+
+.accordion-para {
+    margin: 1em 0;
+}
+
+.accordion-start-2 {
+    font-weight: 900;
+    font-style: italic;
+    color: #000;
+}
+
+.accordion__span {
+    font-family: 'Grand Hotel';
+    font-size: 1.2em;
 }
 
 

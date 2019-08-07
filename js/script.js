@@ -52,15 +52,15 @@ if (body.classList.contains('AboutUs')) {
     
     /**********  TABS  **********/
 
-    let navlist = document.querySelector('.navlist');
-    let anchs = document.querySelectorAll('.navlist a');
+    let navlist = document.querySelector('.aboutus__navlist');
+    let anchs = document.querySelectorAll('.aboutus__navlist a');
 
-    let sects = document.querySelectorAll('.sect-wrap div');
+    let sects = document.querySelectorAll('.aboutus__sect-wrap div');
 
-    let sectWrap = document.querySelector('.sect-wrap');
+    let sectWrap = document.querySelector('.aboutus__sect-wrap');
     let sectHeight = sectWrap.scrollHeight;
 
-    console.log(sectHeight)
+    //console.log(sectHeight)
 
 
 
