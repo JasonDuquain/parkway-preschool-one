@@ -8,7 +8,7 @@ let body = document.body;
 
 if (body.classList.contains('Home')) {
     
-    let tl = new TimelineMax(/*{repeat: 1, yoyo: true, repeatDelay: 2}*/);
+    let tl = new TimelineMax({repeat: 1, yoyo: true, repeatDelay: 2});
 
     let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
 
@@ -109,6 +109,32 @@ if (body.classList.contains('AboutUs')) {
     });
 
 
+    
+}
+
+
+if (body.classList.contains('ContactUs')) {
+    
+    let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
+    
+    inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
+    inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
+    
+    function changeFocus(e) {
+        let prevSib = e.target.previousElementSibling;
+        const icon = prevSib.children[0];
+        prevSib.classList.add('background-color');
+        icon.classList.add('icon-color');
+    }
+
+    function changeBlur(e) {
+        let prevSib = e.target.previousElementSibling;
+        const icon = prevSib.children[0];
+        prevSib.classList.remove('background-color');
+        icon.classList.remove('icon-color');
+    }
+    
+    
     
 }
 
