@@ -22,10 +22,13 @@
 .aboutus {
     max-width: 1280px;
     margin: 0 auto 200px auto;
+    background-color: #ccc;
     
     &__main-wrap {
         width: 90%;
         margin: 0 auto;
+        
+        overflow: hidden; // keeps sections from appearing at bottom on height transition
     }
     
     &__tabs { 
@@ -72,7 +75,7 @@
         height: 50vh;
         max-width: 1280px;
         margin: 0 auto;
-        background-color: gold;
+        
     }
     
     &__sect-wrap > div {
@@ -99,11 +102,21 @@
     }
     
     &__para--2 {
-        padding: 1.5em 1em;
+        padding: 1em;
         color: #fff;
         flex: 1;
     }
     
+    &__para--3 {
+        color: #000;
+        padding: 1em;
+    }
+    
+    
+}
+
+#ourmission {
+    background-color: #fff;
     
 }
 
@@ -112,7 +125,8 @@
 }
 
 #staff {
-    background-image: url('../img/logo.jpg');
+    background-color: #fff;
+    flex-wrap: wrap;
 }
 
 
