@@ -28,7 +28,6 @@ if (body.classList.contains('Home')) {
         rotation: -30,
         ease: Power4.easeInOut
     }, .1, "-=2.3")
-
     
     /***********  TESTIMONIAL SLIDER  ***********/
 
@@ -138,7 +137,6 @@ if (body.classList.contains('ContactUs')) {
     
     
     
-    
 }
 
 
@@ -147,6 +145,7 @@ if (body.classList.contains('ContactUs')) {
 //////////////////////////////////
 
 /***********  STICKY HEADER  ***********/
+
 let header = document.querySelector('.header');
 let hero = document.querySelector('.hero');
 let headerHeight = header.getBoundingClientRect().height + 'px';
@@ -163,6 +162,7 @@ window.addEventListener('scroll', (e) => {
     }
     
 });
+
 
 
 

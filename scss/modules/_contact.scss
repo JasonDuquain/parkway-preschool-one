@@ -1,6 +1,6 @@
 
 .hero__wrap-2.contact {
-    background-image: url('../img/hero2.jpg');
+    background-image: url('../img/hero-contact.jpg');
 }
 
 
@@ -58,6 +58,7 @@
 
 .contact-hdg-span {
     font-weight: 700;
+    font-size: .915em;
 }
 
 .contact-list {
@@ -209,9 +210,11 @@ textarea {
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
- }
+  height: 400px;  
+  width: 100%;  
+}
+
+
 
 
 
