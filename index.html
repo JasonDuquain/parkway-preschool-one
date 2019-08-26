@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font/flaticon.css">
-	<link rel="stylesheet" href="f-a/css/font-awesome.min.css">
+   
     <title>Parkway Preschool</title>
 </head>
 
@@ -24,11 +24,15 @@
                 <div class="header__top-bar">
                     <ul class="header__top-bar-contact">
                         <li class="header__top-bar-item">
-                            <i class="header__top-bar-icon fa fa-phone"></i>
+                            <svg class="header__top-bar-icon">
+                                <use xlink:href="img/sprite.svg#icon-phone" />
+                            </svg>
                             <a href="tel:1-678-513-3909" class="header__top-bar-link header__phone-icon">1-678-513-3909</a>
                         </li>
                         <li class="header__top-bar-item">
-                            <i class="header__top-bar-icon fa fa-envelope"></i>
+                            <svg class="header__top-bar-icon">
+                                <use xlink:href="img/sprite.svg#icon-envelop" />
+                            </svg>
                             <a href="mailto:info@parkwaypreschool.com" class="header__top-bar-link">info@parkwaypreschool.com</a>
                         </li>
                     </ul>
@@ -59,7 +63,12 @@
                         <a href="index.html" class="header__nav-link" data-title="Home">Home</a>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="aboutus.html" class="header__nav-link" data-title="AboutUs">About Us</a>
+                        <a href="aboutus.html" class="header__nav-link" data-title="AboutUs">
+                            <span>About Us</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="aboutus.html#testone">Mission</a></li>
                            <li><a href="aboutus.html#testtwo">Our Story</a></li>
@@ -67,7 +76,12 @@
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="program.html" class="header__nav-link" data-title="Program">Program</a>
+                        <a href="program.html" class="header__nav-link" data-title="Program">
+                            <span>Program</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="#">Overview</a></li>
                            <li><a href="#">Activities</a></li>
@@ -76,7 +90,12 @@
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="curriculum.html" class="header__nav-link" data-title="Curriculum">Curriculum</a>
+                        <a href="curriculum.html" class="header__nav-link" data-title="Curriculum">
+                            <span>Curriculum</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="#">Classes</a></li>
                        </ul>
@@ -272,24 +291,32 @@
                 </div>
                 <div class="footer__contact">
                     <h3 class="footer__subheading">Contact <span class="footer__subheading-span">Us</span></h3>
-                    <i class="footer__contact-icon fa fa-map-marker"></i>
+                    <svg class="footer__contact-icon footer__contact-icon--1">
+                        <use xlink:href="img/sprite.svg#icon-location2" />
+                    </svg>
                     <p class="footer__address">
                         5830 Bethelview Road<br>
                         Cumming, GA 30040
                     </p>
-                    <i class="footer__contact-icon fa fa-phone"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-phone" />
+                    </svg>
                     <p class="footer__telephone">
                         <a href="tel:1-678-230-4384" style="color: inherit">1-678-513-3909</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-envelope"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-envelop" />
+                    </svg>
                     <p class="footer__email">
                          <a href="mailto:info@parkwaypreschool.com" style="color: inherit">info@parkwaypreschool.com</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-fax"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-fax" />
+                    </svg>
                     <p class="footer__fax">
                         1-770-888-9935
                     </p>
-                    <p class="footer__taxid" style="margin-top: 2.5em">
+                    <p class="footer__taxid">
                         Tax Id #000-0000
                     </p>
                 </div>
@@ -297,7 +324,11 @@
         </div>
         <div class="footer__shape">
             <div class="footer__icon-wrap">
-                <a href="https://m.facebook.com/groups/370838632933125?tsid=0.17988193374913042&source=result" class="footer__anch" target="_blank" rel="noopener"><i class="footer__icon fa fa-facebook"></i></a>
+                <a href="https://m.facebook.com/groups/370838632933125?tsid=0.17988193374913042&source=result" class="footer__anch" target="_blank" rel="noopener">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook" />
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -309,7 +340,9 @@
     </div>
     
     <a class="js-btt-btn" href="#home">
-        <i class="js-btt-btn-icon fa fa-arrow-up"></i>
+        <svg class="js-btt-btn-icon">
+            <use xlink:href="img/sprite.svg#icon-arrow-up2" />
+        </svg>
     </a>
     
     

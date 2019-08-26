@@ -60,25 +60,16 @@
     &__contact-icon {
         text-align: left;
         float: left;
-        margin-right: .15em;
-        width: 1.2em;
-        height: 1.2em;
-        font-size: 1.2em !important;
-        color: $aqua;
+        margin-right: .25em;
+        width: 1.1em;
+        height: 1.1em;
+        fill: $aqua;
         transform: translateY(2px);
     }
     
-    &__contact-icon.fa-map-marker, &__contact-icon.fa-phone {
-        
-        &::before {
-            font-size: 1.15em;
-        }
-        
-    }
-    
-    &__contact-icon.fa-envelope {
-        font-size: 1em !important;
-        margin-right: .6em;
+    &__contact-icon--1 {
+        width: 1.2em;
+        height: 1.2em;
     }
     
     &__shape {
@@ -101,17 +92,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     &__icon {
-        color: $aqua;
-        margin-right: .3em;
-        
-        &::before {
-            font-size: 1.25em;
-        }
-        
+        fill: $aqua;
+        width: 1.3em;
+        height: 1.3em;
+        transform: translateY(3px);
     }
-    
     
     &__bottom {
         background-color: $black-lighter;
@@ -136,6 +123,10 @@
         &:hover {
             color: #ccc;
         }
+    }
+    
+    &__taxid {
+        margin-top: 2.5em;
     }
     
 }
