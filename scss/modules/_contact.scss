@@ -31,38 +31,17 @@
     font-size: 1.2em;
 }
 
-.contact-hdg-one {
-    
-    &::before {
-        content: "\f041";
-        font-family: "fontawesome";
-        padding-right: .4em;
-        font-size: 1.1em;
-        color: $aqua;
-    }
-}
-
-.contact-hdg-two {
-    
-    &::before {
-        content: "\f073";
-        font-family: "fontawesome";
-        padding-right: .4em;
-        font-size: 1em;
-        color: $aqua;
-        
-        display: inline-block;
-        transform: translateY(-.1em);
-    }
+.contact-icon {
+    fill: $aqua;
+    padding-right: .1em;
+    width: 1.2em;
+    height: 1.2em;
+    transform: translateY(.2em);
 }
 
 .contact-hdg-span {
     font-weight: 700;
     font-size: .915em;
-}
-
-.contact-list {
-    
 }
 
 .contact-list.list-one {
@@ -151,14 +130,12 @@ form label {
     background-color: #333;
 }
 
-.field-prefix i {
+.form-icon {
+    width: 1em;
+    height: 1em;
+    fill: #fff;
     transition: color 300ms ease-in;
 }
-
-.field-prefix i.icon-color {
-    color: #0188cc;
-}
-
 
 form p {
     margin: 0;
@@ -204,6 +181,10 @@ textarea {
 
 .submit span {
     margin: 0 .3em .2em 0;
+}
+
+.submit .form-icon {
+    transform: translateY(2px);
 }
 
 

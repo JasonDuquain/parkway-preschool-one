@@ -96,18 +96,23 @@ if (body.classList.contains('AboutUs')) {
 
     accordions.forEach((el, idx) => {
         el.addEventListener('click', function(e) {
-            let content = this.nextElementSibling;
+            let content = e.target.nextElementSibling;
 
             if (content.style.maxHeight) {
-                this.classList.remove('is-open');
+                e.target.classList.remove('is-open');
                 content.style.maxHeight = null;
+                e.target.children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-plus");
             } else {
                 for (let i = 0; i < accordions.length; i++) {
                     accordions[i].nextElementSibling.style.maxHeight = null;
-                    accordions[i].classList.remove('is-open');
+                    accordions[i].classList.remove('is-open'); 
+                    console.log(0)
+                    accordions[i].children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-plus");
                 }
                 content.style.maxHeight = `${content.scrollHeight}px`;
-                this.classList.add('is-open');
+                e.target.classList.add('is-open');
+                e.target.children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-minus");
+                
             }
         });
     });

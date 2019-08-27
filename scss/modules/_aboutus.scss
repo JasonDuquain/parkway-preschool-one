@@ -163,16 +163,11 @@ button.accordion {
     font-weight: 300;
 }
 
-button.accordion::after {
-    content: '\f055';
-    font-family: "fontawesome";
-    font-size: 1.1em;
+.accordion__icon {
+    width: 1em;
+    height: 1em;
     float: right;
     transform: translateY(.23em);
-}
-
-button.accordion.is-open::after {
-    content: "\f056";
 }
 
 button.accordion:hover, button.accordion.is-open {
