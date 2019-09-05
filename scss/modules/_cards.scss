@@ -142,15 +142,6 @@
         font-weight: 700;
     }
     
-    &__subheading-brush-span--4, &__subheading-brush-span--5, &__subheading-brush-span--6{
-        font-family: 'Grand Hotel';
-        line-height: 1;
-        font-size: 1.6em;
-    }
-    
-    
-    /* 3RD CARD END */
-    
     &__subheading {
         margin: .5em 0 1em 0;
         font-size: 1.7em;
@@ -177,98 +168,7 @@
         align-self: center;
     }
     
-    /**************************************/
-    /**** 2nd row of new styled cards *****/
-    /**************************************/
-    &__grid-2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-        grid-gap: 2em;
-        align-items: center;
-        margin-top: 4em;
-    }
-    
-    &__wrap-2 {
-        position: relative;
-        overflow: hidden;
-        background-color: #fff;
-        border-radius: 10px;
-    }
-    
-    &__subheading-2 {
-        margin: .5em 0 0 0;
-        font-size: 1.7em;
-        font-weight: 400;
-        align-self: center;
-    }
-    
-    &__image-2 {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    
-    &__content-2 {
-        background-color: rgba(141,198,63,.9);;
-        //position: relative;
-    }
-    
-    &__content-wrap {
-        position: relative;
-    }
-    
-    &__svg-overlay {
-        position: absolute;
-        //bottom: 303px;
-        //left: 0;
-        
-        top: -80px;
-        left: 0;
-        
-        width: 100%;
-        height: 80px;
-        z-index: 2;
-        pointer-events: none;
-        color: rgba(141,198,63,.9);
-    }
-    
-    &__svg-overlay svg {
-        width: 100%;
-        height: 100%;
-        fill: currentColor;
-    }
-    
-    &__content-wrap {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(141,198,63,.9);
-        padding: 2em;
-        padding-top: 1em;
-        color: #fff;
-        
-        display: flex;
-        flex-direction: column;
-    }
-    
-    &__icon-2 {
-        color: #fff; 
-        align-self: center;
-        
-        &::before {
-           margin: 0 !important;
-           font-size: 3em !important;
-        
-        }
-    }
-    
-    &__summary-2 {
-        margin: 1em 0;
-    }
-    
-    &__btn-2 {
-        margin-top: 2em;
-        align-self: center;
-    }
+
     
 }
 
