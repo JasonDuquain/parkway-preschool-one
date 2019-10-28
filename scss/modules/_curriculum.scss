@@ -19,11 +19,17 @@
     &__sect {
         display: flex;
         border: 1px solid $gray-lighter;
+        margin-bottom: 4em;
+    }
+    
+    &__sect--reverse {
+        flex-direction: row-reverse;
     }
     
     &__image {
         max-width: 720px;
         height: auto;
+        object-fit: cover;
     }
     
     /* This is necessary to make the bottom ratio section fill the entire height of its contents */
@@ -34,9 +40,20 @@
     
     &__top {
         color: #fff;
-        padding: 2em 2em 4em 2em;
+        padding: 2em;
         background-color: $pink-brush;
-        
+    }
+    
+    &__top--blue {
+        background-color: $blue-brush;
+    }
+    
+    &__top--green {
+        background-color: $green-brush;
+    }
+    
+    &__top--orange {
+        background-color: $orange-brush;
     }
     
     &__heading {
@@ -84,16 +101,16 @@
     }
     
     &__summary {
-        line-height: 1.5;
+        line-height: 1.45;
         font-size: 1.1em;
     }
     
     &__link {
-        color: hsl(219, 83%, 55%);
+        color: $gray-darker;
         transition: color 300ms ease-in;
         
         &:hover {
-            color: hsl(229, 83%, 55%);
+            color: $gray;
         }
     }
     
@@ -106,7 +123,7 @@
     
     &__bottom {
         color: $gray-dark;
-        padding: 0;
+        padding: 2em;
         display: flex;
         justify-content: space-between;
         
@@ -141,13 +158,13 @@
     &__title {
         font-weight: 700;
         text-transform: uppercase;
-        transform: translateY(.25em);
+        /*transform: translateY(.25em);*/
     }
     
     &__number {
         font-size: 2em;
         color: $aqua;
-        transform: translateY(-.35em);
+        /*transform: translateY(-.35em);*/
     }
     
 }
