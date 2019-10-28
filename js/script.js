@@ -194,7 +194,7 @@ let menuAnchs = document.querySelectorAll('.header__nav-link');
 
 document.addEventListener('DOMContentLoaded', (e) => {
     menuAnchs.forEach((el) => {    
-        if (body.className === el.textContent.replace(/\s/, "")) {
+        if (body.className === el.getAttribute('data-title').replace(/\s/, "")) {
             el.classList.add('clicked');
             el.parentNode.classList.add('clicked-parent');
         }

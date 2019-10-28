@@ -1,0 +1,73 @@
+.hero__wrap-2.ourstaff {
+    background-image: url('../img/staff.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.staff {
+    max-width: 1280px;
+    margin: 6em auto 0 auto;
+    
+    &__about {
+        
+    }
+    
+    &__heading {
+        
+    }
+    
+    &__office-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.5em;
+    }
+    
+    &__individual {
+        position: relative;
+        width: 300px;
+    }
+    
+    &__image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    &__summary {
+        position: absolute;
+        bottom: -12%;
+        background-color: #fff;
+        padding: 2em;
+        left: 10%;
+        right: 10%;
+        border-bottom: 3px solid $pink-brush;
+    }
+    
+    &__summary--blue {
+        border-bottom: 3px solid $blue-brush;
+    }
+    
+    &__summary--green {
+        border-bottom: 3px solid $green-brush;
+    }
+    
+    &__name {
+        
+    }
+    
+    &__email {
+        
+    }
+    
+    &__title {
+        
+    }
+    
+}
+
+
+
+
+
+

@@ -1,9 +1,10 @@
 .handprints {
     height: 120px;
     background-image: url('../img/handprints.jpg');
+    background-position: left bottom;
     background-size: contain;
+    background-repeat: repeat-x;
 }
-
 
 .hero__wrap-2 {
     background-image: url('../img/hero-aboutus.jpeg');

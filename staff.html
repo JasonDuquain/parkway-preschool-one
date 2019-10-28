@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-   
-   <script>
-    
-    // Initialize and add the map here to ensure it is declared BEFORE the script in the ftr calls it
-    function initMap() {
-      
-      var parkway = {lat: 34.168070, lng: -84.179610};
-      
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 15, center: parkway});
-      
-      var marker = new google.maps.Marker({position: parkway, map: map});
-    }
-       
-    </script>
-   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700,700i,900|Grand+Hotel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Contact Us - Parkway Preschool</title>
+    <title>Staff - Parkway Preschool</title>
 </head>
 
 
-<body class="ContactUs">
+<body class="TheStaff">
     
     <header class="header">
        
@@ -74,7 +57,7 @@
                         <ul>
                            <li><a href="aboutus.html#testone">Mission</a></li>
                            <li><a href="aboutus.html#testtwo">Our Story</a></li>
-                           <li><a href="#">Meet Our Staff</a></li>
+                           <li><a href="staff.html">Meet Our Staff</a></li>
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
@@ -107,129 +90,68 @@
         
     </header>
     
-    
     <div class="hero">
-        <div class="hero__wrap-2 contact"> 
-        <h1 id="test" class="hero__heading">THIS IS THE CONTACT US PAGE</h1>
+        <div class="hero__wrap-2 ourstaff"> 
+        <h1 id="test" class="hero__heading">THIS IS THE STAFF</h1>
         </div>
     </div>
     
-    
-    
-    <section class="contact main-sect">
-        <div class="pre-heading">Get In Touch</div>    
-        <h2 class="cards__heading sect-heading">Contact Us</h2>
+    <section class="staff">
+        
+        <div class="pre-heading">Meet</div>    
+        <h2 class="aboutus__heading sect-heading">Our Staff</h2>
         <div class="sect-heading-img"></div>
-      
-      <div class="form-wrapper">
-        <div class="contacts">
-             <div class="contact-wrap">
-                <h3 class="contact-hdg contact-hdg-one">
-                    <svg class="contact-icon">
-                        <use xlink:href="img/sprite.svg#icon-location2" />
-                    </svg>
-                    Main <span class="contact-hdg-span">Office</span>
-                </h3>
-                <ul class="contact-list list-one">
-                    <li class="contact-item">5830 Bethelview Road</li>
-                    <li class="contact-item">Cumming, GA 30040</li>
-                    <li class="contact-item">1-678-513-3909</li>
-                
-              </ul>
-              <h3 class="contact-hdg contact-hdg-two">
-                  <svg class="contact-icon">
-                      <use xlink:href="img/sprite.svg#icon-calendar" />
-                  </svg>
-                  Our <span class="contact-hdg-span">Hours</span>
-              </h3>
-              <ul class="contact-list list-two">
-                  <li class="contact-item">Monday to Friday</li>
-                  <li class="contact-item hours">8:30AM &ndash; 1:00PM</li>
-                  <li class="contact-item">Saturday and Sunday</li>
-                  <li class="contact-item hours">Closed</li>
-              </ul>
-              
-                
-             </div>
+        
+        <p class="staff__about">
+            All staff at Parkway Presbyterian Preschool are CPR, First Aid, and Fire Safety Certified. They receive extensive background checks prior to employment and must complete 10 hours annually of training in Early Childhood Education. Many of our staff hold teaching degrees and hold several years of teaching experience.
+        </p>
+        
+        
+        <h3 class="staff__heading">
+            Office Staff
+        </h3>
+        
+        <div class="staff__office-wrap">
+            <div class="staff__individual">
+                <img class="staff__image" src="img/Erica.jpg" alt="Director of Parkway">
+                <div class="staff__summary">
+                    <p class="staff__name">
+                        <a class="staff__email" href="mailto:director@parkwaypreschool.com">Erica Shaddix</a>
+                    </p>
+                    <p class="staff__title">Director</p>
+                </div>
+            </div>
+            <div class="staff__individual">
+                <img class="staff__image" src="img/Lisa.jpg" alt="Assistant Director of Parkway">
+                <div class="staff__summary staff__summary--blue">
+                    <p class="staff__name">
+                        <a class="staff__email" href="mailto:lisa@parkwaypreschool.com">Lisa Service</a>
+                    </p>
+                    <p class="staff__title">Assistant Director</p>
+                </div>
+            </div>
+            <div class="staff__individual">
+                <img class="staff__image" src="img/Jami.jpg" alt="Parkway&apos; Bookeeper">
+                <div class="staff__summary staff__summary--green">
+                    <p class="staff__name">
+                        <a class="staff__email" href="mailto:director@parkwaypreschool.com">Jami Stargel</a>
+                    </p>
+                    <p class="staff__title">Bookkeeper</p>
+                </div>
+            </div>
         </div>
-
-        <div class="form">
-          <form action="">
-            <p class="field field-text">
-                <label for="applicant-name">Name:</label>
-                <span class="field-prefixed">
-                  <span class="field-prefix" id="applicant-name-prefix">
-                      <svg class="form-icon">
-                          <use xlink:href="img/sprite.svg#icon-user" />
-                      </svg>
-                  </span>
-                  <input name="applicant-name" id="applicant-name" type="text" placeholder="Full Name Here"/>
-                </span>
-
-              </p>
-              <p class="field field-text">
-                <label for="applicant-email">Email Address:</label>
-                <span class="field-prefixed">
-                  <span class="field-prefix" id="applicant-email-prefix">
-                      <svg class="form-icon">
-                          <use xlink:href="img/sprite.svg#icon-envelop" />
-                      </svg>
-                  </span>
-                  <input name="applicant-email" id="applicant-email" type="email" />
-                </span>
-
-              </p>
-            <p class="field field-text full-width">
-                <label for="applicant-date">Subject:</label>
-                <span class="field-prefixed">
-                  <span class="field-prefix" id="applicant-date-prefix">
-                      <svg class="form-icon">
-                          <use xlink:href="img/sprite.svg#icon-book" />
-                      </svg>
-                  </span>
-                  <input name="applicant-date" id="applicant-date" type="text" />
-                </span>
-              </p>
-            <p class="field field-text full-width">
-                <label for="applicant-pencil">Your Message:</label>
-                <span class="field-prefixed">
-                  <span class="field-prefix" id="applicant-pencil-prefix">
-                      <svg class="form-icon">
-                          <use xlink:href="img/sprite.svg#icon-pencil" />
-                      </svg>
-                  </span>
-                  <textarea></textarea>
-                </span>
-              </p>
-            <p class="full-width field">
-                <button type="submit" value="Submit" class="submit">    <span>SEND</span>
-                     <svg class="form-icon">
-                         <use xlink:href="img/sprite.svg#icon-paper-plane" />
-                     </svg>
-                </button>
-            </p>
-          </form>
-        </div>
-      </div>
-      
+        
+        
+        
     </section>
     
     
     
-    <h3 style="text-align: center; margin-bottom: 1em; font-size: 2em; color: #333; text-transform: uppercase">Find Us</h3>
-    <div id="map"></div>
     
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The callback parameter executes the initMap() function
-    -->
+    <div class="handprints">
+       
+   </div>
     
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtHHWbMf5eJi_hkb92xKIbpO8AP_pUxSY&callback=initMap">
-    </script>
-    
-    
-
     <footer class="footer">
         <div class="footer__wrap">
             

@@ -2,14 +2,13 @@
 .footer {
     position: relative;
     padding: 2em;
-    background-image: url('../img/bg_footer.png');
+    background-image: url('../img/footer--bg.png');
     background-repeat: repeat;
     border-bottom: 5px solid $gray-darkest;
     
     &__wrap {
         color: $gray-light;
-        margin-bottom: 3em;
-        
+        margin-bottom: 3em; 
         max-width: 1280px;
         margin: 0 auto;
     }
@@ -49,6 +48,16 @@
     &__hours {
         color: $aqua;
         margin-bottom: .8em;
+    }
+    
+    &__closings-link {
+        color: $aqua;
+        text-decoration: underline;
+        transition: color 300ms ease-out;
+        
+        &:hover {
+            color: darken($aqua, 10%);
+        }
     }
 
     &__contact p {
@@ -117,11 +126,11 @@
     }
 
     &__me, &__me:visited {
-        color: inherit;
+        color: $aqua;
         transition: color 300ms ease-in;
         
         &:hover {
-            color: #ccc;
+            color: darken($aqua, 10%);
         }
     }
     

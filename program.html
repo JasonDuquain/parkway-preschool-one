@@ -107,7 +107,7 @@
             
             <div class="footer__main">
                 <div class="footer__mission">
-                    <h3 class="footer__subheading">Our Mission</h3>
+                    <h3 class="footer__subheading">Our <span class="footer__subheading-span">Mission</span></h3>
                     
                     <div class="footer__logo-wrap">
                         <a href="#" class="footer__logo">
@@ -118,7 +118,7 @@
                     <p class="footer__para">To partner with parents to offer a loving, nurturing, and Christ-filled environment where each child can be encouraged to develop their unique personalities and god-given talents. </p>
                 </div>
                 <div class="footer__times">
-                    <h3 class="footer__subheading">Preschool Hours</h3>
+                    <h3 class="footer__subheading">Preschool <span class="footer__subheading-span">Hours</span></h3>
                     <p class="footer__days">Monday to Friday</p>
                     <p class="footer__hours">9:00AM &ndash; 1:00PM</p>
                     <p class="footer__days">Saturday</p>
@@ -127,40 +127,50 @@
                     <p class="footer__hours">Closed</p>
 
                     <p class="footer__closings">
-                        Please check the Forsyth County School Closings/Calendar
-                        during inclement weather (ADD LINK!)
+                        Please check the <a href="https://www.forsyth.k12.ga.us/forsyth" class="footer__closings-link" target="_blank" rel="noopener">Forsyth County School Closings/Calendar</a>
+                        during inclement weather
                     </p>
                 </div>
                 <div class="footer__contact">
-                    <h3 class="footer__subheading">Contact Us</h3>
-                    <i class="footer__contact-icon fa fa-map-marker"></i>
+                    <h3 class="footer__subheading">Contact <span class="footer__subheading-span">Us</span></h3>
+                    <svg class="footer__contact-icon footer__contact-icon--1">
+                        <use xlink:href="img/sprite.svg#icon-location2" />
+                    </svg>
                     <p class="footer__address">
                         5830 Bethelview Road<br>
                         Cumming, GA 30040
                     </p>
-                    <i class="footer__contact-icon fa fa-phone"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-phone" />
+                    </svg>
                     <p class="footer__telephone">
                         <a href="tel:1-678-230-4384" style="color: inherit">1-678-513-3909</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-envelope"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-envelop" />
+                    </svg>
                     <p class="footer__email">
                          <a href="mailto:info@parkwaypreschool.com" style="color: inherit">info@parkwaypreschool.com</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-fax"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-fax" />
+                    </svg>
                     <p class="footer__fax">
                         1-770-888-9935
                     </p>
-                    <p class="footer__taxid" style="margin-top: 2.5em">
-                        Tax Id #000-0000
+                    <p class="footer__taxid">
+                        Federal Tax ID #02-0633602
                     </p>
                 </div>
             </div>    
         </div>
         <div class="footer__shape">
             <div class="footer__icon-wrap">
-                <i class="footer__icon fa fa-facebook"></i>
-                <i class="footer__icon fa fa-twitter"></i>
-                <i class="footer__icon fa fa-linkedin"></i>
+                <a href="https://m.facebook.com/groups/370838632933125?tsid=0.17988193374913042&source=result" class="footer__anch" target="_blank" rel="noopener">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook" />
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -171,9 +181,11 @@
         <p class="footer__design">website design by <a href="https://github.com/JasonDuquain" target="_blank" class="footer__me">Jason Duquain</a> 
     </div>
     
-    <button class="js-btt-btn" >
-        <i class="js-btt-btn-icon fa fa-arrow-up"></i>
-    </button>
+    <a class="js-btt-btn" href="#home">
+        <svg class="js-btt-btn-icon">
+            <use xlink:href="img/sprite.svg#icon-arrow-up2" />
+        </svg>
+    </a>
     
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
