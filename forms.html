@@ -19,12 +19,16 @@
                 <div class="header__top-bar">
                     <ul class="header__top-bar-contact">
                         <li class="header__top-bar-item">
-                            <i class="header__top-bar-icon fa fa-phone"></i>
-                            <a href="tel:1-678-230-4384" class="header__top-bar-link header__phone-icon">1-678-230-4384</a>
+                            <svg class="header__top-bar-icon">
+                                <use xlink:href="img/sprite.svg#icon-phone" />
+                            </svg>
+                            <a href="tel:1-678-513-3909" class="header__top-bar-link header__phone-icon">1-678-513-3909</a>
                         </li>
                         <li class="header__top-bar-item">
-                            <i class="header__top-bar-icon fa fa-envelope"></i>
-                            <a href="mailto:school@parkway.com" class="header__top-bar-link">school@parkway.com</a>
+                            <svg class="header__top-bar-icon">
+                                <use xlink:href="img/sprite.svg#icon-envelop" />
+                            </svg>
+                            <a href="mailto:info@parkwaypreschool.com" class="header__top-bar-link">info@parkwaypreschool.com</a>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +37,7 @@
         
         <div class="header__main-sect">
             <div class="header__logo">
-                <a href="/index.html" class="header__logo-link">
+                <a href="index.html" class="header__logo-link">
                     <img class="header__logo-image" src="img/logo.jpg" alt="parkway logo">
                 </a>
              </div>
@@ -54,7 +58,12 @@
                         <a href="index.html" class="header__nav-link" data-title="Home">Home</a>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="aboutus.html" class="header__nav-link" data-title="AboutUs">About Us</a>
+                        <a href="aboutus.html" class="header__nav-link" data-title="AboutUs">
+                            <span>About Us</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="aboutus.html#testone">Mission</a></li>
                            <li><a href="aboutus.html#testtwo">Our Story</a></li>
@@ -62,7 +71,12 @@
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="program.html" class="header__nav-link" data-title="Program">Program</a>
+                        <a href="program.html" class="header__nav-link" data-title="Program">
+                            <span>Program</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="#">Overview</a></li>
                            <li><a href="#">Activities</a></li>
@@ -71,7 +85,12 @@
                        </ul>
                     </li>
                     <li class="header__nav-item has-submenu">
-                        <a href="curriculum.html" class="header__nav-link" data-title="Curriculum">Curriculum</a>
+                        <a href="curriculum.html" class="header__nav-link" data-title="Curriculum">
+                            <span>Curriculum</span>
+                            <svg class="header__nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" />
+                            </svg>
+                        </a>
                         <ul>
                            <li><a href="#">Classes</a></li>
                        </ul>
@@ -100,12 +119,68 @@
     </div>
     
     
+    <section class="forms">
+        
+        <div class="forms__main-wrap">
+            <div class="pre-heading">Find your</div>    
+            <h2 class="cards__heading sect-heading">School Forms</h2>
+            <div class="sect-heading-img"></div>
+            
+            <div class="forms__grid">
+                <div class="forms__wrap">
+                    <a href="/docs/2019-2020%20Registration%20Form.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">2019-2020 Registration Form</p>
+                    <p class="forms__info">Adobe Acrobat file, 571 KB</p>   
+                </div>
+                <div class="forms__wrap">
+                    <a href="/docs/Authorization%20to%20Administer%20Medication.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">Authorization to Administer Medication</p>
+                    <p class="forms__info">Adobe Acrobat file, 132 KB</p>   
+                </div>
+                <div class="forms__wrap">
+                    <a href="/docs/Exemption%20from%20Immunization.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">Exemption from Immunization</p>
+                    <p class="forms__info">Adobe Acrobat file, 39 KB</p>   
+                </div>
+                <div class="forms__wrap">
+                    <a href="/docs/Medical%20Action%20Plan.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">Medical Action Plan</p>
+                    <p class="forms__info">Adobe Acrobat file, 217 KB</p>   
+                </div>
+                <div class="forms__wrap">
+                    <a href="/docs/Medical%20Release%20Form.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">Medical Release Form</p>
+                    <p class="forms__info">Adobe Acrobat file, 57 KB</p>   
+                </div>
+                <div class="forms__wrap">
+                    <a href="/docs/lunch%20bunch%20M%20T%2019%2020.pdf" class="forms__link">
+                        <img src="img/adobe.png" alt="acrobat icon">
+                    </a>
+                    <p class="forms__item">Lunch Bunch M T 19 20</p>
+                    <p class="forms__info">Adobe Acrobat file, 249 KB</p>   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    
     <footer class="footer">
         <div class="footer__wrap">
             
             <div class="footer__main">
                 <div class="footer__mission">
-                    <h3 class="footer__subheading">Our Mission</h3>
+                    <h3 class="footer__subheading">Our <span class="footer__subheading-span">Mission</span></h3>
                     
                     <div class="footer__logo-wrap">
                         <a href="#" class="footer__logo">
@@ -116,9 +191,9 @@
                     <p class="footer__para">To partner with parents to offer a loving, nurturing, and Christ-filled environment where each child can be encouraged to develop their unique personalities and god-given talents. </p>
                 </div>
                 <div class="footer__times">
-                    <h3 class="footer__subheading">Preschool Hours</h3>
+                    <h3 class="footer__subheading">Preschool <span class="footer__subheading-span">Hours</span></h3>
                     <p class="footer__days">Monday to Friday</p>
-                    <p class="footer__hours">8:30AM - 1:00PM</p>
+                    <p class="footer__hours">8:30AM &ndash; 1:00PM</p>
                     <p class="footer__days">Saturday</p>
                     <p class="footer__hours">Closed</p>
                     <p class="footer__days">Sunday</p>
@@ -130,25 +205,33 @@
                     </p>
                 </div>
                 <div class="footer__contact">
-                    <h3 class="footer__subheading">Contact Us</h3>
-                    <i class="footer__contact-icon fa fa-map-marker"></i>
+                    <h3 class="footer__subheading">Contact <span class="footer__subheading-span">Us</span></h3>
+                    <svg class="footer__contact-icon footer__contact-icon--1">
+                        <use xlink:href="img/sprite.svg#icon-location2" />
+                    </svg>
                     <p class="footer__address">
                         5830 Bethelview Road<br>
                         Cumming, GA 30040
                     </p>
-                    <i class="footer__contact-icon fa fa-phone"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-phone" />
+                    </svg>
                     <p class="footer__telephone">
                         <a href="tel:1-678-230-4384" style="color: inherit">1-678-513-3909</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-envelope"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-envelop" />
+                    </svg>
                     <p class="footer__email">
                          <a href="mailto:info@parkwaypreschool.com" style="color: inherit">info@parkwaypreschool.com</a>
                     </p>
-                    <i class="footer__contact-icon fa fa-fax"></i>
+                    <svg class="footer__contact-icon">
+                        <use xlink:href="img/sprite.svg#icon-fax" />
+                    </svg>
                     <p class="footer__fax">
                         1-770-888-9935
                     </p>
-                    <p class="footer__taxid" style="margin-top: 2.5em">
+                    <p class="footer__taxid">
                         Tax Id #000-0000
                     </p>
                 </div>
@@ -156,9 +239,11 @@
         </div>
         <div class="footer__shape">
             <div class="footer__icon-wrap">
-                <i class="footer__icon fa fa-facebook"></i>
-                <i class="footer__icon fa fa-twitter"></i>
-                <i class="footer__icon fa fa-linkedin"></i>
+                <a href="https://m.facebook.com/groups/370838632933125?tsid=0.17988193374913042&source=result" class="footer__anch" target="_blank" rel="noopener">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook" />
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -166,15 +251,16 @@
         <p class="footer__copyright">
             Copyright &copy; <span class="year">2018</span>. Parkway Presbyterian Preschool &amp; Kindergarten. All rights reserved. 
         </p>
-        <p class="footer__design">website design by <a href="https://github.com/JasonDuquain" target="_blank" class="footer__me">Jason Duquain</a> 
+        <p class="footer__design">website design by <a href="https://jasonduquain.me" target="_blank" class="footer__me" rel="noopener">Jason Duquain</a> 
     </div>
     
-    <button class="js-btt-btn" >
-        <i class="js-btt-btn-icon fa fa-arrow-up"></i>
-    </button>
+    <a class="js-btt-btn" href="#AboutUs">
+        <svg class="js-btt-btn-icon">
+            <use xlink:href="img/sprite.svg#icon-arrow-up2" />
+        </svg>
+    </a>
     
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
     
     

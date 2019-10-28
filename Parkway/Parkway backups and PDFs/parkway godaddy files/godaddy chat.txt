@@ -1,0 +1,177 @@
+created a bkp of the site
+
+need to download the files
+
+
+
+Jason are you trying to upload all the files to the new site?
+You at 14:16, Aug 9:
+Not right now. They are all created. But I need to make sure I know how to do this and also that all the older html and css files are removed before I do this
+You at 14:16, Aug 9:
+As the website builder expires on August 13th I do not know what that means for all the website files that were created with it?
+vikas at 14:17, Aug 9:
+Jason please create a back up for all the files in your desktop so that when you try to upload the files to new site you would not be facing issue.
+You at 14:17, Aug 9:
+can i download those files from the godaddy site? I do not see where they are
+vikas at 14:17, Aug 9:
+That would remain there if you have created the back up for those files.
+You at 14:19, Aug 9:
+I see a backup and restore section inside the website builder but do not see how to download a backup
+vikas at 14:19, Aug 9:
+You can create a back up there first .
+You at 14:19, Aug 9:
+ok i did
+You at 14:20, Aug 9:
+can i download the files?
+vikas at 14:20, Aug 9:
+Are you getting an option to download there?
+You at 14:20, Aug 9:
+i dont see any..just an option to restore or delete
+You at 14:21, Aug 9:
+so I am looking for anywhere I can download the html files and the css files
+vikas at 14:22, Aug 9:
+Jason I got you!! Please allow me a moment let me check if that option is available.
+You at 14:22, Aug 9:
+ok thank you
+vikas at 14:26, Aug 9:
+Jason I have checked with my resources and just to let you know that the website builder files can not be downloaded as well as the site can not be transferred to some other platform.
+vikas at 14:26, Aug 9:
+As every product comes up with some limitation.
+You at 14:26, Aug 9:
+ok that is fine
+vikas at 14:27, Aug 9:
+Alright!
+You at 14:27, Aug 9:
+so if we let the website builder expire then the site will no longer have any content? Is that correct?
+vikas at 14:28, Aug 9:
+If you have created the back up on the site you can recover the website for 1 month.
+You at 14:29, Aug 9:
+ok so if I let it expire will the site still be viewable online just as it is now for one month?
+vikas at 14:29, Aug 9:
+I do apologize but the site will not be visible.
+You at 14:30, Aug 9:
+that is fine
+You at 14:30, Aug 9:
+so then i need to know how to get the new site files uploaded..they are all built so i do not need the website builder but i do need to know how to upload the files
+vikas at 14:31, Aug 9:
+Well the files you have already created on the website builder can not be downloaded as well as transferable to some other plat form.
+You at 14:32, Aug 9:
+yes I understand I do not need those
+vikas at 14:32, Aug 9:
+So we have to start from the scratch if we want to build the same website on some other plat form./
+vikas at 14:32, Aug 9:
+platform*
+You at 14:32, Aug 9:
+I have built the site in a standard code editor
+You at 14:33, Aug 9:
+so I have all html, css, and javascript files
+You at 14:33, Aug 9:
+and image folder
+You at 14:33, Aug 9:
+I just need to know how to upload those
+vikas at 14:34, Aug 9:
+Jason in order to upload those files you need to have a hosting plan.
+You at 14:34, Aug 9:
+what is the cheapest option?
+You at 14:34, Aug 9:
+do you have a link to the list?
+vikas at 14:34, Aug 9:
+Once you will buy the hosting plan they will give a platform to upload those files
+You at 14:34, Aug 9:
+is this cPanel?
+vikas at 14:35, Aug 9:
+For cpanel you can download the Filezilla app.
+You at 14:36, Aug 9:
+is that the cheapest option? do you have a link with the details of each plan?
+vikas at 14:36, Aug 9:
+Sure please allow me a moment.
+vikas at 14:38, Aug 9:
+https://www.godaddy.com/hosting/web-hosting?ci=
+vikas at 14:38, Aug 9:
+Please go through the link above and confirm if it works for you. :)
+You at 14:40, Aug 9:
+ok I will look at these. Their are currently many email addresses for this domain. When the hosting plan changes from website builder to cPanel we will not lose anything with those email addresses corrrect?
+You at 14:40, Aug 9:
+the email addresses are part of the email hosting accounts
+vikas at 14:42, Aug 9:
+That is correct, as I can see that you have the email via workspace email so changing hosting will not impact your emails.
+vikas at 14:42, Aug 9:
+Also in cpanel hosting you can create multiple email accounts for free. :)
+You at 14:42, Aug 9:
+ok and once the website builder expires and we purchase the cPanel that same day I can upload the files and there will be no conflicts?
+vikas at 14:44, Aug 9:
+That is correct also before you do that you need to remove the domain from the website builder plan so that you can use it with the c panel hosting. :)
+You at 14:44, Aug 9:
+ok that domain will not be removed when the website builder expires? If not how do I do that manually?
+vikas at 14:45, Aug 9:
+Sure thing please allow me a moment.
+vikas at 14:47, Aug 9:
+https://websitetonight.godaddy.com/WST.aspx
+vikas at 14:47, Aug 9:
+Please go through the link above and you can see there in front of the domain name change domain option.
+You at 14:49, Aug 9:
+I get this error when I try to bring up that link: There has been an unexpected error in the application. If you continue to experience this issue, please contact customer support.
+vikas at 14:50, Aug 9:
+Okay no worries, If you login to
+vikas at 14:50, Aug 9:
+https://account.godaddy.com/products/?go_redirect=disabled&ci=
+vikas at 14:51, Aug 9:
+Please go through the above link and click on manage in front of the Business Website Builder.
+You at 14:52, Aug 9:
+ok I am there
+vikas at 14:53, Aug 9:
+You will get the option to change domain in front of the domain name in the middle of the page.
+vikas at 14:53, Aug 9:
+From there you can change the domain name.
+vikas at 14:53, Aug 9:
+:)
+You at 14:53, Aug 9:
+the domain name will not change
+You at 14:54, Aug 9:
+I just will be uploading new web files through cPanel
+vikas at 14:54, Aug 9:
+It will once you the plan will expire.
+vikas at 14:54, Aug 9:
+Or else you can simply delete the website buider from your account.
+vikas at 14:55, Aug 9:
+builder*
+You at 14:55, Aug 9:
+I am not sure I understand. The domain name is good until 2021
+vikas at 14:56, Aug 9:
+Well you will be deleting the website builder not the domain.
+You at 14:56, Aug 9:
+can i delete the website builder then purchase the cPanel plan
+You at 14:56, Aug 9:
+then just upload the files and they should go to parkwaypreschool.com
+vikas at 14:56, Aug 9:
+Absolutely correct. :)
+vikas at 14:57, Aug 9:
+Correct.
+You at 14:57, Aug 9:
+is that the best way to do it? Or can I let the website builder expire on the 13th and then purchase the Cpanel plan that same day
+You at 14:58, Aug 9:
+then upload the files? Please let me know the best way to go about changing i
+vikas at 14:58, Aug 9:
+That would be a better idea if you wait till it gets expire and then change the plan to cpanel.
+You at 14:59, Aug 9:
+ok if so I will do that. Can you show me where I can delete the website builder if I choose to do that?
+vikas at 15:01, Aug 9:
+Sure thing.
+vikas at 15:01, Aug 9:
+https://account.godaddy.com/billing.
+vikas at 15:02, Aug 9:
+Please go through the link and click on the product you would like to cancel and then click on the cancel renewal
+You at 15:02, Aug 9:
+ok perfect
+vikas at 15:02, Aug 9:
+and then you will get an option to delete the product.
+You at 15:02, Aug 9:
+thank you for all of your help
+vikas at 15:03, Aug 9:
+I'm glad I could help you today.
+vikas at 15:03, Aug 9:
+I'd really appreciate your feedback about today's interaction.
+vikas at 15:03, Aug 9:
+I wish you have great rest of your day! Thank you for contacting us.
+vikas at 15:03, Aug 9:
+I request you to please fill in the feedback form at the end of the chat. To close the chat please press the close button on top right of the chat box.

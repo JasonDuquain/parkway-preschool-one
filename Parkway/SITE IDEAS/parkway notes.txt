@@ -1,0 +1,8 @@
+when changing colors of PNGs in photoshop select the colorize option to choose custom HSL values..but still need to figure out how to change to exact HSL values from CSS (ex: HSL(219, 70%, 35%))
+
+add a chat-bubble icon to above the 'contact us' heading of the form
+
+OPTIMIZE IMAGES!!
+
+
+

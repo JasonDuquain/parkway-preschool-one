@@ -1,0 +1,132 @@
+/*-------------------------------------------------------
+		Theme # 	510
+		Cat 			Education
+		Name			Classroom
+-------------------------------------------------------*/
+body {
+	background-color: #4F8796;
+	background-image: url(images/background_5.jpg);
+	background-repeat: repeat-x;
+}
+
+/*--------------------------------
+		Header
+---------------------------------*/
+
+.sf_main_header {
+	color: #ffffff;	
+}
+
+/*--------------------------------
+		Navigation
+---------------------------------*/
+
+.sf_navigation ul li a, .sf_navigation ul li a:visited {
+	color: #BDCFE7;
+}
+.sf_navigation ul li a:hover{
+	background-image: url(images/menuhover_5.jpg);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+/*--------------------------------
+		 	Page Title
+---------------------------------*/
+
+.sf_pagetitle {
+	color: #4F8796;
+}
+
+/*--------------------------
+		 Footer
+--------------------------*/
+
+.sf_footer {	
+	color: #888888;
+	border-top: 1px solid #dddddd;
+}
+
+/*--------------------------
+		Extra Stuff
+--------------------------*/
+
+a {
+	color: #4F8796;
+	border-bottom: 1px dotted #4F8796;
+}
+
+a:visited {
+	color: #4F8796;
+}
+
+a:hover {
+	color: #6Fa7b6;
+}
+
+.sf_banner img {
+	border-bottom: none;
+}
+
+.sf_banner a {	
+	color: #ffffff;
+	border-bottom: none;
+}
+
+.sf_banner a:visited {
+	color: #ffffff;
+}
+
+.sf_banner a:hover {
+	color: #ffffff;
+}
+
+/*--------------------------
+		DBNow
+--------------------------*/
+
+.Data_Central_color1 {
+	background-color:#4F8796;
+	color:#FFFFFF;
+}
+.Data_Central_color2 {
+	background-color:#A2BADC;
+	color:#261A3B;
+}
+.Data_Central_color3 {
+ 	background-color:#C4D3E8;
+	color:#261A3B;
+}
+.Data_Central_color4 {
+	background-color:#ffffff;
+	color:#261A3B;
+}
+.Data_Central_color5 {
+	border-color:#ffffff;
+	color:#261A3B;
+}
+.Data_Central_color6 {
+	background-color:#EFEFEF;
+	color:#261A3B;
+}
+.Data_Central_color7 {
+	background-color:#000000;
+	color:#ffffff;
+}
+
+
+
+.Data_Central_color3 a,
+.Data_Central_color3 a:visited {
+    color:#4F8796;
+}
+.Data_Central_color3 a:hover {
+    text-decoration:none;
+}
+.Data_Central_color4 a,
+.Data_Central_color4 a:visited {
+    color:#4F8796;
+}
+.Data_Central_color4 a:hover {
+    text-decoration:none;
+}

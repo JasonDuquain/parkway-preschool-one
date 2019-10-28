@@ -1,0 +1,505 @@
+/*-------------------------------------------------------
+		Theme # 	510
+		Cat 			Education
+		Name			Classroom
+-------------------------------------------------------*/
+
+body {
+	margin: 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.sf_pagetitle h1 {
+	font-size:18px;
+	font-weight:bold;
+	margin:0px;
+}
+
+.sf_outer_wrapper {
+	margin: 0 auto;
+	width: 916px;
+	padding: 12px;
+}
+
+.sf_extra1 {
+	width: 916px;
+	height: 20px;	
+	background-image: url(images/backtop.png);
+	background-repeat: no-repeat;
+
+}
+
+* html .sf_extra1 {
+	behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/spacer.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
+.sf_wrapper {
+	min-height: 400px;
+	height: auto;
+	_height: 400px;	
+	background-image: url(images/backmid.png);
+}
+
+* html .sf_wrapper {
+	behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/spacer.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='scale')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+/*--------------------------------
+		Top Navigation
+---------------------------------*/
+
+.sf_navigation_top {
+	display: none;
+}
+
+.sf_navigation_top ul {	
+}
+
+.sf_navigation_top ul:after {	
+}
+
+.sf_navigation_top ul li {	
+}
+
+.sf_navigation_top ul li.sf_last_nav_item {	
+}
+
+.sf_navigation_top ul li.sf_first_nav_item {
+}
+
+.sf_navigation_top ul li a {		
+}
+
+.sf_navigation_top ul li a:visited {	
+}
+
+.sf_navigation_top ul li a:hover{	
+}
+
+/*--------------------------------
+		End Top Navigation
+---------------------------------*/
+
+.sf_extra10 {	
+	float: right;
+	width: 449px;
+	height: 187px;
+	margin-right: 20px;
+	display: inline;
+	background-image: url(images/headerphoto.jpg);
+	background-repeat: no-repeat;
+
+}
+
+/*--------------------------------
+		Header
+---------------------------------*/
+
+.sf_header_wrapper {
+	width: 403px;
+	height: 144px;
+	margin-left: 20px;
+	padding: 43px 0 0 24px;
+	float: left;
+	display: inline;
+	background-image: url(images/headerback.jpg);
+	background-repeat: no-repeat;
+
+}
+
+.sf_header_wrapper:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-height: 1px;
+	margin:0px;
+	padding:0px;
+}
+
+.sf_extra2 {
+}
+
+.sf_main_header {
+	overflow: hidden;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	width: 380px;
+	height: 100px;
+}
+
+.sf_extra3 {	
+}
+
+.sf_sub_header { 
+	display:none;
+}
+
+.sf_main_header p, .sf_sub_header p {
+	margin:0px;
+	padding:0px;
+}
+
+/*--------------------------
+		End Header
+--------------------------*/
+
+.sf_extra4 {
+	height: 4px;
+	clear: both;
+}
+
+/*--------------------------------
+		Navigation
+---------------------------------*/
+
+.sf_navigation {
+	margin: 0 20px;
+	width: 876px;
+	position: relative;
+	background-image: url(images/menuback.jpg);
+	background-repeat: repeat;
+	z-index:50;
+	background-position: left bottom;
+
+}
+
+.sf_navigation:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-height: 1px;
+	margin:0px;
+	padding:0px;
+}
+
+.sf_navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sf_navigation ul:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 1px;
+    clear: both;
+}
+
+.sf_navigation ul li {	
+	list-style: none;
+	margin: 0;
+	white-space: nowrap;
+	display: inline;
+	float:left;
+}
+
+.sf_navigation ul li.sf_first_nav_item {
+}
+
+.sf_navigation ul li.sf_last_nav_item {	
+}
+
+.sf_navigation ul li a, .sf_navigation ul li a:visited {	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	border: none;
+	display: block;
+	height: 22px;
+	padding: 5px 15px 0;
+	_float: left;
+}
+
+.sf_navigation ul li a:hover{
+}
+/*------------------------------------
+	Dropdown
+------------------------------------*/
+#Nav1 iframe {
+	position: absolute;
+	/* account for the border */
+	left: -0.25em;
+	top: -0.25em;
+	z-index: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	margin-left: 3px;
+}
+#Nav1, 
+#Nav1 ul { /* all lists */
+	list-style: none;
+}
+#Nav1 a {
+	display: block;
+}
+#Nav1 li:hover, #Nav1 li.hover {  
+    position: static;  
+} 
+#Nav1 li ul { /* second-level lists */
+	position: absolute;
+	left: -999em;
+	width:137px;
+	margin:0;
+	_margin:27px 0 0 -110px;
+	padding:5px 5px 0px 5px ;
+	background:#333333;
+	border:solid 1px #111111;
+	z-index:1000;
+}
+#Nav1 li ul li {
+	background:none;
+	padding:0;
+	margin:0;
+}
+#Nav1 li ul li a {
+	height:auto;
+	width:125px;
+	padding:2px 5px;
+	line-height:normal;
+	white-space:normal;
+	margin:0 0 5px 0;
+	background:#222222;
+	border:solid 1px #111111;
+}
+#Nav1 li ul li a:hover {
+	background:#000000;
+}
+#Nav1 li:hover ul, 
+#Nav1 li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+/*--------------------------------
+		End Navigation
+---------------------------------*/
+
+.sf_extra5 {	
+	clear: both;
+}
+
+/*--------------------------------
+		 	Page Title
+---------------------------------*/
+
+.sf_pagetitle {
+	margin: 20px 20px 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*--------------------------------
+		 End Page Title
+---------------------------------*/
+
+.sf_extra6 {	
+}
+
+/*--------------------------------
+		 Sub Navigation
+---------------------------------*/
+
+.sf_subnavigation {
+	display: none;
+}
+
+.sf_subnavigation ul {	
+}
+
+.sf_subnavigation ul:after {	
+}
+
+.sf_subnavigation ul li {	
+}
+
+.sf_subnavigation ul li.sf_last_nav_item {
+}
+
+.sf_subnavigation ul li.sf_first_nav_item {
+}
+
+.sf_subnavigation ul li a {	
+}
+
+.sf_subnavigation ul li a:visited {	
+}
+
+.sf_subnavigation ul li a:hover {	
+}
+
+/*--------------------------------
+		 End Sub Navigation
+---------------------------------*/
+
+.sf_extra11 {
+}
+	
+/*--------------------------
+		Content
+--------------------------*/
+
+.sf_content {
+	margin: 5px 10px;
+	font-size: 11px;
+}
+
+.sf_content:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-height: 1px;
+	margin:0px;
+	padding:0px;
+}
+
+.sf_content img {	
+}
+
+/*--------------------------
+		End Content
+--------------------------*/
+
+.sf_extra12 {
+}
+
+/*--------------------------------
+		 Sub Navigation2
+---------------------------------*/
+
+.sf_subnavigation2 {
+	display: none;
+}
+
+.sf_subnavigation2 ul {	
+}
+
+.sf_subnavigation2 ul:after {	
+}
+
+.sf_subnavigation2 ul li {	
+}
+
+.sf_subnavigation2 ul li.sf_last_nav_item {
+}
+
+.sf_subnavigation2 ul li.sf_first_nav_item {
+}
+
+.sf_subnavigation2 ul li a {	
+}
+
+.sf_subnavigation2 ul li a:visited {	
+}
+
+.sf_subnavigation2 ul li a:hover{	
+}
+
+/*--------------------------------
+		 End Sub Navigation2
+---------------------------------*/
+
+.sf_extra7 {	
+}
+
+.sf_extra7 span{	
+}
+
+/*--------------------------
+		 Footer
+--------------------------*/
+
+.sf_footer {
+	margin: 0 auto;
+	width: 800px;
+	text-align: center;
+	padding: 6px 0 0;
+	font-size: 11px;
+}
+
+.sf_footer p{
+	margin: 0;
+}
+
+/*--------------------------
+		End Footer
+--------------------------*/
+
+
+.sf_extra8 {	
+}
+
+.sf_extra9 {	
+	width: 916px;
+	height: 19px;
+	background-image:url(images/backbottom.png);
+	background-repeat: no-repeat;
+
+}
+
+* html .sf_extra9 {
+	behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/spacer.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
+/*--------------------------
+		Extra Stuff
+--------------------------*/
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+
+}
+
+a:hover {	
+	text-decoration: none;
+}
+
+.sf_banner {
+	margin: 10px auto 0;
+	width: 300px;
+	text-align: center;
+	font-size: 11px;
+}
+
+.sf_banner div {	
+}
+
+.sf_banner img {
+}
+
+.sf_banner a {
+	font-size: 11px;
+}
+
+.sf_banner a:visited {
+}
+
+.sf_banner a:hover {
+}
+/**
+ * Sticking flyout menu bug
+ *
+ * @bugfix
+ * @affected ie7
+ * @css-for ie7
+ * @valid yes
+ */
+#Nav1 li:hover, #Nav1 li.hover {  
+    position: static;  
+} 
