@@ -175,6 +175,8 @@ window.addEventListener('scroll', (e) => {
 
 
 
+
+
 /*********** HAMBURGER MENU - USES CHECKBOX HACK NOW ***********/
 /*
 
@@ -212,8 +214,7 @@ bttBtn.addEventListener('click', (e) => {
 });
 
 
-/****** Coryright year  ********/
-
+/****** Copyright year  ********/
 let year = document.querySelector('.year');
 year.textContent = new Date().getFullYear();
 

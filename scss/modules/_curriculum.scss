@@ -3,3 +3,152 @@
 .hero__wrap-2.curriculum {
     background-image: url('../img/hero-curriculum.jpg');
 }
+
+
+.curriculum {
+
+    &__wrap {
+        max-width: 1280px;
+        margin: 6em auto 0 auto;
+    }
+    
+    &__sect-wrap {
+        
+    }
+    
+    &__sect {
+        display: flex;
+        border: 1px solid $gray-lighter;
+    }
+    
+    &__image {
+        max-width: 720px;
+        height: auto;
+    }
+    
+    /* This is necessary to make the bottom ratio section fill the entire height of its contents */
+    &__main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__top {
+        color: #fff;
+        padding: 2em 2em 4em 2em;
+        background-color: $pink-brush;
+        
+    }
+    
+    &__heading {
+        font-family: 'Bubblegum Sans', cursive;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+    
+    &__hearts {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1.5em;
+    }
+    
+    &__hearts div {
+        z-index: 99;
+    }
+    
+    &__hearts div + div {
+        margin-left: .1em;
+    }
+    
+    &__hearts::before {
+        flex: 0 0 100%;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 44%;
+        transform: translateY(-50%);
+    }
+    
+    &__hearts-icon {
+        height: 18px;
+        width: 18px;
+        fill: #fff;
+    }
+    
+    &__info {
+        
+    }
+    
+    &__summary {
+        line-height: 1.5;
+        font-size: 1.1em;
+    }
+    
+    &__link {
+        color: hsl(219, 83%, 55%);
+        transition: color 300ms ease-in;
+        
+        &:hover {
+            color: hsl(229, 83%, 55%);
+        }
+    }
+    
+    &__note {
+        display: inline-block;
+        font-style: italic;
+        font-size: 1em;
+        margin-top: .5em;
+    }
+    
+    &__bottom {
+        color: $gray-dark;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        
+        /* This is necessary to make the bottom ratio section fill the entire height of its contents */
+        flex: 1;
+        
+    }
+    
+    &__subheading {
+        margin: 0;
+        font-size: 1.75em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    &__ratio {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__ratio {
+       border-left: 1px solid $gray-lighter; 
+    }
+    
+    /* Using translate since padding makes the bottom sect go higher and thus the entire curriculum__sect is going higher */
+    &__title {
+        font-weight: 700;
+        text-transform: uppercase;
+        transform: translateY(.25em);
+    }
+    
+    &__number {
+        font-size: 2em;
+        color: $aqua;
+        transform: translateY(-.35em);
+    }
+    
+}
+

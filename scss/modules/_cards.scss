@@ -107,7 +107,7 @@
        padding-bottom: 20px;
         
         &::after {
-            background-color: #f27c7e;
+            background-color: $pink-brush;
             position: absolute;
             content: "";
             padding: 0;
@@ -128,13 +128,13 @@
     
     &__subheading-brush--2 {
         &::after {
-            background-color: rgb(76, 114, 150);
+            background-color: $blue-brush;
         }
     }
     
     &__subheading-brush--3 {
         &::after {
-            background-color: rgb(172, 193, 88);
+            background-color: $green-brush;
         }
     }
     
