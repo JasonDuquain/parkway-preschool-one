@@ -52,21 +52,17 @@ if (body.classList.contains('Home')) {
 
 
 /********  CODE FOR THE ABOUT US PAGE  ********/
-if (body.classList.contains('AboutUs')) {
+if (body.classList.contains('TheAboutUs')) {
     
     /**********  TABS  **********/
 
-    let navlist = document.querySelector('.aboutus__navlist');
+    /*let navlist = document.querySelector('.aboutus__navlist');
     let anchs = document.querySelectorAll('.aboutus__navlist a');
 
     let sects = document.querySelectorAll('.aboutus__sect-wrap div');
 
     let sectWrap = document.querySelector('.aboutus__sect-wrap');
     let sectHeight = sectWrap.scrollHeight;
-
-    //console.log(sectHeight)
-
-
 
     navlist.addEventListener('click', (e) => {
         e.preventDefault();
@@ -87,12 +83,11 @@ if (body.classList.contains('AboutUs')) {
 
             });
         }
-    });
+    });*/
 
     /**********  ACCORDION  **********/
 
     let accordions = document.querySelectorAll('.accordion');
-
 
     accordions.forEach((el, idx) => {
         el.addEventListener('click', function(e) {
