@@ -20,7 +20,7 @@
         text-align: center;
         font-size: 1.4em;
         text-transform: uppercase;
-        margin-bottom: 1.5em;
+        margin-bottom: 3em;
         letter-spacing: .05em;
     }
     
@@ -89,9 +89,111 @@
     
     
     /******* TEACHERS ******/
+    &__teachers {
+        
+    }
+    
+    &__teachers-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 3em;
+        background-color: gray;
+    }
+    
+    &__teachers-list {
+        position: relative;
+        background-color: #fff;
+    }
+    
+    &__teachers-hdg {
+        background: $aqua;
+        height: 93px;
+        width: 100%;
+        position: relative;
+        line-height: 93px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    
+    &__teachers-hdg::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: repeat;
+        height: 12px;
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle at 10px -5px, transparent 14px, #f8f8f8 16px);
+    }
+    
+    &__teachers-hdg::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: repeat;
+        height: 12px;
+        background-size: 40px 20px;
+        background-image: radial-gradient(circle at 10px 15px, #f8f8f8 12px, transparent 13px)
+    }
+    
+    &__teachers-btmhdg {
+        background: $aqua;
+        height: 93px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
+    
+    &__teachers-btmhdg::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-repeat: repeat;
+        height: 12px;
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle at 10px -5px, transparent 14px, #f8f8f8 16px);
+        transform: rotate(180deg);
+    }
+    
+    &__teachers-btmhdg::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-repeat: repeat;
+        height: 12px;
+        background-size: 40px 20px;
+        background-image: radial-gradient(circle at 10px 15px, #f8f8f8 12px, transparent 13px);
+        transform: rotate(180deg);
+    }
+    
+    &__teachers-item {
+        padding: 2em;
+    }
+    
+    &__teachers-item--last {
+        margin-bottom: 93px;
+    }
+    
+    &__teachers-link {
+        
+    }
     
     &__teachers-link--current {
         color: red;
+    }
+    
+    &__teachers-table {
+        
     }
     
     &__teachers-listout {
