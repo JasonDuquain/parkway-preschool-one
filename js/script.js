@@ -161,7 +161,7 @@ if (body.classList.contains('TheStaff')) {
                 staffDivs[idx].classList.remove('staff__teachers-listout--visible');
                 e.target.classList.add('staff__teachers-link--current');
                 
-                if (e.target.getAttribute('href').slice(1) === staffDivs[idx].getAttribute('id')) {
+                if (e.target.getAttribute('href').slice(1) === staffDivs[idx].getAttribute('data-id')) {
                     
                     staffDivs[idx].classList.add('staff__teachers-listout--visible');
                 }

@@ -12,8 +12,8 @@
     &__about {
         font-size: 1.1em;
         width: 80%;
-        margin: 4em auto;
-        line-height: 1.4;
+        margin: 6em auto;
+        line-height: 1.5;
     }
     
     &__heading {
@@ -96,8 +96,8 @@
     &__teachers-grid {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-column-gap: 3em;
-        background-color: gray;
+        border: 1px solid $gray-lighter;
+        margin-bottom: 4em;
     }
     
     &__teachers-list {
@@ -177,33 +177,85 @@
     }
     
     &__teachers-item {
-        padding: 2em;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    &__teachers-item--first {
+        margin-top: 1em;
     }
     
     &__teachers-item--last {
-        margin-bottom: 93px;
+        margin-bottom: calc(93px + 1em);
     }
     
     &__teachers-link {
+        color: $gray-darkest;
+        text-transform: uppercase;
+        transition: color 300ms ease-out;
         
+        &:hover {
+            color: $aqua;
+        }
     }
     
     &__teachers-link--current {
-        color: red;
+        color: $aqua;
+        font-weight: 700;
     }
-    
-    &__teachers-table {
-        
-    }
-    
+
     &__teachers-listout {
         display: none;
     }
     
     &__teachers-listout--visible {
         display: block;
+        //display: flex;
+        //flex-direction: column;
+        height: 100%;
     }
     
+    &__teachers-table-wrap {
+        color: #fff;
+    }
+    
+    
+    &__teachers-table {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        //flex: 1;
+    }
+    
+    &__teachers-table tr:nth-of-type(odd) {
+        background-color: $gray-darker;
+    }
+    
+    &__teachers-table tr:nth-of-type(even) {
+        background-color: $gray-darkest;
+    }
+    
+    &__teachers-table th {
+        text-align: left;
+        padding: 1em;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    &__teachers-table td {
+        padding: .5em .5em .5em 1em;
+        
+    }
+    
+    &__teachers-table td a {
+        color: inherit;
+        transition: color 300ms ease-out;
+        
+        &:hover {
+            color: $aqua;
+        }
+        
+    }
     
 }
 
