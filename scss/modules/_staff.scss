@@ -10,17 +10,25 @@
     margin: 6em auto 0 auto;
     
     &__about {
-        
+        font-size: 1.1em;
+        width: 80%;
+        margin: 4em auto;
+        line-height: 1.4;
     }
     
     &__heading {
-        
+        text-align: center;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+        letter-spacing: .05em;
     }
     
     &__office-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 1.5em;
+        margin-bottom: 10em;
     }
     
     &__individual {
@@ -53,16 +61,47 @@
     }
     
     &__name {
-        
+
     }
     
     &__email {
+        font-size: 1.25em;
+        display: inline-block;
+        margin-right: .15em;
+        color: lighten($royalblue, 15%);
+        transition: color 300ms ease-out;
         
+        &:hover {
+            color: $royalblue;
+        }
+    }
+    
+    &__icon {
+        width: 1em;
+        height: 1em;
+        fill: lighten($royalblue, 15%);
     }
     
     &__title {
-        
+        font-style: italic;
+        font-size: 1.1em;
     }
+    
+    
+    /******* TEACHERS ******/
+    
+    &__teachers-link--current {
+        color: red;
+    }
+    
+    &__teachers-listout {
+        display: none;
+    }
+    
+    &__teachers-listout--visible {
+        display: block;
+    }
+    
     
 }
 

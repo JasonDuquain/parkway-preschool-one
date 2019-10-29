@@ -117,8 +117,6 @@ if (body.classList.contains('AboutUs')) {
         });
     });
 
-
-    
 }
 
 
@@ -144,6 +142,33 @@ if (body.classList.contains('ContactUs')) {
         icon.classList.remove('icon-color');
     }
      
+    
+}
+
+if (body.classList.contains('TheStaff')) {
+    
+    let staffUl = document.querySelector('.staff__teachers-list');
+    let staffLinks = document.querySelectorAll('.staff__teachers-link');
+    let staffDivs = document.querySelectorAll('.staff__teachers-listout');
+    
+    staffUl.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        if (e.target.classList.contains('staff__teachers-link') && !e.target.classList.contains('staff__teachers-link--current')) {
+            
+            staffLinks.forEach((el, idx) => {
+                el.classList.remove('staff__teachers-link--current');
+                staffDivs[idx].classList.remove('staff__teachers-listout--visible');
+                e.target.classList.add('staff__teachers-link--current');
+                
+                if (e.target.getAttribute('href').slice(1) === staffDivs[idx].getAttribute('id')) {
+                    
+                    staffDivs[idx].classList.add('staff__teachers-listout--visible');
+                }
+            })
+        }
+    })
+    
     
 }
 
