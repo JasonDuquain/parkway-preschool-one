@@ -127,7 +127,8 @@ if (body.classList.contains('ContactUs')) {
     })
     
     
-    let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
+    //let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
+    let inputs = document.querySelectorAll('.kw-110293, textarea');
     
     
     inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
