@@ -41,7 +41,7 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
   //  }
 
 
-
+/***** KWES STYLES START ****/
 .kw-field-wrapper {
     width: 100%;
 }
@@ -55,6 +55,12 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
 .kw-field-wrapper-6 {
     height: 6em !important;
 }
+/* This matches pencil icon wrap to be the same height at the textarea field --why 8 and not 6?????? */
+#applicant-pencil-prefix {
+    height: 8em;
+}
+/***** KWES STYLES END ****/
+
 
 
 .hero__wrap-2.contact {
