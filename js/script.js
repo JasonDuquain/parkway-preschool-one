@@ -194,9 +194,6 @@ window.addEventListener('scroll', (e) => {
 
 
 
-
-
-
 /*********** HAMBURGER MENU - USES CHECKBOX HACK NOW ***********/
 /*
 

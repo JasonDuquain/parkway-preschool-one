@@ -86,6 +86,10 @@
         }
     }
     
+    &__top-bar-item:first-of-type {
+        transform: translateY(1px);
+    }
+    
     &__top-bar-item {
         display: flex;
         align-items: center;
@@ -107,8 +111,6 @@
         }
     }
 
-    
-    
     &__top-bar-link {
         color: #fff;
         transition: color 300ms ease-out;
@@ -167,6 +169,7 @@
         transition: all 300ms ease-in;
     }
     
+    
     &__nav-item + &__nav-item {
         margin-left: 1em;
     }
@@ -178,28 +181,24 @@
     }
     
     &__nav-item:hover {
-        box-shadow: inset 0 -0.1875em 0 $royalblue;
+        box-shadow: inset 0 -0.1875em 0 $aqua;
     }
     
     &__nav-item:hover .header__nav-link {
-        color: $royalblue;
+        color: $aqua;
     }
     
-
-    /* if submenus get removed go ahead and add pointer-events: none and change the cursor to some kind of not-allowed */
     &__nav-item.clicked-parent {
-        box-shadow: inset 0 -0.1875em 0 $royalblue;
+        box-shadow: inset 0 -0.1875em 0 $aqua;
         transition: none;
     }
     
     &__nav-link.clicked {
-        color: $royalblue;
+        color: $aqua;
         transition: none;
     }
     
-    
     &__nav-link {
-        
         font-size: .95em;
         letter-spacing: .05em;
         color: $gray-darker;
@@ -210,54 +209,6 @@
             font-size: .85em;
         }
         
-    }
-    
-    /**** 2nd LEVEL  ****/
-    &__nav-item ul {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: 300%;
-        left: 0;
-        width: 15rem;
-        background-color: $gray-darker;
-        border-radius: 5px;
-        transition: all 300ms ease-out;
-    }
-    
-    &__nav-item ul li:not(:last-of-type){
-        border-bottom: 1px dotted #fff;
-    }
-    
-    &__nav-item:hover > ul {
-        opacity: 1;
-        visibility: visible;
-        top: 100%;
-    }
-    
-    &__nav-item ul a {
-        
-        font-size: .95em;
-        
-        display: block;
-        padding: 1rem 1.5rem;
-        font-family: inherit;
-        color: #fff;
-        text-transform: uppercase;
-        transition: color 300ms ease-out;
-        
-        @include breakpoint (max-width 1020px) {
-            font-size: .9em;
-        }
-        
-    }
-    
-    &__nav-item ul li:hover a {
-        color: $aqua;
-    }
-    
-    &__nav-item ul li::after:hover {
-        color: $royalblue;
     }
     
 }
@@ -291,7 +242,6 @@
     
     & .header__nav-link {
         color: #fff;
-        
     }
     
     & .header__nav-item.has-submenu::after {
@@ -299,7 +249,6 @@
     }
     
 }
-
 
 
 
@@ -374,17 +323,13 @@
     .header__nav-item {
         margin-bottom: .5em;
         margin-top: .5em;
-        margin-left: 0 !important;
-        
-        padding: .75em 1em;
-        
+        margin-left: 0 !important;     
+        padding: .75em 1em;    
         background-color: #fff;
-        
         transition: all 300ms ease-out;
     } 
     
     .header__nav-item:hover {
-        
         transform: translateX(.75em);
         background-color: #333;
     }
@@ -397,13 +342,13 @@
         color: #fff;
     }
     
-    .header__nav-item.has-submenu::after {
+    /*.header__nav-item.has-submenu::after {
         color: $royalblue;
-    }
+    }*/
     
-    .header__nav-item.has-submenu:hover::after {
+    /*.header__nav-item.has-submenu:hover::after {
         color: #fff;
-    }
+    }*/
 
     .header__nav-link.clicked {
         color: #fff;
@@ -446,27 +391,27 @@
         color: #fff;
     }
     
-    .header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu::after {
+    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu::after {
         color: $royalblue;
-    }
+    }*/
     
-    .navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
+    /*.navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
         color: #fff;
-    }
+    }*/
     
-    .header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
+    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
         color: #fff;
-    }
+    }*/
     
-    .header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover::after {
+    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover::after {
         color: #fff;
-    }
+    }*/
     
-    .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover > ul {
+    /*.navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover > ul {
         opacity: 0;
         visibility: hidden;
         top: 300%;
-    }
+    }*/
 
     .navigation__icon {
         position: relative;
