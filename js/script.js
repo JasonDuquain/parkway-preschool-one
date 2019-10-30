@@ -118,7 +118,12 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
     
+    console.log('yes?')
+    
+    
     let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
+    
+    console.log(inputs);
     
     inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
     inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
