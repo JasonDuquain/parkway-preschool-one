@@ -117,18 +117,21 @@ if (body.classList.contains('TheAboutUs')) {
 
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
-    
-    console.log('yes?')
+     
+    document.querySelector('#applicant-date').addEventListener('focus', (e) => {
+        console.log('focused');
+    })
     
     
     let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
     
-    console.log(inputs);
     
     inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
     inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
     
     function changeFocus(e) {
+        
+        console.log('now?')
         
         let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
         
@@ -181,6 +184,9 @@ if (body.classList.contains('TheStaff')) {
 ////////////////////////////////////////
 /********* THESE ARE UNIVERAL **********/
 ////////////////////////////////////////
+
+
+console.log('global');
 
 
 /***********  STICKY HEADER  ***********/
