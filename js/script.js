@@ -118,7 +118,11 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
      
-    document.querySelector('#applicant-date').addEventListener('focus', (e) => {
+    let msg = document.querySelector('#applicant-date');
+    
+    console.log(msg);
+    
+    msg.addEventListener('focus', (e) => {
         console.log('focused');
     })
     
@@ -131,7 +135,7 @@ if (body.classList.contains('ContactUs')) {
     
     function changeFocus(e) {
         
-        console.log('now?')
+        console.log('this is working why is input focus not??')
         
         let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
         
