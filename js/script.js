@@ -124,14 +124,19 @@ if (body.classList.contains('ContactUs')) {
     inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
     
     function changeFocus(e) {
-        let prevSib = e.target.previousElementSibling;
+        
+        let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
+        
+        console.log(prevSib);
+        console.log(e.target.parentNode.previousElementSibling);
+        
         const icon = prevSib.children[0];
         prevSib.classList.add('background-color');
         icon.classList.add('icon-color');
     }
 
     function changeBlur(e) {
-        let prevSib = e.target.previousElementSibling;
+        let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
         const icon = prevSib.children[0];
         prevSib.classList.remove('background-color');
         icon.classList.remove('icon-color');
