@@ -1,3 +1,61 @@
+/*
+temp fix to kwes removing the class name from the form
+.subscribe form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3em 1.5em;
+}
+
+*/
+
+
+
+/*
+KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width needs to be added to this span but I still might need to account for the submit button any time is is a button element and NOT a input type=submit element
+*/
+
+//.kw-field-wrapper {
+//    width: 100%;
+//}
+
+// keeps the error msgs from messing up the layout
+//.kwes-field-wrapper .help {
+//    position: absolute
+//}
+
+ //&__field-prefixed {
+        //display: flex;
+        
+// might just be field-prefixed
+
+
+/*** ADD THIS POSITION RELATIVE MAYBE!!!! *****/
+        // this is need to keep the error msgs from messing up the layout
+        //position: relative; 
+   // }
+
+
+// height for textarea needs to be on its wrapper
+ //   &__field-prefixed .kw-field-wrapper-6 {
+ //       height: 6em;
+  //  }
+
+
+
+.kw-field-wrapper {
+    width: 100%;
+}
+
+.kwes-field-wrapper .help {
+    position: absolute
+}
+
+
+/* TEXTAREA */
+.kw-field-wrapper-6 {
+    height: 6em !important;
+}
+
 
 .hero__wrap-2.contact {
     background-image: url('../img/hero-contact.jpg');
@@ -110,6 +168,8 @@ form label {
 
 .field-prefixed {
     display: flex;
+    
+    position: relative /* KWES - MAY NOT NEED TEST IT **/
 }
 
 .field-prefix {
