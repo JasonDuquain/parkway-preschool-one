@@ -118,13 +118,19 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
      
-    let msg = document.querySelector('#applicant-date');
     
-    console.log(msg);
     
-    msg.addEventListener('focus', (e) => {
-        console.log('focused');
-    })
+    
+    
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let msg = document.querySelector('#applicant-date');
+        
+        console.log(msg);
+        
+        msg.addEventListener('focus', (e) => {
+            console.log('focused');
+        });
+    });
     
     
     //let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
