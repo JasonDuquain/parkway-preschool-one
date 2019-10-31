@@ -40,7 +40,7 @@
     
     &__top {
         color: #fff;
-        padding: 2em;
+        padding: 1.5em;
         background-color: $pink-brush;
     }
     
@@ -61,6 +61,7 @@
         font-size: 1.6em;
         text-transform: uppercase;
         margin-bottom: 1em;
+        text-align: center;
     }
     
     &__hearts {
@@ -112,6 +113,44 @@
         
         &:hover {
             color: #ddd;
+        }
+    }
+    
+    &__price {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: .75em 1.5em;
+        background-color: transparent;
+        border-radius: 99em;
+        margin: 2em auto 0 auto;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+        transition: all 300ms ease-out;
+        width: 10em;
+        text-align: center;
+        
+        &:hover {
+            background-color: #fff;
+            color: $pink-brush;
+        }
+    }
+    
+    &__price--blue {
+        &:hover {
+            color: $blue-brush;
+        }
+    }
+    
+    &__price--green {
+        &:hover {
+            color: $green-brush;
+        }
+    }
+    
+    &__price--orange {
+        &:hover {
+            color: $orange-brush;
         }
     }
     

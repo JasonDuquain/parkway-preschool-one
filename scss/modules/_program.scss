@@ -13,14 +13,20 @@
     }
     
     &__sect {
+        margin: 0 auto 3em auto;
+        width: 80%;
+    }
+    
+    &__sect--last {
         margin-bottom: 6em;
     }
     
     &__sect-flex {
         display: flex;
-        border: 2px solid red;
+        border: 1px solid $gray-lighter;
+        border-radius: 3px;
         overflow: hidden;
-        margin-bottom: 8em;
+        margin-bottom: 10em;
     }
     
     &__sect-flex--reverse {
@@ -32,8 +38,12 @@
     }
     
     &__para {
-       line-height: 1.4;
-        padding: 1em;
+        line-height: 1.4;
+        padding: 1em 1.5em 1em 1em;
+    }
+    
+    &__para--reverse {
+        padding: 1em 1em 1em 1.5em;
     }
     
     &__link {
@@ -45,12 +55,20 @@
         }
     }
     
+    &__small {
+        display: block;
+    }
+    
     &__table-wrap {
         position: relative;
         flex: 1;
         background-color: $aqua;
         color: #fff;
         padding: 2em;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         &::before {
             content: "";
