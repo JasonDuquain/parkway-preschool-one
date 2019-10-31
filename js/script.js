@@ -118,23 +118,21 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
      
-    document.addEventListener('DOMContentLoaded', (event) => {
-        let msg = document.querySelector('#applicant-date');
-        
-        console.log(msg);
-        
-        msg.addEventListener('focus', (e) => {
-            console.log('focused');
-        });
-    });
-    
-    
-    //let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
+    //let msg = document.querySelector('#applicant-date');
+
+    //console.log(msg);
+
+    //msg.addEventListener('focus', (e) => {
+    //    console.log('focused');
+    //});
+
+
+    let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
     //let inputs = document.querySelectorAll('.kw-110293, textarea');
     
     
-    //inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
-    //inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
+    inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
+    inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
     
     function changeFocus(e) {
         

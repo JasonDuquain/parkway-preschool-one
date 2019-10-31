@@ -106,11 +106,12 @@
     }
     
     &__link {
-        color: $gray-darker;
+        color: #fff;
+        border-bottom: 1px solid currentColor;
         transition: color 300ms ease-in;
         
         &:hover {
-            color: $gray;
+            color: #ddd;
         }
     }
     
@@ -129,7 +130,6 @@
         
         /* This is necessary to make the bottom ratio section fill the entire height of its contents */
         flex: 1;
-        
     }
     
     &__subheading {

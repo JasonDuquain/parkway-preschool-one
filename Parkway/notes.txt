@@ -5,9 +5,13 @@ all paths in nav menu should not have a / in front of them (a href="aboutus.html
 the slick slider was causing some horizontal overflow due to the right arrow!!
 
 
+
 OPTIMIZE AND RENAME APPLICABLE IMAGES
 
+remove font weight variants from lato on each page that arent being used!!!
+
 REMOVE GOOGLE FONTS AND ANY JQUERY OR JS FRAMEWORK THAT IS NOT USED ON A SPECIFIC PAGE
+
 
 when changing colors of PNGs in photoshop select the colorize option to choose custom HSL values..but still need to figure out how to change to exact HSL values from CSS (ex: HSL(219, 70%, 35%))
 
