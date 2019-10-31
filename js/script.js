@@ -118,10 +118,6 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
      
-    
-    
-    
-    
     document.addEventListener('DOMContentLoaded', (event) => {
         let msg = document.querySelector('#applicant-date');
         
