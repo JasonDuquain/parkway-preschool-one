@@ -17,6 +17,8 @@ when changing colors of PNGs in photoshop select the colorize option to choose c
 
 add a chat-bubble icon to above the 'contact us' heading of the form
 
+add a pill shaped price link to the classes list that is a ghost color (blends in with the colored bg)
+
 
 
 

@@ -1,3 +1,109 @@
 .hero__wrap-2.program {
     background-image: url('../img/hero-program.jpg');
 }
+
+
+
+.program {
+    
+    
+    &__wrap {
+        max-width: 1280px;
+        margin: 4em auto;
+    }
+    
+    &__sect {
+        margin-bottom: 6em;
+    }
+    
+    &__sect-flex {
+        display: flex;
+        border: 2px solid red;
+        overflow: hidden;
+        margin-bottom: 8em;
+    }
+    
+    &__sect-flex--reverse {
+        flex-direction: row-reverse;
+    }
+    
+    &__para-wrap {
+        flex: 1;
+    }
+    
+    &__para {
+       line-height: 1.4;
+        padding: 1em;
+    }
+    
+    &__link {
+        color: $aqua;
+        transition: color 300ms ease-out;
+        
+        &:hover {
+            color: darken($aqua, 15%);
+        }
+    }
+    
+    &__table-wrap {
+        position: relative;
+        flex: 1;
+        background-color: $aqua;
+        color: #fff;
+        padding: 2em;
+        
+        &::before {
+            content: "";
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -100%;
+            margin-left: -12px;
+            top: 50%;
+            right: 0;
+            background-repeat: repeat;
+            height: 12px;
+            background-size: 20px 20px;
+            background-image: radial-gradient(circle at 10px -5px, transparent 14px, $aqua 16px);
+        }
+        
+        &::after {
+            content: "";
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -100%;
+            margin-left: -12px;
+            top: 50%;
+            right: 0;
+            background-repeat: repeat;
+            height: 12px;
+            background-size: 40px 20px;
+            background-image: radial-gradient(circle at 10px 15px, $aqua 12px, transparent 13px);
+        }
+    }
+    
+    /*** rotation is 90deg not -90 and marging is -22, not -12 ***/
+    &__table-wrap--reverse {
+        &::before {
+            transform: rotate(90deg);
+            margin-right: -22px;
+            right: -100%;
+            left: 0;
+        }
+        
+        &::after {
+            transform: rotate(90deg);
+            margin-right: -22px;
+            right: -100%;
+            left: 0;
+        }
+    }
+    
+    &__table {
+        
+    }
+    
+    
+    
+    
+}
+
