@@ -6,10 +6,9 @@
 
 .program {
     
-    
     &__wrap {
         max-width: 1280px;
-        margin: 4em auto;
+        margin: 6em auto;
     }
     
     &__sect {
@@ -17,16 +16,12 @@
         width: 80%;
     }
     
-    &__sect--last {
-        margin-bottom: 6em;
-    }
-    
     &__sect-flex {
         display: flex;
         border: 1px solid $gray-lighter;
         border-radius: 3px;
         overflow: hidden;
-        margin-bottom: 10em;
+        margin-bottom: 8em;
     }
     
     &__sect-flex--reverse {
@@ -56,7 +51,10 @@
     }
     
     &__small {
+        font-size: 1em;
         display: block;
+        font-style: italic;
+        margin-top: 1em;
     }
     
     &__table-wrap {
@@ -117,7 +115,43 @@
     }
     
     &__table {
+        font-size: 1.1em;
+        border-collapse: collapse;
+        border: 1px solid #fff;
+    }
+    
+    &__table tr {
         
+    }
+    
+    &__table tr:nth-of-type(1n) {
+        background-color: $royalblue;
+    }
+    
+    &__table tr:nth-of-type(2n) {
+        background-color: darken($royalblue, 15%);
+    }
+    
+    &__table-row--one {
+        background-color: $pink-brush !important;
+    }
+    
+    &__table-row--two {
+        background-color: $blue-brush !important;
+    }
+    
+    &__table-row--three {
+        background-color: $green-brush !important;
+    }
+    
+    &__table th {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    &__table td {
+        padding: 1em;
     }
     
     
