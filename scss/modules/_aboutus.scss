@@ -1,3 +1,14 @@
+/* IF YOU KEEP THE MOBILE ANIMATION THEN JUST ADD THESE STYLES TO THE MAIN BODY element CLASS */
+.TheAboutUs {
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+
+
+
+
+
+
 .handprints {
     height: 120px;
     background-image: url('../img/handprints.jpg');
@@ -14,7 +25,6 @@
     justify-content: center;
     margin-bottom: 5em;
     background-size: cover;
-    
     background-attachment: fixed;
 }
 

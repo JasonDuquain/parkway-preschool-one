@@ -54,6 +54,23 @@ if (body.classList.contains('Home')) {
 /********  CODE FOR THE ABOUT US PAGE  ********/
 if (body.classList.contains('TheAboutUs')) {
     
+    
+    
+    
+    
+    /****** START 2 -- try to animate page transitions *******/
+    window.addEventListener('load', (e) => {
+        document.querySelector('.TheAboutUs').style.opacity = 1;
+        document.querySelector('.empty').style.backgroundColor = 'transparent';
+    });
+    /****** END 2 -- try to animate page transitions *******/
+    
+    
+    
+    
+    
+    
+    
     /**********  TABS  **********/
 
     /*let navlist = document.querySelector('.aboutus__navlist');
@@ -118,15 +135,6 @@ if (body.classList.contains('TheAboutUs')) {
 /********  CODE FOR THE CONTACT US PAGE  ********/
 if (body.classList.contains('ContactUs')) {
      
-    //let msg = document.querySelector('#applicant-date');
-
-    //console.log(msg);
-
-    //msg.addEventListener('focus', (e) => {
-    //    console.log('focused');
-    //});
-
-
     let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
     //let inputs = document.querySelectorAll('.kw-110293, textarea');
     
@@ -224,6 +232,7 @@ hamburgerMenu.addEventListener('click', function(e) {
 
 */
 
+
 /******* HIGHTLIGHT INDIVIDUAL PAGES ******/
 let menuAnchs = document.querySelectorAll('.header__nav-link');
 
@@ -235,6 +244,44 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
     });
 });
+
+
+
+
+
+
+
+/****** START -- try to animate page transitions *******/
+let aboutUsLink = document.querySelector('.header__nav-link.test');
+let aboutUsItem = document.querySelector('.header__nav-item.testt');
+let emptyDiv = document.querySelector('.empty');
+
+
+aboutUsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    emptyDiv.classList.add('yo');
+    
+    
+});
+
+emptyDiv.addEventListener('transitionend', (e) => {
+    
+    if (e.propertyName.includes('transform')) {
+        emptyDiv.classList.remove('yo');
+        window.location.href = 'http://127.0.0.1:56783/aboutus.html'; 
+        
+    }
+    
+});
+/****** END -- try to animate page transitions *******/
+
+
+
+
+
+
+
 
 /********   BACK TO TOP BTN  *********/
 let bttBtn = document.querySelector('.js-btt-btn');
