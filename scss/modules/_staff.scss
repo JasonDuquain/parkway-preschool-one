@@ -131,6 +131,7 @@
     }
     
     &__teachers-hdg {
+        //font-family: 'Bubblegum Sans', Arial;
         background: $aqua;
         height: 93px;
         width: 100%;
@@ -215,6 +216,8 @@
     }
     
     &__teachers-link {
+        font-family: 'Bubblegum Sans', Arial;
+        
         color: $gray-darkest;
         text-transform: uppercase;
         transition: color 300ms ease-out;

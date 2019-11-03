@@ -1,21 +1,19 @@
 /* IF YOU KEEP THE MOBILE ANIMATION THEN JUST ADD THESE STYLES TO THE MAIN BODY element CLASS */
+/*
 .TheAboutUs {
     opacity: 0;
     transition: opacity 400ms ease-in;
 }
-
-
-/*
-.bubbles--one {
-    font-weight: bold;
-    //height: 70vh;
-    width: 100%;
-    clip-path: url(#svg-path);
-}
-
 */
 
-
+// testing clip path on text
+.bubbles--one {
+    //height: 70vh;
+    width: 100%;
+    height: 300px;
+    clip-path: url(#svg-path);
+    
+}
 
 
 
@@ -61,7 +59,7 @@
     }
     
     &__imgwrap {
-        background: url('../img/blue-circle-bubble.png') no-repeat top left;
+        background: url('../img/aqua-circle-bubble.png') no-repeat top left;
         height: 60px;
         width: 58px;
         display: flex;
@@ -108,6 +106,11 @@
         margin-bottom: 1em;
     }
     
+    &__span {
+        //color: $aqua;
+        font-weight: 700;
+    }
+    
     &__link {
         color: $aqua;
         transition: color 300ms ease-out;
@@ -119,10 +122,11 @@
     }
     
     &__quote {
+        font-weight: 400;
         font-style: italic;
-        font-size: 1.2em;
+        font-size: 1.4em;
         width: 100%;
-        margin: 2.5em 0;
+        margin: 3em 0;
         padding-right: 4em;
         padding-left: 2em;
         display: grid;
@@ -143,8 +147,8 @@
     
     &__quote span {
         font-family: sans-serif;
-        //color: $gray-light;
-        color: $aqua;
+        color: $gray-light;
+        //color: $aqua;
         font-size: 8em;
         line-height: .5;
         

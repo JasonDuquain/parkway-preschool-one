@@ -70,10 +70,10 @@ if (body.classList.contains('TheAboutUs')) {
     
     
     /****** START 2 -- try to animate page transitions *******/
-    window.addEventListener('load', (e) => {
+    /*window.addEventListener('load', (e) => {
         document.querySelector('.TheAboutUs').style.opacity = 1;
         document.querySelector('.empty').style.backgroundColor = 'transparent';
-    });
+    });*/
     /****** END 2 -- try to animate page transitions *******/
     
     
@@ -141,6 +141,30 @@ if (body.classList.contains('TheAboutUs')) {
     });
 
 }
+
+
+
+/********  CODE FOR THE CONTACT US PAGE  ********/
+if (body.classList.contains('TheProgram')) {
+    
+    let tables = document.querySelectorAll('.program__table');
+    
+    window.addEventListener('scroll', (e) => {
+        
+        tables.forEach((el, idx) => {
+            
+            if (el.getBoundingClientRect().bottom < window.innerHeight) {
+                el.classList.add('program__table--visible');
+            } 
+            
+        })
+        
+    });
+    
+    
+    
+}
+
 
 
 /********  CODE FOR THE CONTACT US PAGE  ********/
@@ -263,7 +287,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 
 /****** START -- try to animate page transitions *******/
-let aboutUsLink = document.querySelector('.header__nav-link.test');
+/*let aboutUsLink = document.querySelector('.header__nav-link.test');
 let aboutUsItem = document.querySelector('.header__nav-item.testt');
 let emptyDiv = document.querySelector('.empty');
 
@@ -281,13 +305,13 @@ emptyDiv.addEventListener('transitionend', (e) => {
 
     if (e.propertyName.includes('transform')) {
 
-        alert(99)
+        //alert(99)
 
         emptyDiv.classList.remove('yo');
         
-        /****** PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! ****/
+        // PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! 
         window.location.href = 'http://127.0.0.1:56783/aboutus.html'; 
-        /****** PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! ****/
+        // PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! 
         
         setTimeout(() => {
             document.querySelector('.empty').classList.add('yo'); 
@@ -295,7 +319,7 @@ emptyDiv.addEventListener('transitionend', (e) => {
     }
 
 });
-    
+*/
     
 
 /****** END -- try to animate page transitions *******/
