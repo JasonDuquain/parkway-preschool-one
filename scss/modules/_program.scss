@@ -4,9 +4,96 @@
 
 
 
+
+
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(0,0,0,.1);
+}
+
+.cell--one {
+    grid-column: 1 / 2;
+    position: relative;
+    text-align: right;
+}
+
+.cell--two {
+    grid-column: 2 / 3;
+    
+    
+    & img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        
+        /* this is needed to get it to expand width to the right */
+        margin-left: auto;
+    }
+}
+
+.translate {
+    width: 115%;
+    padding: 3.5em;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid $aqua;
+}
+
+.split--two {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgba(0,0,0,.1);
+}
+
+.cell--three {
+    grid-column: 1 / 2;
+    
+    & img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+}
+
+.cell--four {
+    grid-column: 2 / 3;
+    position: relative;
+    text-align: left;
+}
+
+.translate--two {
+    width: 115%;
+    padding: 3.5em;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid $aqua;
+}
+
+
+
+
+
+
+
 .program {
     
+    padding-right: 0;
+    padding-left: 0;
+    
+    
     &__wrap {
+        
+        padding-right: 2em;
+        padding-left: 2em;
+        
         max-width: 1280px;
         margin: 6em auto;
     }
