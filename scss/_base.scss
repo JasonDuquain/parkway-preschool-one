@@ -90,6 +90,19 @@ section {
     }
 }
 
+.hero {
+    position: relative;
+}
+
+.brush {
+    background-image: url('../img/brush-hero-btm.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 63px;
+}
 
 
 

@@ -1,6 +1,5 @@
 
 .cards {
-    background-color: lighten($gray-lighter, 5%);
     
     
     &__main-wrap {
@@ -18,6 +17,7 @@
     &__wrap {
         background-color: #fff;
         border-radius: 10px;
+        border: 1px solid $gray-lighter;
     }
     
     &__image-wrap {

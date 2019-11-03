@@ -8,6 +8,8 @@ let docElement = document.documentElement;
 let body = document.body;
 
 
+
+
 /********  CODE FOR THE HOME PAGE  ********/
 if (body.classList.contains('Home')) {
     
@@ -53,6 +55,15 @@ if (body.classList.contains('Home')) {
 
 /********  CODE FOR THE ABOUT US PAGE  ********/
 if (body.classList.contains('TheAboutUs')) {
+    
+    let quote = document.querySelector('.aboutus__quote');
+    
+    window.addEventListener('scroll', (e) => {
+        if (quote.getBoundingClientRect().bottom < window.innerHeight / 1.5) {
+            quote.classList.add('visible');
+        } 
+    });
+    
     
     
     
@@ -256,24 +267,37 @@ let aboutUsLink = document.querySelector('.header__nav-link.test');
 let aboutUsItem = document.querySelector('.header__nav-item.testt');
 let emptyDiv = document.querySelector('.empty');
 
-
+    
 aboutUsLink.addEventListener('click', (e) => {
+
     e.preventDefault();
-    
+
     emptyDiv.classList.add('yo');
-    
-    
+
+
 });
 
 emptyDiv.addEventListener('transitionend', (e) => {
-    
+
     if (e.propertyName.includes('transform')) {
+
+        alert(99)
+
         emptyDiv.classList.remove('yo');
-        window.location.href = 'http://127.0.0.1:56783/aboutus.html'; 
         
+        /****** PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! ****/
+        window.location.href = 'http://127.0.0.1:56783/aboutus.html'; 
+        /****** PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! ****/
+        
+        setTimeout(() => {
+            document.querySelector('.empty').classList.add('yo'); 
+        }, 0)
     }
-    
+
 });
+    
+    
+
 /****** END -- try to animate page transitions *******/
 
 

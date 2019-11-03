@@ -5,6 +5,16 @@
 }
 
 
+/*
+.bubbles--one {
+    font-weight: bold;
+    //height: 70vh;
+    width: 100%;
+    clip-path: url(#svg-path);
+}
+
+*/
+
 
 
 
@@ -16,6 +26,7 @@
     background-size: contain;
     background-repeat: repeat-x;
 }
+
 
 .hero__wrap-2 {
     background-image: url('../img/hero-aboutus.jpeg');
@@ -112,20 +123,28 @@
         font-size: 1.2em;
         width: 100%;
         margin: 2.5em 0;
-        //border: 1px solid $gray-lighter;
-        //border-left: 10px solid $aqua;
-        //padding: 2em 4em 2em 2em;
         padding-right: 4em;
         padding-left: 2em;
-        
         display: grid;
         grid-column-gap: 1.5em;
         grid-template-columns: min-content 1fr;
+        
+        
+        opacity: 0;
+        transition: all 800ms ease-out;
+        transform: translateY(-150%) scale(1.4);
+        
+    }
+    
+    &__quote.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
     
     &__quote span {
         font-family: sans-serif;
-        color: $gray-light;
+        //color: $gray-light;
+        color: $aqua;
         font-size: 8em;
         line-height: .5;
         

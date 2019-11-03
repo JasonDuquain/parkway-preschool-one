@@ -11,6 +11,9 @@
     //width: 116px;
     //height: 40px;
      transform: scale(50) rotate(180deg);
+    
+    opacity: 1;
+    
 }
 
 .empty {
@@ -23,10 +26,13 @@
     z-index: -1;
     transform: scale(1) rotate(0);
     background-color: #fff;
+    
+    opacity: 0;
+    
     //width: 0;
     //height: 0;
     //transform: scale(.1);
-    transition: all 400ms ease-in;
+    transition: transform 400ms ease-in, opacity 200ms ease-in;
     pointer-events: none;
 }
 /*** END STYLES FOR THE MOBILE MENU ANIMATION ***/
