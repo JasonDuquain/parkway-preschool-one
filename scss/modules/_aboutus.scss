@@ -6,14 +6,6 @@
 }
 */
 
-// testing clip path on text
-.bubbles--one {
-    //height: 70vh;
-    width: 100%;
-    height: 300px;
-    clip-path: url(#svg-path);
-    
-}
 
 
 
@@ -48,6 +40,33 @@
     &__wrap {
         width: 70%;
         margin: 6em auto 0 auto;
+    }
+    
+    /*
+    
+    To make the font-size change a little smoother when the size of the
+    SVG embedded object changes/in media queries, you can add in a CSS transition effect:
+    
+    svg text { transition: font-size 0.5s; }
+    
+    */
+    
+    &__text-svg {
+        font-family: 'Bubblegum Sans', sans-serif;
+        font-size: 90px;
+    }
+    
+    &__tspan-svg {
+        font-size: 165px;
+        letter-spacing: 2px;
+    }
+    
+    &__image-svg {
+        //height: 70vh;
+        width: 100%;
+        height: 300px;
+        clip-path: url(#svg-path);
+        object-fit: cover;
     }
     
     &__sect {
