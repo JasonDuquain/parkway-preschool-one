@@ -36,6 +36,11 @@ section {
     padding: 10em 2em;
 }
 
+/* adjusted section around the mark your calender img to better center it  */
+section.current {
+    padding: 2em 2em 5em 0;
+}
+
 .pre-heading {
     text-transform: uppercase;
     text-align: center;
