@@ -37,7 +37,7 @@ if (body.classList.contains('Home')) {
     /***********  TESTIMONIAL SLIDER  ***********/
 
     /** Arrows removed as the right arrow was causing horizontal overlfow **/
-    $(document).ready(function(){
+    /*$(document).ready(function(){
       $('.hero').slick({
       dots: true,
       infinite: true,
@@ -48,7 +48,7 @@ if (body.classList.contains('Home')) {
       autoplaySpeed: 10000,
       arrows: false
       });
-    });
+    });*/
 
 }
 

@@ -1,13 +1,13 @@
-.hero__wrap-2.ourstaff {
+.hero__wrap--five {
     background-image: url('../img/staff.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+
 .staff {
     max-width: 1280px;
-    margin: 6em auto 0 auto;
+    margin: 0 auto 0 auto;
     
     &__about {
         font-size: 1.1em;

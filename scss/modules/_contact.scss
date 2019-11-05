@@ -64,14 +64,14 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
 
 
 
-.hero__wrap-2.contact {
+.hero__wrap--eight {
     background-image: url('../img/hero-contact.jpg');
 }
 
 
 .form-wrapper {
     margin: 4em auto 4em auto;
-    padding: 1.5em 1em;
+    //padding: 1.5em 1em;
     max-width: 1280px;
     display: flex;
 }

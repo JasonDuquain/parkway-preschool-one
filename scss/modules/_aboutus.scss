@@ -18,15 +18,8 @@
 }
 
 
-.hero__wrap-2 {
-    background-image: url('../img/hero-aboutus.jpeg');
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5em;
-    background-size: cover;
-    background-attachment: fixed;
+.hero__wrap--two {
+    background-image: url('../img/wall.jpg');
 }
 
 .hero__heading {
@@ -177,10 +170,13 @@
     
 }
 
+/*
+
 .hay {
     grid-column: 2 / 3;
 }
 
+*/
 
 /******* 1st accordion *********/
 /*
@@ -303,6 +299,7 @@
 
 /**************** 2nd accordion *****************/
 
+/*
 
 .about-us-2 {
     max-width: 1280px;
@@ -370,6 +367,7 @@ div.accordion-content {
     font-size: 1.2em;
 }
 
+*/
 
 
 
