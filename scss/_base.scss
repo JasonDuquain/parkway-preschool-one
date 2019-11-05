@@ -34,18 +34,32 @@ body {
 
 section {
     padding: 10em 2em;
+    
+    @include breakpoint (max-width $medium-760) {
+        padding: 8em 1em;
+    }
+    
+    @include breakpoint (max-width $smaller-400) {
+        padding: 6em .5em;
+    }
 }
 
-/* adjusted section around the mark your calender img to better center it  */
-section.current {
-    padding: 2em 2em 5em 0;
-}
+
 
 .pre-heading {
     text-transform: uppercase;
     text-align: center;
     color: $gray-dark;
     margin-bottom: .2em;
+    
+    @include breakpoint (max-width $mobile-hamburger) {
+        font-size: .95em;
+        margin-bottom: .15em;
+    }
+    
+    @include breakpoint (max-width $tiny-369) {
+        font-size: .9em;
+    }
 }
 
 .sect-heading {
@@ -56,6 +70,28 @@ section.current {
     letter-spacing: 2px;
     margin-bottom: .2em;
     color: $gray-darker;
+    
+    @include breakpoint (max-width $mobile-hamburger) {
+        font-size: 2.3em;
+        letter-spacing: 1px;
+    }
+    
+    @include breakpoint (max-width $medium-760) {
+        font-size: 2.1em;
+        letter-spacing: normal;
+    }
+    
+    @include breakpoint (max-width $small-560) {
+        font-size: 1.9em;
+    }
+    
+    @include breakpoint (max-width $smaller-450) {
+        font-size: 1.7em;
+    }
+    
+    @include breakpoint (max-width $tiny-369) {
+        font-size: 1.5em;
+    }
 }
 
 .sect-heading-img {

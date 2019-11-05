@@ -38,8 +38,6 @@
 /*** END STYLES FOR THE MOBILE MENU ANIMATION ***/
 
 
-
-
 .header {
        
     &__top-sect {
@@ -160,7 +158,7 @@
             color: darken(#fff, 15%);
         }
         
-        @include breakpoint (max-width 615px) {
+        @include breakpoint (max-width $small-615) {
             color: #333;
             
             &:hover {
@@ -181,13 +179,17 @@
             padding: 0 1em;
         }
         
+        @include breakpoint (max-width $small-615) {
+            padding: 2em;
+        }
+        
     }
     
     &__logo {
         transform: translateY(-37px);
         margin-bottom: -30px; 
         
-        @include breakpoint (max-width 615px) {
+        @include breakpoint (max-width $small-615) {
             margin-left: auto;
             margin-right: auto;
         }

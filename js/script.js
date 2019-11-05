@@ -13,7 +13,7 @@ let body = document.body;
 /********  CODE FOR THE HOME PAGE  ********/
 if (body.classList.contains('Home')) {
     
-    let tl = new TimelineMax({repeat: 1, yoyo: true, repeatDelay: 2});
+    let tl = new TimelineMax();
 
     let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
 

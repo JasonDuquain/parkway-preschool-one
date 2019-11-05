@@ -6,6 +6,22 @@
         width: 80%;
         margin: 6em auto 8em auto;
         line-height: 1.5;
+        
+        @include breakpoint (max-width $medium-760) {
+            font-size: 1em;
+            margin: 4em auto 5em auto;
+        }
+        
+        @include breakpoint (max-width $small-560) {
+            width: 90%;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+            line-height: 1.4;
+            width: 100%;
+        }
+        
     }
     
     &__main-wrap {
@@ -15,15 +31,30 @@
     
     &__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 2em;
         align-items: center;
+        
+        @include breakpoint (max-width $large-980) {
+            grid-gap: 1em;
+        }
+        
     }
     
     &__wrap {
         background-color: #fff;
         border-radius: 10px;
         border: 1px solid $gray-lighter;
+        
+        @include breakpoint (max-width 622px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
     
     &__image-wrap {
@@ -74,7 +105,7 @@
     }
     
     &__content {
-        padding: 1.5em; 
+        padding: 1em; 
         display: flex;
         flex-direction: column;
     }
@@ -99,7 +130,7 @@
     }
     
     
-    /* 3RD CARD START */
+    /* 3RD CARD START -- is this used??? */
     &__icon-large {
         color: $royalblue !important;
         
@@ -129,6 +160,12 @@
             left: 55%;
             transform: translateX(-50%);
             height: 14px;
+            
+            @include breakpoint (max-width $large-980) {
+                max-width: 240px;
+                left: 50%;
+            }
+            
         }
     }
     
@@ -154,6 +191,11 @@
         font-size: 1.7em;
         font-weight: 300;
         text-align: center;
+        
+        @include breakpoint (max-width $large-980) {
+            font-size: 1.5em;
+            margin: .5em 0 .75em 0;
+        }
     }
     
     &__icon-wrap {
@@ -168,11 +210,20 @@
     
     &__summary {
         line-height: 1.5;
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+            line-height: 1.4;
+        }
     }
     
     &__btn {
         margin: 3em 0;
         align-self: center;
+        
+        @include breakpoint (max-width $smaller-450) {
+            margin: 2em 0;
+        }
     }
     
 

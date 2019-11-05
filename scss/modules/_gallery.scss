@@ -1,16 +1,16 @@
 
-.current {
-    padding-bottom: 0;
+.current-cal {
+    padding: 0 0 3em 0;
     text-align: center;
     
     
     &__image {
-        height: 700px;
-        width: 700px;
+        max-width: 600px;
+        width: 60%;
+        height: auto;
         
-        @include breakpoint (max-width 720px) {
-            height: 325px;
-            width: 325px;
+        @include breakpoint (max-width $small-560) {
+            width: 90%;
         }
     }
     
@@ -29,6 +29,23 @@
         background-color: #000;
         overflow: hidden;
     }
+    
+    @include breakpoint (max-width $mobile-hamburger) {
+        
+        &.fullwidth {
+            flex-wrap: wrap;
+        }
+        
+        &__image-wrap {
+            width: 50%;
+        }
+        
+        &__image-wrap--order {
+            order: -1;
+        }
+    }
+    
+    
     
     &__image {
         width: 100%;
