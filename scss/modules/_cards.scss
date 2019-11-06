@@ -39,6 +39,10 @@
             grid-gap: 1em;
         }
         
+        @include breakpoint (max-width 622px) {
+            grid-gap: 3em 1em;
+        }
+        
     }
     
     &__wrap {

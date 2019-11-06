@@ -8,16 +8,6 @@
 
 
 
-
-.handprints {
-    height: 120px;
-    background-image: url('../img/handprints.jpg');
-    background-position: left bottom;
-    background-size: contain;
-    background-repeat: repeat-x;
-}
-
-
 .hero__wrap--two {
     background-image: url('../img/wall.jpg');
 }
@@ -44,22 +34,39 @@
     
     */
     
-    &__text-svg {
+    
+    /*&__text-svg {
         font-family: 'Bubblegum Sans', sans-serif;
         font-size: 90px;
-    }
+    }*/
     
-    &__tspan-svg {
+    /*&__tspan-svg {
         font-size: 165px;
         letter-spacing: 2px;
-    }
+    }*/
     
-    &__image-svg {
+    /*&__image-svg {
         //height: 70vh;
         width: 100%;
         height: 300px;
         clip-path: url(#svg-path);
         object-fit: cover;
+    }*/
+    
+    &__text-svg {
+        font-family: 'Bubblegum Sans', sans-serif;
+        font-size: 30px;
+    }
+    
+    &__tspan-svg {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    
+    &__image-svg {
+
+        clip-path: url(#svg-path);
+        
     }
     
     &__sect {
