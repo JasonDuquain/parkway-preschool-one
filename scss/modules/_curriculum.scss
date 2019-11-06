@@ -5,6 +5,7 @@
 
 
 .curriculum {
+    padding: 10em 0;
     
     &__hdg {
         font-family: 'Bubblegum Sans', Arial;
@@ -23,7 +24,8 @@
     
     &__sect {
         display: flex;
-        border: 1px solid $gray-lighter;
+        border-top: 1px solid $gray-lighter;
+        border-bottom: 1px solid $gray-lighter;
         margin-bottom: 6em;
     }
     
@@ -32,9 +34,13 @@
     }
     
     &__image {
-        max-width: 720px;
+        max-width: 60%;
         height: auto;
         object-fit: cover;
+        
+        @include breakpoint (max-width $larger-1120) {
+            font-size: 1.55em;
+        }
     }
     
     /* This is necessary to make the bottom ratio section fill the entire height of its contents */
@@ -45,7 +51,7 @@
     
     &__top {
         color: #fff;
-        padding: 1.5em;
+        padding: 1em;
         background-color: $pink-brush;
     }
     
@@ -64,8 +70,9 @@
     &__heading {
         font-family: 'Bubblegum Sans', cursive;
         font-size: 1.6em;
+        line-height: 1.6em;
         text-transform: uppercase;
-        margin-bottom: 1em;
+        margin-bottom: 12px;
         text-align: center;
     }
     
@@ -107,8 +114,12 @@
     }
     
     &__summary {
-        line-height: 1.45;
+        line-height: 1.4;
         font-size: 1.1em;
+        
+        @include breakpoint (max-width $larger-1120) {
+            line-height: 1.35;
+        }
     }
     
     &__link {
@@ -129,7 +140,7 @@
         padding: .75em 1.5em;
         background-color: transparent;
         border-radius: 99em;
-        margin: 2em auto 0 auto;
+        margin: 2em auto 1em auto;
         box-shadow: 1px 1px 3px rgba(0,0,0,.4);
         transition: 
             background-color 300ms ease-out,
@@ -175,12 +186,16 @@
     
     &__bottom {
         color: $gray-dark;
-        padding: 2em;
+        padding: 1.75em;
         display: flex;
         justify-content: space-between;
         
         /* This is necessary to make the bottom ratio section fill the entire height of its contents */
         flex: 1;
+        
+        @include breakpoint (max-width $larger-1120) {
+            padding: 1em;
+        }
     }
     
     &__subheading {
@@ -191,6 +206,10 @@
         align-items: center;
         justify-content: center;
         flex: 1;
+        
+        @include breakpoint (max-width $larger-1120) {
+            font-size: 1.55em;
+        }
     }
     
     &__ratio {
@@ -216,6 +235,10 @@
         font-size: 2em;
         color: $aqua;
         /*transform: translateY(-.35em);*/
+        
+        @include breakpoint (max-width $larger-1120) {
+            font-size: 1.7em;
+        }
     }
     
 }
