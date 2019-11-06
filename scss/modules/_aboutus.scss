@@ -23,7 +23,26 @@
     &__wrap {
         width: 70%;
         margin: 6em auto 0 auto;
+        
+        @include breakpoint (max-width $mobile-hamburger) {
+            width: 80%;
+        }
+        
+        @include breakpoint (max-width $medium-760) {
+            width: 90%;
+        }
+        
+        @include breakpoint (max-width $small-615) {
+            width: 95%;
+        }
+        
+        @include breakpoint (max-width $small-560) {
+            width: 100%;
+        }
+        
     }
+    
+    
     
     /*
     
@@ -53,13 +72,18 @@
         object-fit: cover;
     }*/
     
+    &__svg {
+        width: 100%;
+        height: 100%;
+    }
+    
     &__text-svg {
         font-family: 'Bubblegum Sans', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
     }
     
     &__tspan-svg {
-        font-size: 50px;
+        font-size: 35px;
         letter-spacing: 2px;
     }
     
@@ -123,6 +147,10 @@
     
     &__para {
         margin-bottom: 1em;
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+        }
     }
     
     &__span {
@@ -152,10 +180,34 @@
         grid-column-gap: 1.5em;
         grid-template-columns: min-content 1fr;
         
-        
         opacity: 0;
         transition: all 800ms ease-out;
         transform: translateY(-150%) scale(1.4);
+        
+        @include breakpoint (max-width $medium-840) {
+            font-size: 1.3em;
+            margin: 2.5em 0;
+        }
+        
+        @include breakpoint (max-width $medium-760) {
+            font-size: 1.2em;
+        }
+        
+        @include breakpoint (max-width $small-560) {
+            grid-column-gap: 1em;
+            padding-right: 3em;
+            padding-left: 1.5em;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            padding-right: 2em;
+            padding-left: 1em;
+        }
+        
+        @include breakpoint (max-width $smaller-400) {
+            font-size: 1.1em;
+        }
+        
         
     }
     
@@ -167,7 +219,6 @@
     &__quote span {
         font-family: sans-serif;
         color: $gray-light;
-        //color: $aqua;
         font-size: 8em;
         line-height: .5;
         
@@ -177,13 +228,6 @@
     
 }
 
-/*
-
-.hay {
-    grid-column: 2 / 3;
-}
-
-*/
 
 /******* 1st accordion *********/
 /*
