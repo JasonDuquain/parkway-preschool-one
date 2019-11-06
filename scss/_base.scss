@@ -114,6 +114,12 @@ section {
     background-position: left bottom;
     background-size: contain;
     background-repeat: repeat-x;
+    
+    @include breakpoint (max-width $small-560) {
+        height: 100px;
+        background-size: cover;
+        //background-size: 100% 85%;
+    }
 }
 
 .line__subhdg {
