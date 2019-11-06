@@ -4,21 +4,23 @@
 
 
 .program {
-    
     padding-right: 0;
     padding-left: 0;
-    
     
     &__split--one {
         display: grid;
         grid-template-columns: 1fr 2fr;
         background-color: rgba(0,0,0,.05);
-        margin-top: 7em;
+        margin-top: 2em;
         
         @include breakpoint (max-width $medium-760) {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
-            margin-bottom: 10em;
+            margin-bottom: 16em;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            margin-bottom: 18em;
         }
     }
     
@@ -121,16 +123,21 @@
         @include breakpoint (max-width $medium-760) {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
-            margin-bottom: 15em;
+            margin-bottom: 16em;
         }
         
         @include breakpoint (max-width 500px) {
-            margin-bottom: 27em;
+            margin-bottom: 22em;
         }
         
         @include breakpoint (max-width $smaller-450) {
             /* extra top margin as there looks like margin collapsing */
             margin-top: 16em;
+            margin-bottom: 27em;
+        } 
+        
+        @include breakpoint (max-width $tiny-369) {
+            margin-bottom: 29em;
         } 
     }
     
@@ -192,18 +199,44 @@
     
     
     
-    &__wrap {
-        
+    &__wrap {     
         padding-right: 2em;
         padding-left: 2em;
-        
         max-width: 1280px;
-        margin: 6em auto;
+        margin: 8em auto 6em auto;
+        
+        @include breakpoint (max-width $mobile-hamburger) {
+            margin-bottom: 0;
+        } 
+        
+        @include breakpoint (max-width $small-560) {
+            padding-right: 1em;
+            padding-left: 1em;
+        } 
+        
+        @include breakpoint (max-width $smaller-450) {
+            padding-right: .5em;
+            padding-left: .5em;
+        } 
+        
+        @include breakpoint (max-width $smaller-400) {
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
     
     &__sect {
         margin: 0 auto 3em auto;
         width: 80%;
+        
+        @include breakpoint (max-width $larger-1120) {
+            width: 90%;
+        } 
+        
+        @include breakpoint (max-width $mobile-hamburger) {
+            width: 100%;
+        } 
+        
     }
     
     &__sect-flex {
@@ -212,10 +245,29 @@
         border-radius: 3px;
         overflow: hidden;
         margin-bottom: 8em;
+
+        @include breakpoint (max-width $medium) {
+            flex-direction: column;
+        } 
+        
+        @include breakpoint (max-width $smaller-400) {
+            border: 0;
+            border-radius: 0;
+        }
+    }
+    
+    &__sect-flex:last-of-type {
+        @include breakpoint (max-width $mobile-hamburger) {
+            margin-bottom: 0;
+        } 
     }
     
     &__sect-flex--reverse {
         flex-direction: row-reverse;
+        
+        @include breakpoint (max-width $medium) {
+            flex-direction: column;
+        } 
     }
     
     &__para-wrap {
@@ -225,10 +277,22 @@
     &__para {
         line-height: 1.4;
         padding: 1em 1.5em 1em 1em;
+        
+        @include breakpoint (max-width $medium) {
+            padding: 1em 1em 2em 1em;
+        } 
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+        }
     }
     
     &__para--reverse {
         padding: 1em 1em 1em 1.5em;
+        
+        @include breakpoint (max-width $medium) {
+            padding: 1em 1em 2em 1em;
+        } 
     }
     
     &__link {
@@ -258,6 +322,10 @@
         align-items: center;
         justify-content: center;
         
+        @include breakpoint (max-width $smaller-450) {
+            padding: 2em 1em;
+        }
+        
         &::before {
             content: "";
             transform: rotate(-90deg);
@@ -270,6 +338,14 @@
             height: 12px;
             background-size: 20px 20px;
             background-image: radial-gradient(circle at 10px -5px, transparent 14px, $aqua 16px);
+            
+            @include breakpoint (max-width $medium) {
+                left: 0;
+                top: -12px;
+                transform: rotate(0);
+                
+                /* NEED TO UNDO THE NEGATIVE MARGIN?? */
+            } 
         }
         
         &::after {
@@ -284,16 +360,32 @@
             height: 12px;
             background-size: 40px 20px;
             background-image: radial-gradient(circle at 10px 15px, $aqua 12px, transparent 13px);
+            
+            @include breakpoint (max-width $medium) {
+                left: 0;
+                top: -12px;
+                transform: rotate(0);
+                
+                /* NEED TO UNDO THE NEGATIVE MARGIN?? */
+            } 
         }
     }
     
-    /*** rotation is 90deg not -90 and marging is -22, not -12 ***/
+    /*** rotation is 90deg not -90 and margin is -22, not -12 ***/
     &__table-wrap--reverse {
         &::before {
             transform: rotate(90deg);
             margin-right: -22px;
             right: -100%;
             left: 0;
+            
+            @include breakpoint (max-width $medium) {
+                right: 0;
+                top: -12px;
+                transform: rotate(0);
+                
+                /* NEED TO UNDO THE NEGATIVE MARGIN?? */
+            } 
         }
         
         &::after {
@@ -301,6 +393,14 @@
             margin-right: -22px;
             right: -100%;
             left: 0;
+            
+            @include breakpoint (max-width $medium) {
+                right: 0;
+                top: -12px;
+                transform: rotate(0);
+                
+                /* NEED TO UNDO THE NEGATIVE MARGIN?? */
+            } 
         }
     }
     
@@ -309,12 +409,19 @@
         border-collapse: collapse;
         border: 1px solid #fff;
         transition: all 800ms cubic-bezier(.75, -0.5, .25, 1.32);
+        transform: translateX(200%);
         
-        transform: translateX(200%)
+        @include breakpoint (max-width $smaller-450) {
+            font-size: 1em;
+        }
+        
+        @include breakpoint (max-width $tiny-369) {
+            font-size: .95em;
+        }
     }
     
     &__table--reverse {
-        transform: translateX(-200%)
+        transform: translateX(-200%);
     }
     
     &__table--visible {
@@ -322,12 +429,7 @@
         opacity: 1;
     }
     
-    &__table tr {
-        
-    }
-    
     &__table tr:nth-of-type(1n) {
-        //background-color: $royalblue;
         background-color: transparent;
     }
     
@@ -352,14 +454,20 @@
         text-transform: uppercase;
         text-align: center;
         padding: 1em;
+        
+        @include breakpoint (max-width $smaller-450) {
+            padding: .75em;
+        }
     }
     
     &__table td {
         padding: 1em;
+        
+        @include breakpoint (max-width $smaller-450) {
+            padding: .75em;
+        }
     }
-    
-    
-    
+
     
 }
 

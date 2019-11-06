@@ -6,6 +6,10 @@
     background-repeat: repeat;
     border-bottom: 5px solid $gray-darkest;
     
+    @include breakpoint (max-width $smaller-450) {
+        padding: 2em 1em;
+    }
+    
     &__wrap {
         color: $gray-light;
         margin-bottom: 3em; 
@@ -32,6 +36,10 @@
         grid-gap: 2.5em;
         margin: 3em 0;
         line-height: 1.4;
+        
+        @include breakpoint (max-width $smaller-450) {
+            grid-gap: 3.5em;
+        }
     }
     
     &__subheading {
@@ -122,6 +130,10 @@
     &__copyright {
         text-align: center;
         margin-bottom: .5em;
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+        }
     }
     
     &__design {

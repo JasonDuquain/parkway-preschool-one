@@ -106,6 +106,10 @@ section {
 .sect-heading-img--curriculum, 
 .sect-heading-img--contactus {
     margin-bottom: 10em;
+    
+    @include breakpoint (max-width $medium-760) {
+        margin-bottom: 5em;
+    }  
 }
 
 .handprints {
@@ -127,7 +131,7 @@ section {
     text-transform: uppercase;
     color: $gray-dark;
     font-size: 1.65em;
-    margin: 0 auto 2em auto;
+    margin: 0 auto .75em auto;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-column-gap: .5em;
