@@ -9,6 +9,10 @@
     max-width: 1280px;
     margin: 0 auto 0 auto;
     
+    @include breakpoint (max-width 645px) {
+        padding: 6em 0;
+    }
+    
     &__about {
         font-size: 1.1em;
         width: 80%;
@@ -21,12 +25,35 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 1.5em;
         margin-bottom: 15em;
+        margin-top: 3em;
         justify-items: center;
+        
+        @include breakpoint (max-width 645px) {
+            margin-bottom: 10em;
+            grid-template-columns: 1fr;
+            grid-gap: 7em 0;
+        }
     }
     
     &__individual {
         position: relative;
         width: 300px;
+        
+        @include breakpoint (max-width 1020px) {
+            width: 250px;
+        }
+        
+        @include breakpoint (max-width 870px) {
+            width: 220px;
+        }
+        
+        @include breakpoint (max-width $medium-760) {
+            width: 180px;
+        }
+        
+        @include breakpoint (max-width 645px) {
+            width: 300px;
+        }
     }
     
     &__image {
@@ -43,6 +70,29 @@
         left: 10%;
         right: 10%;
         z-index: 3;
+        
+        @include breakpoint (max-width 1020px) {
+            bottom: -15%;
+        }
+        
+        @include breakpoint (max-width 870px) {
+            padding: 1.2em 1em;
+            bottom: -12%;
+        }
+        
+        @include breakpoint (max-width $medium-760) {
+            left: 5%;
+            right: 5%;
+            bottom: -14.5%;
+        }
+        
+        @include breakpoint (max-width 645px) {
+            padding: 2em;
+            bottom: -12%;
+            left: 10%;
+            right: 10%;
+        }
+
     }
     
     &__summary:hover::after {
@@ -95,6 +145,14 @@
         &:hover {
             color: $royalblue;
         }
+        
+        @include breakpoint (max-width 870px) {
+            font-size: 1.1em;
+        }
+        
+        @include breakpoint (max-width 645px) {
+            font-size: 1.25em;
+        }
     }
     
     &__icon {
@@ -109,6 +167,14 @@
         
         position: relative;
         z-index: 2;
+        
+        @include breakpoint (max-width 870px) {
+            font-size: 1.05em;
+        }
+        
+        @include breakpoint (max-width 645px) {
+            font-size: 1.1em;
+        }
         
     }
     

@@ -278,6 +278,14 @@
         transition: all 600ms ease-out;
     }
     
+    & .header__main-sect {
+        
+        @include breakpoint (max-width $small-615) {
+            padding: 0 1em;
+        }
+        
+    }
+    
     & .header__logo {
         transform: none;
         margin-bottom: 0;
