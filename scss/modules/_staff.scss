@@ -18,6 +18,21 @@
         width: 80%;
         margin: 6em auto 8em auto;
         line-height: 1.5;
+        
+        @include breakpoint (max-width $medium-760) {
+            font-size: 1em;
+            margin: 4em auto 5em auto;
+        }
+        
+        @include breakpoint (max-width $small-560) {
+            width: 90%;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+            line-height: 1.4;
+            width: 95%;
+        }
     }
     
     &__office-wrap {
@@ -179,6 +194,8 @@
     }
     
     
+    
+    
     /******* TEACHERS ******/
     &__teachers {
         
@@ -189,15 +206,25 @@
         grid-template-columns: 1fr 3fr;
         border: 1px solid $gray-lighter;
         margin-bottom: 4em;
+        margin-top: 3em;
+        
+        @include breakpoint (max-width $small-560) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
     }
     
     &__teachers-list {
         position: relative;
         background-color: #fff;
+        
+        @include breakpoint (max-width $small-560) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
     }
     
     &__teachers-hdg {
-        //font-family: 'Bubblegum Sans', Arial;
         background: $aqua;
         height: 93px;
         width: 100%;
@@ -240,6 +267,10 @@
         bottom: 0;
         width: 100%;
         position: absolute;
+        
+        @include breakpoint (max-width $small-560) {
+            display: none;
+        }
     }
     
     &__teachers-btmhdg::before {
@@ -271,14 +302,34 @@
     &__teachers-item {
         padding: 1em;
         text-align: center;
+        
+        @include breakpoint (max-width $small-560) {
+            display: inline-block;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 3vw;
+        }
     }
     
     &__teachers-item--first {
         margin-top: 1em;
+        
+        @include breakpoint (max-width $small-560) {
+            margin-top: 0;
+        }
     }
     
     &__teachers-item--last {
         margin-bottom: calc(93px + 1em);
+        
+        @include breakpoint (max-width $small-560) {
+            margin-bottom: 0;
+            margin-right: 2em;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            margin-right: 1em;
+        }
     }
     
     &__teachers-link {
@@ -313,6 +364,11 @@
     
     &__teachers-table-wrap {
         color: #fff;
+        
+        @include breakpoint (max-width $small-560) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
     }
     
     
@@ -341,16 +397,32 @@
     &__teachers-table td {
         padding: .5em .5em .5em 1em;
         
+        @include breakpoint (max-width $small-560) {
+            font-size: .95em;
+        }
+        
     }
     
-    &__teachers-table td a {
+    /*&__teachers-table td a {
         color: inherit;
         transition: color 300ms ease-out;
         
-        &:hover {
+        &:hover &__teachers-icon {
             color: $aqua;
         }
         
+    }*/
+    
+    &__teachers-icon {
+        width: 1.5em;
+        height: 1.5em;
+        fill: #fff;
+        transform: translateY(1px);
+        transition: fill 350ms ease-out;
+        
+        &:hover {
+            fill: $aqua;
+        }
     }
     
 }
