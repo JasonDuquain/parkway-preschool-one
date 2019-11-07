@@ -74,13 +74,27 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
     //padding: 1.5em 1em;
     max-width: 1280px;
     display: flex;
+    
+    @include breakpoint (max-width $medium-840) {
+        flex-direction: column;
+    }
+    
 }
 
 //CONTACT SECT
+
+.contact {
+    padding: 8em 1em;
+    
+    @include breakpoint (max-width $smaller-400) {
+        padding: 5em 0;
+    }
+}
+
 .contacts {
     background-color: darken($royalblue, 10%);
     color: #fff;
-    padding: 1.5em;
+    padding: 1.25em;
     flex: 1;
 }
 
@@ -88,6 +102,30 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
     display: flex;
     flex-direction: column;
     height: 100%; //why is this needed?
+    
+    @include breakpoint (max-width $medium-840) {
+        flex-direction: row;
+    }
+    
+    @include breakpoint (max-width $tiny-369) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.wrappy--one {
+    margin-bottom: auto;
+    
+    @include breakpoint (max-width $medium-840) {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    
+    @include breakpoint (max-width $tiny-369) {
+        margin-bottom: 3em;
+        margin-right: 0;
+    }
+    
 }
 
 .contact-hdg {
@@ -110,8 +148,14 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
     font-size: .915em;
 }
 
-.contact-list.list-one {
-    margin-bottom: auto;
+.contact-item {
+    @include breakpoint (max-width 890px) {
+        font-size: .95em;
+    }
+    
+    @include breakpoint (max-width $tiny-369) {
+        font-size: 1em;
+    }
 }
 
 .contact-item + .contact-item {
@@ -133,7 +177,11 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
     background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/child-writing.jpg');
     background-size: cover;
     padding: 4em 1.5em;
-    flex: 5;
+    flex: 4;
+    
+    @include breakpoint (max-width $smaller-450) {
+        padding: 2em .75em;
+    }
 }
 
 form {
@@ -156,7 +204,6 @@ form {
     border: 1px solid #ccc; 
     font: inherit;
     color: inherit;  
-    
 }
 
 .field-text input {
@@ -176,7 +223,6 @@ form label {
 
 .field-prefixed {
     display: flex;
-    
     position: relative /* KWES - MAY NOT NEED TEST IT **/
 }
 
@@ -219,6 +265,16 @@ textarea {
     grid-column: 1 / -1;
 }
 
+@include breakpoint (max-width $small-560) {
+    
+    .field-text {
+        grid-column: 1 / -1;
+    }
+        
+}
+
+
+
 .full-width:last-of-type {
     justify-self: center;
 }
@@ -229,7 +285,7 @@ textarea {
     color: #fff;
     border-radius: 6px;
     border: 0;
-    background-image: linear-gradient(lighten($royalblue, 8%), $royalblue);
+    background-image: linear-gradient($royalblue, darken($royalblue, 8%),);
     box-shadow: 1px 1px 2px rgba(0,0,0,.4);
 }
 

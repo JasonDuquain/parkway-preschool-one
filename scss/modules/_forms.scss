@@ -34,6 +34,13 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         font-size: 1.2em;
+        align-self: end;
+        margin-bottom: .1em;
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: 1em;
+        }
+        
     }
     
     &__info {
@@ -41,6 +48,10 @@
         grid-row: 2 / 3;
         font-style: italic;
         align-self: start;
+        
+        @include breakpoint (max-width $smaller-450) {
+            font-size: .95em;
+        }
     }
 }
 
