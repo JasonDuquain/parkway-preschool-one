@@ -339,10 +339,11 @@ window.addEventListener('scroll', (e) => {
     (window.pageYOffset > (highestHeight / 8)) ? bttBtn.classList.add('active') : bttBtn.classList.remove('active');
 });
 
+/* REMOVING THIS SINCE THE BTN HAS A TARGET - TRYING TO GET IT SCROLLING ON MOBILE
 bttBtn.addEventListener('click', (e) => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 });
-
+*/
 
 /****** Copyright year  ********/
 let year = document.querySelector('.year');

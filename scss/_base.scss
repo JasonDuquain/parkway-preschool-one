@@ -25,7 +25,8 @@ body {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
     color: $gray-darkest;
-    //overflow-x: hidden;
+    
+    overflow-x: hidden;
       
     @include breakpoint (max-width 1130px) {
         font-size: .95em;
