@@ -33,6 +33,20 @@
           },
           //defaultDate: '2019-11-01',
           navLinks: true, // can click day/week names to navigate views
+           
+            hiddenDays: [0, 6],
+            
+            windowResize: function(view) {
+                
+                if (window.innerWidth < 600) {
+                    console.log(calendar);
+                    console.log('The calendar has adjusted to a window resize');
+                }
+                
+            
+          },
+		  
+		  
 
           weekNumbers: true,
           weekNumbersWithinDays: true,
