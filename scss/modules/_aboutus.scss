@@ -224,7 +224,7 @@
         transform: translateY(.2em);
         
         @include breakpoint (max-width $small-560) {
-            line-height: .4;
+            line-height: .45;
         }
     }
     
