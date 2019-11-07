@@ -24,6 +24,10 @@
         width: 70%;
         margin: 6em auto 0 auto;
         
+        
+        overflow-x: hidden;
+        
+        
         @include breakpoint (max-width $mobile-hamburger) {
             width: 80%;
         }
