@@ -114,17 +114,19 @@ section {
 }
 
 .handprints {
-    height: 120px;
-    background-image: url('../img/handprints.jpg');
+    height: 140px;
+    background-image: url('../img/handprints-updated.jpg');
     background-position: left bottom;
     background-size: contain;
-    background-repeat: repeat-x;
+    
+    // these allow bg imgs to be repeated without clipping.
+    background-repeat: round; // or space
+    
     
     @include breakpoint (max-width $small-560) {
-        height: 100px;
-        background-size: cover;
-        //background-size: 100% 85%;
+        height: 100px;    
     }
+    
 }
 
 .line__subhdg {
