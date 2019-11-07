@@ -64,81 +64,13 @@ if (body.classList.contains('TheAboutUs')) {
         } 
     });
     
-    
-    
-    
-    
-    
+   
     /****** START 2 -- try to animate page transitions *******/
     /*window.addEventListener('load', (e) => {
         document.querySelector('.TheAboutUs').style.opacity = 1;
         document.querySelector('.empty').style.backgroundColor = 'transparent';
     });*/
     /****** END 2 -- try to animate page transitions *******/
-    
-    
-    
-    
-    
-    
-    
-    /**********  TABS  **********/
-
-    /*let navlist = document.querySelector('.aboutus__navlist');
-    let anchs = document.querySelectorAll('.aboutus__navlist a');
-
-    let sects = document.querySelectorAll('.aboutus__sect-wrap div');
-
-    let sectWrap = document.querySelector('.aboutus__sect-wrap');
-    let sectHeight = sectWrap.scrollHeight;
-
-    navlist.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        if (e.target.tagName === 'A' && !e.target.classList.contains('active')) {
-
-            sects.forEach((el, idx) => {
-
-                el.classList.add('hidden');
-                anchs[idx].classList.remove('active');
-                el.style.height = 0;
-
-                if (e.target.getAttribute('href').slice(1) === el.getAttribute('id')) {
-                    e.target.classList.add('active');
-                    el.classList.remove('hidden');
-                    el.style.height = sectHeight + 'px';
-                }
-
-            });
-        }
-    });*/
-
-    /**********  ACCORDION  **********/
-
-    let accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach((el, idx) => {
-        el.addEventListener('click', function(e) {
-            let content = e.target.nextElementSibling;
-
-            if (content.style.maxHeight) {
-                e.target.classList.remove('is-open');
-                content.style.maxHeight = null;
-                e.target.children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-plus");
-            } else {
-                for (let i = 0; i < accordions.length; i++) {
-                    accordions[i].nextElementSibling.style.maxHeight = null;
-                    accordions[i].classList.remove('is-open'); 
-                    console.log(0)
-                    accordions[i].children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-plus");
-                }
-                content.style.maxHeight = `${content.scrollHeight}px`;
-                e.target.classList.add('is-open');
-                e.target.children[1].children[0].setAttribute("xlink:href", "img/sprite.svg#icon-minus");
-                
-            }
-        });
-    });
 
 }
 
