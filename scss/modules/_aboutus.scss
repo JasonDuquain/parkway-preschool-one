@@ -79,6 +79,7 @@
     &__svg {
         width: 100%;
         height: 100%;
+        
     }
     
     &__text-svg {
@@ -93,7 +94,7 @@
     
     &__image-svg {
 
-        clip-path: url(#svg-path);
+       clip-path: url(#svg-path);
         
     }
     
