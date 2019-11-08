@@ -79,6 +79,7 @@
     &__svg {
         width: 100%;
         height: 100%;
+        margin: 0 auto;
         
     }
     
@@ -89,7 +90,6 @@
     
     &__tspan-svg {
         font-size: 35px;
-        letter-spacing: 2px;
     }
     
     &__image-svg {
