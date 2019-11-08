@@ -7,9 +7,6 @@
 let docElement = document.documentElement;
 let body = document.body;
 
-
-
-
 /********  CODE FOR THE HOME PAGE  ********/
 if (body.classList.contains('Home')) {
     
@@ -34,24 +31,7 @@ if (body.classList.contains('Home')) {
         ease: Power4.easeInOut
     }, .1, "-=2.3")
     
-    /***********  TESTIMONIAL SLIDER  ***********/
-
-    /** Arrows removed as the right arrow was causing horizontal overlfow **/
-    /*$(document).ready(function(){
-      $('.hero').slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 10000,
-      arrows: false
-      });
-    });*/
-
 }
-
 
 /********  CODE FOR THE ABOUT US PAGE  ********/
 if (body.classList.contains('TheAboutUs')) {
@@ -63,73 +43,23 @@ if (body.classList.contains('TheAboutUs')) {
             quote.classList.add('visible');
         } 
     });
-    
-   
-    /****** START 2 -- try to animate page transitions *******/
-    /*window.addEventListener('load', (e) => {
-        document.querySelector('.TheAboutUs').style.opacity = 1;
-        document.querySelector('.empty').style.backgroundColor = 'transparent';
-    });*/
-    /****** END 2 -- try to animate page transitions *******/
 
 }
 
-
-
-/********  CODE FOR THE CONTACT US PAGE  ********/
+/********  CODE FOR THE PROGRAM PAGE  ********/
 if (body.classList.contains('TheProgram')) {
-    
     let tables = document.querySelectorAll('.program__table');
     
     window.addEventListener('scroll', (e) => {
-        
         tables.forEach((el, idx) => {
             
-            if (el.getBoundingClientRect().bottom < window.innerHeight) {
+            if (el.getBoundingClientRect().bottom <= (window.innerHeight + 50)) {
                 el.classList.add('program__table--visible');
             } 
             
-        })
+        });
         
     });
-    
-    
-    
-}
-
-
-
-/********  CODE FOR THE CONTACT US PAGE  ********/
-if (body.classList.contains('ContactUs')) {
-     
-    let inputs = document.querySelectorAll('input:not(.navigation__checkbox), textarea');
-    //let inputs = document.querySelectorAll('.kw-110293, textarea');
-    
-    
-    inputs.forEach((el, idx) => el.addEventListener('focus', changeFocus));
-    inputs.forEach((el, idx) => el.addEventListener('blur', changeBlur));
-    
-    function changeFocus(e) {
-        
-        console.log('this is working why is input focus not??')
-        
-        let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
-        
-        console.log(prevSib);
-        console.log(e.target.parentNode.previousElementSibling);
-        
-        const icon = prevSib.children[0];
-        prevSib.classList.add('background-color');
-        icon.classList.add('icon-color');
-    }
-
-    function changeBlur(e) {
-        let prevSib = e.target.parentNode.previousElementSibling.firstElementChild;
-        const icon = prevSib.children[0];
-        prevSib.classList.remove('background-color');
-        icon.classList.remove('icon-color');
-    }
-     
     
 }
 
@@ -155,16 +85,13 @@ if (body.classList.contains('TheStaff')) {
                 }
             })
         }
-    })
-    
-    
+    });
+      
 }
-
 
 ////////////////////////////////////////
 /********* THESE ARE UNIVERAL **********/
 ////////////////////////////////////////
-
 
 /***********  STICKY HEADER  ***********/
 
@@ -186,20 +113,6 @@ window.addEventListener('scroll', (e) => {
 });
 
 
-
-/*********** HAMBURGER MENU - USES CHECKBOX HACK NOW ***********/
-/*
-
-let hamburgerMenu = document.querySelector('.hamburger-icon');
-
-hamburgerMenu.addEventListener('click', function(e) {
-    this.classList.toggle('interact');
-    header.classList.toggle('hamburger-on');
-});
-
-*/
-
-
 /******* HIGHTLIGHT INDIVIDUAL PAGES ******/
 let menuAnchs = document.querySelectorAll('.header__nav-link');
 
@@ -211,56 +124,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
     });
 });
-
-
-
-
-
-
-
-/****** START -- try to animate page transitions *******/
-/*let aboutUsLink = document.querySelector('.header__nav-link.test');
-let aboutUsItem = document.querySelector('.header__nav-item.testt');
-let emptyDiv = document.querySelector('.empty');
-
-    
-aboutUsLink.addEventListener('click', (e) => {
-
-    e.preventDefault();
-
-    emptyDiv.classList.add('yo');
-
-
-});
-
-emptyDiv.addEventListener('transitionend', (e) => {
-
-    if (e.propertyName.includes('transform')) {
-
-        //alert(99)
-
-        emptyDiv.classList.remove('yo');
-        
-        // PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! 
-        window.location.href = 'http://127.0.0.1:56783/aboutus.html'; 
-        // PORT NUMBER MAY NOT ALWAYS MATCH !!!!!!!! 
-        
-        setTimeout(() => {
-            document.querySelector('.empty').classList.add('yo'); 
-        }, 0)
-    }
-
-});
-*/
-    
-
-/****** END -- try to animate page transitions *******/
-
-
-
-
-
-
 
 
 /********   BACK TO TOP BTN  *********/

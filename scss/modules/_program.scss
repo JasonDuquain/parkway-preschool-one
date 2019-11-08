@@ -47,6 +47,7 @@
         top: 50%;
         transform: translateY(-50%);
         border-top: 5px solid $aqua;
+		max-width: 750px;
         
         @include breakpoint (max-width $mobile-hamburger) {
             padding: 1em;
