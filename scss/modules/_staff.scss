@@ -217,14 +217,14 @@
     &__teachers-list {
         position: relative;
         background-color: #fff;
-        
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
+
         @include breakpoint (max-width $small-560) {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
     
