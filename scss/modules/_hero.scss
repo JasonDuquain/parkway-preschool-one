@@ -14,8 +14,13 @@
         background-attachment: fixed;
         color: rgba(255,255,255,.8);
         position: relative;
-        
+        background-repeat: no-repeat;
         background-position: center center;
+        
+        @include breakpoint (max-width $medium-840) {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
+            height: 55vh;
+        }
     }
     
     &__center {
@@ -24,7 +29,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
     
     &__heading {
         text-transform: uppercase;
@@ -52,6 +56,16 @@
     
 }
 
+.brush {
+    background-image: url('../img/brush-hero-btm.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 63px;
+}
+
 .btn:link, .btn:visited {
     font-size: .8em;
     text-transform: uppercase;
@@ -72,7 +86,6 @@
     }
     
 }
-
 
 
 
