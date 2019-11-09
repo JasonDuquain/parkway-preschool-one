@@ -1,6 +1,10 @@
 
 .hero__wrap--four {
     background-image: url('../img/chalkboard--blue-highres.jpg');
+    
+    @include breakpoint (max-width 500px) {
+        background-image: url('../img/chalkboard--blue-highres--small.jpg');
+    }
 }
 
 

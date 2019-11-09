@@ -1,6 +1,10 @@
 
 .hero__wrap--seven {
     background-image: url('../img/resources.jpg');
+    
+    @include breakpoint (max-width 500px) {
+        background-image: url('../img/resources--small.jpg');
+    }
 }
 
 

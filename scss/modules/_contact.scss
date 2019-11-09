@@ -66,6 +66,10 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
 
 .hero__wrap--eight {
     background-image: url('../img/hero-contact.jpg');
+    
+    @include breakpoint (max-width 500px) {
+        background-image: url('../img/hero-contact--small.jpg');
+    }
 }
 
 

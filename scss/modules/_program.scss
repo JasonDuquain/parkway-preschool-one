@@ -3,6 +3,10 @@
 
 .hero__wrap--three {
     background-image: url('../img/school-room--large.jpg');
+    
+    @include breakpoint (max-width 500px) {
+        background-image: url('../img/school-room--small.jpg');
+    }
 }
 
 
