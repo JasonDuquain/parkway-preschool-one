@@ -22,5 +22,53 @@
 
 
 
+/* fix to make height stay full height of calendar at mobile viewports */
+
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td  {
+    border-color: #000 !important;
+}
+
+.fc-scroller.fc-day-grid-container {
+    height: auto !important;
+}
+
+
+body .fc {
+    
+    @include breakpoint (max-width 670px) {
+        font-size: .9em !important;
+    }
+    
+    @include breakpoint (max-width $small-560) {
+        font-size: .85em !important;
+    }
+    
+    @include breakpoint (max-width $smaller-400) {
+        font-size: .8em !important;
+    }
+    
+}
+
+
+@include breakpoint (max-width $small-560) {
+    .fc-toolbar {
+        flex-wrap: wrap;
+    }
+    
+    .fc-center {
+        flex: 0 0 100%;
+        order: -1;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+    
+    .fc-dayGrid-view .fc-body .fc-row {
+        min-height: 6.25em !important;
+    }
+} 
+
+
+
+
 
 

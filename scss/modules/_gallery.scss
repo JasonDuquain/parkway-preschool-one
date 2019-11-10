@@ -1,25 +1,41 @@
 
 .current-cal {
-    max-width: 1280px;
+    /* use a low max-width to keep the text size the same until 600pm then it scales down as the viewport width decreases */
+    max-width: 600px;
     margin: 0 auto 8em auto;
-    padding: 0 2em;
+    padding: 0 1em;
     text-align: center;
+    
+    @include breakpoint (max-width $smaller-450) {
+        padding: 0 .5em;
+    }
+    
 }
 
 .current-cal--svg {
-    width: 100%;
+    width: 75%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .current-cal--text {
     font-family: 'Bubblegum Sans', sans-serif;
-    font-size: .55em;
+    font-size: 3em;
     text-anchor: middle;
 }
 
 .current-cal--list {
+    margin-top: 2em;
     display: inline-block;
     text-align: left;
+    
+    @include breakpoint (max-width 500px) {
+        font-size: .9em;
+    }
+    
+    @include breakpoint (max-width $smaller-400) {
+        font-size: .87em;
+    }
 }
 
 .current-cal--item {
@@ -27,9 +43,15 @@
 }
 
 .current-cal--span {
-    font-weight: 700;
+    font-style: italic;
 }
 
+.current-cal--img {
+    width: 15px;
+    display: inline-block;
+    transform: translateY(3px);
+    margin-right: 3px;
+}
 
 .gallery {
     
