@@ -10,27 +10,27 @@ let body = document.body;
 /********  CODE FOR THE HOME PAGE  ********/
 if (body.classList.contains('Home')) {
     
-    let tl = new TimelineMax();
+    window.addEventListener('load', (e) => {
+        
+        let tl = new TimelineMax();
 
-    let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
+        let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
 
-    /*tl.from('.hero__wrap .btn', 2.4, {
-        y: 500,
-        opacity: 0,
-        ease: Power2.easeOut
-    })*/
-    tl.from('.hero__wrap .hero__heading', 2.5, {
-        scale: 5,
-        opacity: 0,
-        transformOrigin: '50% 50%',
-        ease: Power2.easeOut
+        tl.from('.hero__wrap .hero__heading', 2.5, {
+            scale: 5,
+            opacity: 0,
+            transformOrigin: '50% 50%',
+            ease: Power2.easeOut
+        })
+        .staggerFrom(perfect.chars, .7, {
+            y: 70,
+            opacity: 0,
+            rotation: -30,
+            ease: Power4.easeInOut
+        }, .1, "-=1.7")
+        
     })
-    .staggerFrom(perfect.chars, .7, {
-        y: 70,
-        opacity: 0,
-        rotation: -30,
-        ease: Power4.easeInOut
-    }, .1, "-=1.7")
+    
     
     
     let dates = document.querySelectorAll('.current-cal--item');
