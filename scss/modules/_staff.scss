@@ -4,6 +4,7 @@
     background-position: bottom;
 }
 
+/**** iPhones landscape *****/
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -42,6 +43,58 @@
     .hero__wrap--five {
         background-position: center;
     } 
+}
+
+/******* Galaxy Phones landscape *******/
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    .hero__wrap {
+          background-position: center;
+      }
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    .hero__wrap {
+          background-position: center;
+      }
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+    .hero__wrap {
+          background-position: center;
+      }
+}
+
+/******* Pixel Phones landscape *******/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    .hero__wrap {
+          background-position: center;
+      }
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+    .hero__wrap {
+          background-position: center;
+      }
 }
 
 

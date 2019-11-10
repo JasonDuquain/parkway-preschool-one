@@ -1,11 +1,3 @@
-/* IF YOU KEEP THE MOBILE ANIMATION THEN JUST ADD THESE STYLES TO THE MAIN BODY element CLASS */
-/*
-.TheAboutUs {
-    opacity: 0;
-    transition: opacity 400ms ease-in;
-}
-*/
-
 
 .hero__wrap--two {
     background-image: url('../img/wall.jpg');
@@ -49,8 +41,7 @@
         }
         
     }
-    
-      
+     
     /*
     
     To make the font-size change a little smoother when the size of the
@@ -141,7 +132,6 @@
     }
     
     &__span {
-        //color: $aqua;
         font-weight: 700;
     }
     
