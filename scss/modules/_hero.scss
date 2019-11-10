@@ -23,7 +23,6 @@
         background-position: center center;
         
         @include breakpoint (max-width 500px) {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
             height: 55vh;
             background-attachment: scroll;
         }
@@ -69,7 +68,6 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
       .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -81,7 +79,6 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -93,7 +90,6 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -105,7 +101,6 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -118,7 +113,6 @@
   and (-webkit-device-pixel-ratio: 2) 
   and (orientation: landscape) {
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -130,7 +124,6 @@
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -142,7 +135,6 @@
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: landscape) {
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -155,7 +147,6 @@
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }
@@ -167,7 +158,6 @@
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: landscape) {
     .hero__wrap {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
           height: 65vh;
           background-attachment: scroll;
       }

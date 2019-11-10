@@ -93,14 +93,20 @@
         height: 1.2em;
     }
     
+    /* Fix for iphone safari browser showing blue text */
+    &__telephone a {
+        color: $gray-light !important;
+    }
+    
+    &__fax {
+        color: $gray-light !important;
+    }
+    
     &__shape {
         background-image: url('../img/shape_bottom.png');
-        background-repeat: no-repeat;
-        //background-position: 50% 0%;
-        
+        background-repeat: no-repeat;       
         width: 300px;
-        height: 45px;
-        
+        height: 45px;      
         position: absolute;
         bottom: 0;
         left: 50%;

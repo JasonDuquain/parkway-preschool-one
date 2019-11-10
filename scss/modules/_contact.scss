@@ -166,6 +166,11 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
     margin-top: .3em;
 }
 
+/* Fix for iphone safari browser showing blue text */
+.contact-item--gray {
+    color: $gray-light !important;
+}
+
 .contact-item.hours {
     color: $aqua;
     margin-top: 0;
