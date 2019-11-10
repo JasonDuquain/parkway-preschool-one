@@ -12,9 +12,13 @@ if (body.classList.contains('Home')) {
     
     window.addEventListener('load', (e) => {
         
+        TweenMax.set('.hero__heading', {visibility: 'visible'});
+        TweenMax.set('.hero__subheading', {visibility: 'visible'});
+        
         let tl = new TimelineMax();
 
         let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
+        
 
         tl.from('.hero__wrap .hero__heading', 2.5, {
             scale: 5,
@@ -29,8 +33,7 @@ if (body.classList.contains('Home')) {
             ease: Power4.easeInOut
         }, .1, "-=1.7")
         
-    })
-    
+    });
     
     
     let dates = document.querySelectorAll('.current-cal--item');

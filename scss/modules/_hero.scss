@@ -39,6 +39,7 @@
         letter-spacing: 2px;
         line-height: 1;
         
+        visibility: hidden;
         
         @include breakpoint (max-width $medium) {
             font-size: 10.3vw;
@@ -48,6 +49,9 @@
     
     &__subheading {
         font-size: 3.5em;
+        
+        visibility: hidden;
+        
         
         @include breakpoint (max-width $medium) {
             font-size: 7.7vw;
