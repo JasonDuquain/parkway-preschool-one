@@ -1,5 +1,8 @@
 
 .header {
+    
+    overflow-x: hidden;
+    
        
     &__top-sect {
         border-top: 5px solid $gray-darker; 
@@ -65,7 +68,7 @@
         }
 
         @include breakpoint (max-width 615px) {
-            right: .25em;
+            left: .5em;
             
             // allow phone # to go above logo
             z-index: 5565;
@@ -134,12 +137,10 @@
         align-items: center;
         padding: 0 2em;
         
+        overflow-x: hidden;
+        
         @include breakpoint (max-width 1020px) {
             padding: 0 1em;
-        }
-        
-        @include breakpoint (max-width $small-615) {
-            padding: 2em;
         }
         
     }
@@ -235,14 +236,6 @@
         transition: all 600ms ease-out;
     }
     
-    & .header__main-sect {
-        
-        @include breakpoint (max-width $small-615) {
-            padding: 0 1em;
-        }
-        
-    }
-    
     & .header__logo {
         transform: none;
         margin-bottom: 0;
@@ -254,6 +247,14 @@
     
     & .header__nav-item.has-submenu::after {
         color: #fff;
+    }
+    
+    & .navigation__button {
+        top: 20px;
+    }
+    
+    & .navigation__background {
+        top: 25px;
     }
     
 }
@@ -278,6 +279,14 @@
         box-shadow: 0 1.5em 2em rgba(#000, .1);
         text-align: center;
         cursor: pointer;
+        
+        @include breakpoint (max-width $small-615) {
+            top: 35px;
+        }
+        
+        @include breakpoint (max-width $tiny-369) {
+            right: 5px;
+        }
     }
 
     .navigation__background {
@@ -289,8 +298,15 @@
         right: 20px;
         background-image: radial-gradient(rgba($royalblue, .9), rgba($aqua, .9));
         z-index: 1000;
-
         transition: transform 800ms cubic-bezier(.86, 0, .07, 1);
+        
+        @include breakpoint (max-width $small-615) {
+            top: 40px;
+        }
+        
+        @include breakpoint (max-width $tiny-369) {
+            right: 10px;
+        }
     }
 
     .header__nav {
