@@ -1,5 +1,10 @@
+
+
+
+
+
 .hero--overflow {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -56,6 +61,56 @@
     }
     
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      .hero__wrap {
+          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
+          height: 65vh;
+          background-attachment: scroll;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .hero__wrap {
+          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
+          height: 65vh;
+          background-attachment: scroll;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .hero__wrap {
+          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
+          height: 65vh;
+          background-attachment: scroll;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .hero__wrap {
+          background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/hero-paid--small.jpg');
+          height: 65vh;
+          background-attachment: scroll;
+      }
+}
+
+
 
 .brush {
     background-image: url('../img/brush-hero-btm.png');

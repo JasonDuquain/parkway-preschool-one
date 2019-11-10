@@ -475,10 +475,36 @@
     .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
         transform: translateY(0) rotate(-135deg);
     }
-    
-    
 
 
 }
 
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      .header__nav-link {
+          font-size: .8em;
+      }
+      
+      .header__nav-item {
+          padding: .5em .75em;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .header__nav-link {
+          font-size: .82em;
+      }
+      
+      .header__nav-item {
+          padding: .5em .75em;
+      }
+}
 
