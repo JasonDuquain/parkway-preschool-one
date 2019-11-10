@@ -5,7 +5,7 @@
     <meta charset="UTF-8"> 
     <meta name="description" content="Parkway Presbyterian Preschool and Kindergarten is a private Christian preschool founded in 1999 and currently serves 175 children ages 2 years through 5 years. The program is accredited by the North Georgia Preschool Association and is recognized as a School of Excellence. Our mission is to partner with parents to offer a loving, nurturing, and Christ-filled environment where each child can be encouraged to develop their unique personalities and God-given talents."> 
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Bubblegum+Sans&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font/flaticon.css">
@@ -91,9 +91,9 @@
     <div class="hero hero--overflow" id="hdr">
         <div class="hero__wrap">
            <div class="hero__center">
-                <h1 class="hero__heading" style="letter-spacing: 2px;"><span style="font-size: .7em;">ccAt</span> Parkway Preschool</h1>
-                <h2 class="hero__subheading">Every Child<span class="hero__subheading--span"> Matters</span></h2>
-                <!--<a href="#" class="btn">Important Items for the 2019 Year</a>-->
+                <h1 class="hero__heading" style="letter-spacing: 2px;">Welcome</h1>
+                <h2 class="hero__subheading">to Parkway<span class="hero__subheading--span"> Preschool</span></h2>
+                <a href="#" class="btn">Helping parents choose, preparing children to learn.</a>
                 
            </div> 
            <div class="brush"></div> 
@@ -160,9 +160,42 @@
        </div>
         
     </section>
-    
+
     <section class="current-cal">
-        <img class="current-cal__image" src="img/mark-your-calender.svg" alt="monthly events list">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="current-cal--svg" viewBox="0 0 188 20">
+              <defs>
+                 <linearGradient id="myGradient">
+                  <stop offset="5%"  stop-color="hsl(200, 99%, 40%)" />
+                  <stop offset="30%" stop-color="hsl(219, 70%, 35%)" />
+                  <stop offset="100%"  stop-color="hsl(200, 99%, 40%)" />
+                </linearGradient>
+                
+              </defs>
+              <text x="50%" y="15" class="current-cal--text" fill="url('#myGradient')">
+                  Mark Your Calendar!     
+              </text>
+          </svg>
+          <ul class="current-cal--list">
+              <li class="current-cal--item">
+                  <svg class="contact-icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar" />
+                  </svg>
+                  November 11: <span class="current-cal--span">Veterans Day (wear red, white, and blue)</span>
+              </li>
+              <li class="current-cal--item">
+                  <svg class="contact-icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar" />
+                  </svg>
+                 November 21&ndash;22: <span class="current-cal--span">Thanksgiving Feasts (11:00AM)</span>
+                  </li>
+              <li class="current-cal--item">
+                  <!--<svg class="contact-icon">
+                      <use xlink:href="img/sprite.svg#icon-calendar" />
+                  </svg>-->
+                  <img src="img/aqua-circle-bubble.png" width="14" alt="">
+                  November 25&ndash;29: <span class="current-cal--span">Thanksgiving Break (NO SCHOOL)</span>
+              </li>
+          </ul>
     </section>
     
     <section class="gallery fullwidth">
