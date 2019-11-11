@@ -22,13 +22,13 @@ if (body.classList.contains('Home')) {
             let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
 
 
-            tl.from('.hero__wrap .hero__heading', 2.5, {
+            tl.from('.hero__wrap .hero__heading', 2.8, {
                 scale: 5,
                 opacity: 0,
                 transformOrigin: '50% 50%',
                 ease: Power2.easeOut
             })
-            .staggerFrom(perfect.chars, .3, {
+            .staggerFrom(perfect.chars, .28, {
                 y: 70,
                 opacity: 0,
                 rotation: -30,
@@ -36,7 +36,7 @@ if (body.classList.contains('Home')) {
                 onComplete: function() {
                     sessionStorage.setItem('animation', 'complete');
                 }
-            }, .09, "-=1.8")
+            }, .07, "-=1.8")
 
         });
         
