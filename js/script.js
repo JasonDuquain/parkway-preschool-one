@@ -10,32 +10,42 @@ let body = document.body;
 /********  CODE FOR THE HOME PAGE  ********/
 if (body.classList.contains('Home')) {
     
-    window.addEventListener('load', (e) => {
+    if (!sessionStorage.getItem('animation')) {
         
+        window.addEventListener('load', (e) => {
+
+            TweenMax.set('.hero__heading', {visibility: 'visible'});
+            TweenMax.set('.hero__subheading', {visibility: 'visible'});
+
+            let tl = new TimelineMax();
+
+            let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
+
+
+            tl.from('.hero__wrap .hero__heading', 2.5, {
+                scale: 5,
+                opacity: 0,
+                transformOrigin: '50% 50%',
+                ease: Power2.easeOut
+            })
+            .staggerFrom(perfect.chars, .3, {
+                y: 70,
+                opacity: 0,
+                rotation: -30,
+                ease: Power4.easeOut,
+                onComplete: function() {
+                    sessionStorage.setItem('animation', 'complete');
+                }
+            }, .09, "-=1.8")
+
+        });
+        
+    } else {
         TweenMax.set('.hero__heading', {visibility: 'visible'});
         TweenMax.set('.hero__subheading', {visibility: 'visible'});
-        
-        let tl = new TimelineMax();
-
-        let perfect = new SplitText('.hero__wrap .hero__subheading', {type: 'chars, lines'})
-        
-
-        tl.from('.hero__wrap .hero__heading', 2.5, {
-            scale: 5,
-            opacity: 0,
-            transformOrigin: '50% 50%',
-            ease: Power2.easeOut
-        })
-        .staggerFrom(perfect.chars, .3, {
-            y: 70,
-            opacity: 0,
-            rotation: -30,
-            ease: Power4.easeOut
-        }, .09, "-=1.8")
-        
-    });
+    }
     
-    
+
     let dates = document.querySelectorAll('.current-cal--item');
     
     window.addEventListener('scroll', (e) => {
