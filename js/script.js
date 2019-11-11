@@ -26,12 +26,12 @@ if (body.classList.contains('Home')) {
             transformOrigin: '50% 50%',
             ease: Power2.easeOut
         })
-        .staggerFrom(perfect.chars, .7, {
+        .staggerFrom(perfect.chars, .3, {
             y: 70,
             opacity: 0,
             rotation: -30,
-            ease: Power4.easeInOut
-        }, .1, "-=1.7")
+            ease: Power4.easeOut
+        }, .09, "-=1.8")
         
     });
     

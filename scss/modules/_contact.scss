@@ -8,8 +8,6 @@ temp fix to kwes removing the class name from the form
 
 */
 
-
-
 /*
 KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width needs to be added to this span but I still might need to account for the submit button any time is is a button element and NOT a input type=submit element
 */
@@ -65,17 +63,21 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
 
 
 .hero__wrap--eight {
-    background-image: url('../img/hero-contact.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../img/hero-contact.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include breakpoint (max-width 500px) {
-        background-image: url('../img/hero-contact--small.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.2)), url('../img/hero-contact--small.jpg');
     }
 }
 
 
+
 .form-wrapper {
     margin: 4em auto 4em auto;
-    //padding: 1.5em 1em;
     max-width: 1280px;
     display: flex;
     
@@ -168,7 +170,7 @@ KWES WRAPS EACH INPUT ELEMENT IN A SPAN .kw-field-wrapper so the 100% width need
 
 /* Fix for iphone safari browser showing blue text */
 .contact-item--gray {
-    color: $gray-light !important;
+    color: #fff;
 }
 
 .contact-item.hours {

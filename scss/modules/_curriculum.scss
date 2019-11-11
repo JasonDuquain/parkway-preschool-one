@@ -1,10 +1,16 @@
 
+
 .hero__wrap--four {
     background-image: url('../img/chalkboard--blue-highres.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include breakpoint (max-width 500px) {
         background-image: url('../img/chalkboard--blue-highres--small.jpg');
     }
+
 }
 
 

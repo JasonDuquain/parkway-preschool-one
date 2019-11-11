@@ -52,7 +52,6 @@
         
         visibility: hidden;
         
-        
         @include breakpoint (max-width $medium) {
             font-size: 7.7vw;
         }

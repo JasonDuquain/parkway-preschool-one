@@ -1,13 +1,18 @@
 /* MAY NEED TO ADD OVERFLOW-X: HIDDEN ON TABLE OR TABLE WRAPPER ELEMENTS SINCE THEY ARE OFFSCREEN HORIZONTALLY AND THE ANIMATED IN */
 
+
 .hero__wrap--three {
-    background-image: url('../img/school-room--large.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../img/school-room--large.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include breakpoint (max-width 500px) {
-        background-image: url('../img/school-room--small.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../img/school-room--small.jpg');
     }
-}
 
+}
 
 .program {
     padding-right: 0;

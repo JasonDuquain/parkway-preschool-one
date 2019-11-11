@@ -134,7 +134,6 @@
         align-items: center;
         padding: 0 2em;
         
-        overflow-x: hidden;
         
         @include breakpoint (max-width 1020px) {
             padding: 0 1em;
@@ -257,7 +256,6 @@
 }
 
 
-
 .navigation__checkbox {
     display: none;
 }
@@ -362,14 +360,6 @@
     .header__nav-item:hover .header__nav-link {
         color: #fff;
     }
-    
-    /*.header__nav-item.has-submenu::after {
-        color: $royalblue;
-    }*/
-    
-    /*.header__nav-item.has-submenu:hover::after {
-        color: #fff;
-    }*/
 
     .header__nav-link.clicked {
         color: #fff;
@@ -411,28 +401,6 @@
     .header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item:hover .header__nav-link  {
         color: #fff;
     }
-    
-    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu::after {
-        color: $royalblue;
-    }*/
-    
-    /*.navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
-        color: #fff;
-    }*/
-    
-    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.clicked-parent.has-submenu::after  {
-        color: #fff;
-    }*/
-    
-    /*.header.sticky .navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover::after {
-        color: #fff;
-    }*/
-    
-    /*.navigation__checkbox:checked ~ .header__nav .header__nav-item.has-submenu:hover > ul {
-        opacity: 0;
-        visibility: hidden;
-        top: 300%;
-    }*/
 
     .navigation__icon {
         position: relative;

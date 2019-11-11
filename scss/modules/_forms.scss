@@ -1,10 +1,18 @@
 
+
 .hero__wrap--seven {
-    background-image: url('../img/resources.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../img/business-girl--large.jpg');
+    background-attachment: scroll;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include breakpoint (max-width 500px) {
-        background-image: url('../img/resources--small.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../img/business-girl--small.jpg');
     }
+
 }
 
 
