@@ -23,6 +23,7 @@
         grid-template-columns: 1fr 2fr;
         background-color: rgba(0,0,0,.05);
         margin-top: 2em;
+        position: relative;
         
         @include breakpoint (max-width $medium-760) {
             grid-template-columns: 1fr;
@@ -32,6 +33,21 @@
         
         @include breakpoint (max-width $smaller-450) {
             margin-bottom: 18em;
+        }
+        
+        @include breakpoint (max-width $smaller-450) {
+            
+            &::before {
+                content: "";
+                background-color: $gray-lighter;
+                width: 50px;
+                height: 2px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -13.5em;
+            }
+            
         }
     }
     
@@ -50,7 +66,7 @@
     
     &__translate {
         padding: 2em;
-        background-color: #fff;
+        background-color: rgba(255,255,255,.85);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -119,6 +135,7 @@
             max-width: 100%;
             height: auto;
             display: block;
+            border: 1px solid $gray-lighter;
         
             /* this is needed to get it to expand width to the right */
             margin-left: auto; 
@@ -164,6 +181,7 @@
             max-width: 120%;
             height: auto;
             display: block;
+            border: 1px solid $gray-lighter;
             
             @include breakpoint (max-width $medium-760) {
                 max-width: 100%;

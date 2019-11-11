@@ -20,6 +20,7 @@
         @include breakpoint (max-width 500px) {
             height: 55vh;
             background-attachment: scroll;
+            background-position: 20% center;
         }
     }
     
@@ -35,25 +36,25 @@
     
     &__heading {
         font-weight: 300;
-        font-size: 6em;
+        font-size: 5.9em;
         letter-spacing: 2px;
         line-height: 1;
         
         visibility: hidden;
         
         @include breakpoint (max-width $medium) {
-            font-size: 10.3vw;
+            font-size: 11.6vw;
         }
         
     }
     
     &__subheading {
-        font-size: 3.5em;
+        font-size: 3.3em;
         
         visibility: hidden;
         
         @include breakpoint (max-width $medium) {
-            font-size: 7.7vw;
+            font-size: 6.8vw;
         }
         
         &--span {
