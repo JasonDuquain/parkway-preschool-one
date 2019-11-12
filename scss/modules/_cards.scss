@@ -125,22 +125,15 @@
         }
     }
     
+    /* FIX FOR IE11 - just using scale for all browers */
     &__icon.flaticon-kindergarten {
-        &::before {
-           margin: 0 !important;
+        transform: scale(1.15);
+        
+        /*&::before {
+           
            font-size: 3.2em !important;
         
-        }
-    }
-    
-    
-    /* 3RD CARD START -- is this used??? */
-    &__icon-large {
-        color: $royalblue !important;
-        
-        &::before {
-            font-size: 3em;
-        }
+        }*/
     }
     
     &__subheading-brush {

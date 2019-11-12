@@ -54,6 +54,10 @@
         position: absolute; 
         right: 4em;
         top: 50%;
+        
+        // FIX FOR IE11
+        transform: translateY(-50%) translateY(-5px);
+        
         transform: translateY(calc(-50% - 5px));
         color: #fff;
         display: flex;
