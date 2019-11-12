@@ -12,7 +12,7 @@ if (body.classList.contains('Home')) {
     
     if (!sessionStorage.getItem('animation')) {
         
-        window.addEventListener('load', (e) => {
+        window.addEventListener('load', function(e) {
 
             TweenMax.set('.hero__heading', {visibility: 'visible'});
             TweenMax.set('.hero__subheading', {visibility: 'visible'});
@@ -48,8 +48,8 @@ if (body.classList.contains('Home')) {
 
     let dates = document.querySelectorAll('.current-cal--item');
     
-    window.addEventListener('scroll', (e) => {
-        dates.forEach((el, idx) => {
+    window.addEventListener('scroll', function (e) {
+        Array.prototype.slice.call(dates).forEach(function(el, idx) {
             
             if (el.getBoundingClientRect().bottom <= (window.innerHeight + 50)) {
                 el.classList.add('current-cal--item--visible');
@@ -67,7 +67,7 @@ if (body.classList.contains('TheAboutUs')) {
     
     let quote = document.querySelector('.aboutus__quote');
     
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', function (e) {
         if (quote.getBoundingClientRect().bottom < window.innerHeight / 1.5) {
             quote.classList.add('visible');
         } 
@@ -79,8 +79,8 @@ if (body.classList.contains('TheAboutUs')) {
 if (body.classList.contains('TheProgram')) {
     let tables = document.querySelectorAll('.program__table');
     
-    window.addEventListener('scroll', (e) => {
-        tables.forEach((el, idx) => {
+    window.addEventListener('scroll', function (e) {
+        Array.prototype.slice.call(tables).forEach(function (el, idx) {
             
             if (el.getBoundingClientRect().bottom <= (window.innerHeight + 50)) {
                 el.classList.add('program__table--visible');
@@ -98,12 +98,12 @@ if (body.classList.contains('TheStaff')) {
     let staffLinks = document.querySelectorAll('.staff__teachers-link');
     let staffDivs = document.querySelectorAll('.staff__teachers-listout');
     
-    staffUl.addEventListener('click', (e) => {
+    staffUl.addEventListener('click', function (e) {
         e.preventDefault();
         
         if (e.target.classList.contains('staff__teachers-link') && !e.target.classList.contains('staff__teachers-link--current')) {
             
-            staffLinks.forEach((el, idx) => {
+            Array.prototype.slice.call(staffLinks).forEach(function  (el, idx) {
                 el.classList.remove('staff__teachers-link--current');
                 staffDivs[idx].classList.remove('staff__teachers-listout--visible');
                 e.target.classList.add('staff__teachers-link--current');
@@ -129,7 +129,7 @@ let hero = document.querySelector('.hero');
 let headerHeight = header.getBoundingClientRect().height + 'px';
 
 
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', function (e) {
     
     if (hero.getBoundingClientRect().top < -1) {
         header.classList.add('sticky');
@@ -145,8 +145,8 @@ window.addEventListener('scroll', (e) => {
 /******* HIGHTLIGHT INDIVIDUAL PAGES ******/
 let menuAnchs = document.querySelectorAll('.header__nav-link');
 
-document.addEventListener('DOMContentLoaded', (e) => {
-    menuAnchs.forEach((el) => {    
+document.addEventListener('DOMContentLoaded', function (e) {
+    Array.prototype.slice.call(menuAnchs).forEach(function (el) {    
         if (body.className === el.getAttribute('data-title').replace(/\s/, "")) {
             el.classList.add('clicked');
             el.parentNode.classList.add('clicked-parent');
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 let bttBtn = document.querySelector('.js-btt-btn');
 let highestHeight = docElement.scrollHeight;
 
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', function (e) {
     (window.pageYOffset > (highestHeight / 8)) ? bttBtn.classList.add('active') : bttBtn.classList.remove('active');
 });
 
