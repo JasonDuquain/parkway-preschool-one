@@ -129,18 +129,35 @@
         }
     }
     
+
     &__office-wrap {
+        
+        /***** NOT -ms-display: grid ****/
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 1.5em;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;   
+        
+        /** if its IE 11 then I have added margin to make up for this **/
+        @supports (display: grid) {
+            grid-column-gap: 1.5em;
+        }
+        
         margin-bottom: 15em;
         margin-top: 3em;
         justify-items: center;
         
         @include breakpoint (max-width 645px) {
             margin-bottom: 10em;
+            
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
-            grid-gap: 7em 0;
+            
+            /** if its IE 11 then I have added margin to make up for this **/
+            @supports (display: grid) {
+                grid-gap: 7em 0;
+            }
+             
         }
     }
     
@@ -162,6 +179,40 @@
         
         @include breakpoint (max-width 645px) {
             width: 300px;
+            
+            /*** remove the margin declared below the @supports for browsers that support grid ***/
+            @supports (display: grid) {
+                margin: 0;
+            }
+            
+            /*** fallback for grid-gap **/
+            margin: 0 auto 7em auto;
+        }
+    }
+    
+    &__individual:first-of-type {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        
+    }
+    
+    &__individual:nth-of-type(2) {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        
+        @include breakpoint (max-width 645px) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+    }
+    
+    &__individual:nth-of-type(3) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+        
+        @include breakpoint (max-width 645px) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3;
         }
     }
     
@@ -255,8 +306,6 @@
         }
         
         
-        
-        
     }
     
     &__summary:hover::after {
@@ -348,21 +397,26 @@
     
     
     
-    
     /******* TEACHERS ******/
     &__teachers {
         
     }
     
     &__teachers-grid {
+        
         display: grid;
+        display: -ms-grid;
         grid-template-columns: 1fr 3fr;
+        -ms-grid-columns: 1fr 3fr;
+        
         border: 1px solid $gray-lighter;
         margin-bottom: 4em;
         margin-top: 3em;
         
         @include breakpoint (max-width $small-560) {
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
+            
             grid-template-rows: auto auto;
         }
     }
@@ -370,8 +424,13 @@
     &__teachers-list {
         position: relative;
         background-color: #fff;
+        
+        -ms-grid-column: 1;
+         -ms-grid-row: 1;
 
         @include breakpoint (max-width $small-560) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             
@@ -517,7 +576,12 @@
     &__teachers-table-wrap {
         color: #fff;
         
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        
         @include breakpoint (max-width $small-560) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
@@ -553,16 +617,6 @@
         }
         
     }
-    
-    /*&__teachers-table td a {
-        color: inherit;
-        transition: color 300ms ease-out;
-        
-        &:hover &__teachers-icon {
-            color: $aqua;
-        }
-        
-    }*/
     
     &__teachers-icon {
         width: 1.5em;
