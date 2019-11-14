@@ -398,9 +398,6 @@
     
     
     /******* TEACHERS ******/
-    &__teachers {
-        
-    }
     
     &__teachers-grid {
         
@@ -426,7 +423,7 @@
         background-color: #fff;
         
         -ms-grid-column: 1;
-         -ms-grid-row: 1;
+        -ms-grid-row: 1;
 
         @include breakpoint (max-width $small-560) {
             -ms-grid-column: 1;
