@@ -105,9 +105,12 @@
     }
     
     /* This is necessary to make the bottom ratio section fill the entire height of its contents */
-    &__main {
-        display: flex;
-        flex-direction: column;
+    /* flexbox fix for IE11 **/
+    @supports (display: grid) {
+        &__main {
+            display: flex;
+            flex-direction: column;
+        }    
     }
     
     &__top {

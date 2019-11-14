@@ -19,15 +19,20 @@
     padding-left: 0;
     
     &__split--one {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
+        
         background-color: rgba(0,0,0,.05);
         margin-top: 2em;
         position: relative;
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
+            
             margin-bottom: 16em;
         }
         
@@ -52,13 +57,18 @@
     }
     
     &__split-cell--one {
+        -ms-grid-column: 1;
         grid-column: 1 / 2;
+        
         position: relative;
         text-align: right;
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-column: 1;
             grid-column: 1 / 2;
+            -ms-grid-row: 2;
             grid-row: 2 / 3;
+            
             text-align: left;
         }       
 
@@ -124,10 +134,13 @@
     
     
     &__split-cell--two {
+        -ms-grid-column: 2;
         grid-column: 2 / 3;
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-column: 1;
             grid-column: 1 / 2;
+            -ms-grid-row: 1;
             grid-row: 1 / 2;
         }  
         
@@ -145,13 +158,18 @@
 
     
     &__split--two {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
+        
         background-color: rgba(0,0,0,.05);
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
+            
             margin-bottom: 16em;
         }
         
@@ -171,9 +189,11 @@
     }
     
     &__split-cell--three {
+        -ms-grid-column: 1;
         grid-column: 1 / 2;
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-row: 1;
             grid-row: 1 / 2;
         } 
         
@@ -191,12 +211,15 @@
     }
     
     &__split-cell--four {
+        -ms-grid-column: 2;
         grid-column: 2 / 3;
         position: relative;
         text-align: left;
         
         @include breakpoint (max-width $medium-760) {
+            -ms-grid-column: 1;
             grid-column: 1 / 2;
+            -ms-grid-row: 2;
             grid-row: 2 / 3;
             text-align: left;
         }    
@@ -304,9 +327,26 @@
         } 
     }
     
+    
     &__para-wrap {
         flex: 1;
     }
+    
+    /** flexbox fix for IE11 **/
+    @include breakpoint (max-width $medium) {
+        
+        &__para-wrap {
+            flex: auto;
+        }
+        
+        /* override IE11 style above */
+         @supports (display: grid) {
+            &__para-wrap {
+                flex: 1;
+            }
+        }   
+    } 
+
     
     &__para {
         line-height: 1.4;
@@ -404,6 +444,21 @@
             } 
         }
     }
+    
+    /** flexbox fix for IE11 **/
+    @include breakpoint (max-width $medium) {
+        
+        &__table-wrap {
+            flex: auto;
+        }
+        
+        /* override IE11 style above */
+         @supports (display: grid) {
+            &__table-wrap {
+                flex: 1;
+            }
+        }   
+    } 
     
     /*** rotation is 90deg not -90 and margin is -22, not -12 ***/
     &__table-wrap--reverse {
