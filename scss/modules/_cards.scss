@@ -12,9 +12,20 @@
 
 .cards {
     
+    &__heading--three {
+        margin: 4em auto 0 auto;
+        max-width: 1280px;
+        width: 80%;
+        font-size: 1.45em;
+        
+        @include breakpoint (max-width $small-560) {
+            width: 90%;
+        }
+    }
+    
     &__about.update {
-        margin-top: 5em;
-        margin-bottom: -2em;
+        margin-top: .5em;
+        margin-bottom: -1em;
         font-style: italic;
         font-size: 1.2em;
     }
