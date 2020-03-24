@@ -12,6 +12,13 @@
 
 .cards {
     
+    &__about.update {
+        margin-top: 5em;
+        margin-bottom: -2em;
+        font-style: italic;
+        font-size: 1.2em;
+    }
+    
     &__about {
         font-size: 1.1em;
         width: 80%;
