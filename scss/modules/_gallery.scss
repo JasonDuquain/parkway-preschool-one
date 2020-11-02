@@ -53,26 +53,25 @@
 }
 
 .current-cal--item:nth-of-type(2) {
-    transition-delay: 500ms;
+    transition-delay: 400ms;
 }
 
 .current-cal--item:nth-of-type(3) {
-    transition-delay: 900ms;
-}
-
-/*
-.current-cal--item:nth-of-type(3) {
-    transition-delay: 1000ms;
+    transition-delay: 800ms;
 }
 
 .current-cal--item:nth-of-type(4) {
-    transition-delay: 1500ms;
+    transition-delay: 1200ms;
 }
 
 .current-cal--item:nth-of-type(5) {
+    transition-delay: 1600ms;
+}
+
+.current-cal--item:nth-of-type(6) {
     transition-delay: 2000ms;
 }
-*/
+
 
 .current-cal--item--visible {
     opacity: 1;
